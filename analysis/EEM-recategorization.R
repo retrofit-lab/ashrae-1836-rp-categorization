@@ -21,8 +21,8 @@ library(writexl)    # for exporting Excel workbook
 
 ### Step 1: Import relevant files (EEM sample and tag list)
 
-tag_list <- read_csv("categorization-tags.csv")
-sample_eems <- read_csv("sample-eems.csv")
+tag_list <- read_csv("../data/categorization-tags.csv")
+sample_eems <- read_csv("../data/sample-eems.csv")
 # Load one of the two samples provided with the script:
 # sample-eems.csv: 5% random sample of EEMs from the main list
 # building-sync.csv: List of BuildingSync EEMs
@@ -161,6 +161,7 @@ excel_sheets <- list(`Tagged EEMs` = sheet_1_tagged_eems,
                      `Untagged bigrams` = sheet_5_untagged_bigrams)
 
 write_xlsx(excel_sheets, "sample-eems-categorized-using-1836rp.xlsx")
+#write_xlsx(excel_sheets, "bsync-eems-categorized-using-1836rp.xlsx")
 
 
 
