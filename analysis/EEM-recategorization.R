@@ -14,7 +14,6 @@
 library(tidyverse)
 library(tidytext)
 library(tokenizers) # for 1-n gram tokenization
-library(textstem)   # for lemmatization
 library(writexl)    # for exporting Excel workbook
 
 
@@ -22,7 +21,7 @@ library(writexl)    # for exporting Excel workbook
 ### Step 1: Import relevant files (EEM sample and tag list)
 
 tag_list <- read_csv("../data/categorization-tags.csv")
-sample_eems <- read_csv("../data/sample-eems.csv")
+sample_eems <- read_csv("../data/building-sync.csv")
 # Load one of the two samples provided with the script:
 # sample-eems.csv: 5% random sample of EEMs from the main list
 # building-sync.csv: List of BuildingSync EEMs
@@ -55,11 +54,6 @@ eem_tokens <- map_df(token_1_5grams, ~as.data.frame(.x), .id="id")
 
 eem_tokens$id <- as.numeric(eem_tokens$id)
 eem_tokens <- dplyr::rename(eem_tokens, tokens = .x)
-
-
-## Lemmatize EEM name tokens and tags
-eem_tokens$tokens <- lemmatize_strings(eem_tokens$tokens)
-tag_list$keyword <- lemmatize_strings(tag_list$keyword)
 
 
 
@@ -160,8 +154,8 @@ excel_sheets <- list(`Tagged EEMs` = sheet_1_tagged_eems,
                      `Untagged words` = sheet_4_untagged_words,
                      `Untagged bigrams` = sheet_5_untagged_bigrams)
 
-write_xlsx(excel_sheets, "sample-eems-categorized-using-1836rp.xlsx")
-#write_xlsx(excel_sheets, "bsync-eems-categorized-using-1836rp.xlsx")
+#write_xlsx(excel_sheets, "sample-eems-categorized-using-1836rp.xlsx")
+write_xlsx(excel_sheets, "bsync-eems-categorized-using-1836rp.xlsx")
 
 
 
@@ -176,7 +170,7 @@ paste0("Percent EEMs tagged = ", round(100*tagged_eem_count/total_eem_count,1))
 ## Metric 2: Percentage of EEMs getting categorized (i.e., Tagged EEMs minus EEMs with only X0000 tags)
 
 categorized_tokens <- tagged_tokens %>% 
-  # filter(uni_code != "X0000") # I've left this in till we decide which one to keep
+  #filter(uni_code != "X0000") # Use this if you want to see both the descriptor and element tags
   filter(type == "Element")
 
 categorized_eem_count <- categorized_tokens$id %>% unique() %>% length()
