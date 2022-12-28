@@ -1,0 +1,118 @@
+eem_id,document,cat_lev1,cat_lev2,eem_name
+1238,BSYNC,Advanced Metering Systems,0,Clean and/or repair
+1239,BSYNC,Advanced Metering Systems,0,Implement training and/or documentation
+1240,BSYNC,Advanced Metering Systems,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1241,BSYNC,Advanced Metering Systems,0,Other
+1249,BSYNC,Boiler Plant Improvements,0,Clean and/or repair
+1250,BSYNC,Boiler Plant Improvements,0,Implement training and/or documentation
+1251,BSYNC,Boiler Plant Improvements,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1252,BSYNC,Boiler Plant Improvements,0,Convert to Cleaner Fuels
+1253,BSYNC,Boiler Plant Improvements,0,Other
+1258,BSYNC,Building Automation Systems/Energy Management Control Systems (EMCS),0,"Upgrade operating protocols, calibration, and/or sequencing"
+1259,BSYNC,Building Automation Systems/Energy Management Control Systems (EMCS),0,Other
+1262,BSYNC,Building Envelope Modifications,0,Insulate thermal bypasses
+1265,BSYNC,Building Envelope Modifications,0,Insulate attic hatch / stair box
+1268,BSYNC,Building Envelope Modifications,0,Add shading devices
+1271,BSYNC,Building Envelope Modifications,0,Replace glazing
+1274,BSYNC,Building Envelope Modifications,0,Insulate foundation
+1275,BSYNC,Building Envelope Modifications,0,Clean and/or repair
+1277,BSYNC,Building Envelope Modifications,0,Other
+1289,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Install or upgrade master venting
+1292,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Clean and/or repair
+1293,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Implement training and/or documentation
+1294,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,"Upgrade operating protocols, calibration, and/or sequencing"
+1295,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Other
+1299,BSYNC,Chiller Plant Improvements,0,Install gas cooling
+1302,BSYNC,Chiller Plant Improvements,0,Clean and/or repair
+1303,BSYNC,Chiller Plant Improvements,0,Implement training and/or documentation
+1304,BSYNC,Chiller Plant Improvements,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1305,BSYNC,Chiller Plant Improvements,0,Other
+1309,BSYNC,"Conveyance Systems (e.g., Elevators)",0,Clean and/or repair
+1310,BSYNC,"Conveyance Systems (e.g., Elevators)",0,Implement training and/or documentation
+1311,BSYNC,"Conveyance Systems (e.g., Elevators)",0,"Upgrade operating protocols, calibration, and/or sequencing"
+1312,BSYNC,"Conveyance Systems (e.g., Elevators)",0,Other
+1314,BSYNC,Data center energy conservation improvements,0,Implement hot aisle hold aisle design
+1317,BSYNC,Data center energy conservation improvements,0,Clean and/or repair
+1318,BSYNC,Data center energy conservation improvements,0,Implement training and/or documentation
+1319,BSYNC,Data center energy conservation improvements,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1320,BSYNC,Data center energy conservation improvements,0,Other
+1324,BSYNC,Distributed Generation,0,Convert fuels
+1325,BSYNC,Distributed Generation,0,Clean and/or repair
+1326,BSYNC,Distributed Generation,0,Implement training and/or documentation
+1327,BSYNC,Distributed Generation,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1328,BSYNC,Distributed Generation,0,Other
+1330,BSYNC,Electrical Peak Shaving/Load Shifting,0,Implement training and/or documentation
+1331,BSYNC,Electrical Peak Shaving/Load Shifting,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1332,BSYNC,Electrical Peak Shaving/Load Shifting,0,Other
+1333,BSYNC,Energy Cost Reduction Through Rate Adjustments,0,Change to more favorable rate schedule
+1334,BSYNC,Energy Cost Reduction Through Rate Adjustments,0,Energy cost reduction through rate adjustments - uncategorized
+1336,BSYNC,Energy Cost Reduction Through Rate Adjustments,0,Change to lower energy cost supplier(s)
+1337,BSYNC,Energy Cost Reduction Through Rate Adjustments,0,Other
+1339,BSYNC,Energy/Utility Distribution Systems,0,Implement power quality upgrades
+1341,BSYNC,Energy/Utility Distribution Systems,0,Install gas distribution systems
+1342,BSYNC,Energy/Utility Distribution Systems,0,Clean and/or repair
+1343,BSYNC,Energy/Utility Distribution Systems,0,Implement training and/or documentation
+1344,BSYNC,Energy/Utility Distribution Systems,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1345,BSYNC,Energy/Utility Distribution Systems,0,Other
+1346,BSYNC,Energy Related Process Improvements,0,Implement industrial process improvements
+1347,BSYNC,Energy Related Process Improvements,0,Implement production and/or manufacturing improvements
+1348,BSYNC,Energy Related Process Improvements,0,Clean and/or repair
+1349,BSYNC,Energy Related Process Improvements,0,Implement training and/or documentation
+1350,BSYNC,Energy Related Process Improvements,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1351,BSYNC,Energy Related Process Improvements,0,Other
+1352,BSYNC,Future/Other ECMs,0,Other
+1356,BSYNC,Lighting Improvements,0,Install spectrally enhanced lighting
+1357,BSYNC,Lighting Improvements,0,Retrofit with fiber optic lighting technologies
+1362,BSYNC,Lighting Improvements,0,Install timers
+1365,BSYNC,Lighting Improvements,0,Upgrade exterior lighting
+1366,BSYNC,Lighting Improvements,0,Clean and/or repair
+1367,BSYNC,Lighting Improvements,0,Implement training and/or documentation
+1368,BSYNC,Lighting Improvements,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1369,BSYNC,Lighting Improvements,0,Other
+1371,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Replace with higher efficiency
+1373,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Clean and/or repair
+1374,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Implement training and/or documentation
+1375,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1376,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Other
+1383,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Balance ventilation/distribution system
+1386,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Replace package units
+1388,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install passive solar heating
+1390,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Add enhanced dehumidification
+1391,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install solar ventilation preheating system
+1397,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install gas cooling
+1401,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install or Upgrade Master Venting
+1402,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Clean and/or repair
+1403,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Implement training and/or documentation
+1404,BSYNC,"Heating, Ventilating, and Air Conditioning",0,"Upgrade operating protocols, calibration, and/or sequencing"
+1405,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Other heating
+1406,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Other cooling
+1407,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Other ventilation
+1408,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Other distribution
+1409,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Other
+1416,BSYNC,Appliance and plug-load reductions,0,Clean and/or repair
+1417,BSYNC,Appliance and plug-load reductions,0,Implement training and/or documentation
+1418,BSYNC,Appliance and plug-load reductions,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1419,BSYNC,Appliance and plug-load reductions,0,Other
+1423,BSYNC,Refrigeration,0,Clean and/or repair
+1424,BSYNC,Refrigeration,0,Implement training and/or documentation
+1425,BSYNC,Refrigeration,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1426,BSYNC,Refrigeration,0,Other
+1427,BSYNC,Renewable Energy Systems,0,"Install landfill gas, wastewater treatment plant digester gas, or coal bed methane power plant"
+1430,BSYNC,Renewable Energy Systems,0,Install wood waste or other organic waste stream heating or power plant
+1431,BSYNC,Renewable Energy Systems,0,Clean and/or repair
+1432,BSYNC,Renewable Energy Systems,0,Implement training and/or documentation
+1433,BSYNC,Renewable Energy Systems,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1434,BSYNC,Renewable Energy Systems,0,Other
+1438,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install water pressure booster
+1441,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Replace piping
+1447,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Clean and/or repair
+1448,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Implement training and/or documentation
+1449,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1450,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Other
+1451,BSYNC,Category heading for measures that don't fit into another category,0,Other
+1454,BSYNC,Water and Sewer Conservation Systems,0,Install onsite sewer treatment systems
+1455,BSYNC,Water and Sewer Conservation Systems,0,Implement water efficient irrigation
+1456,BSYNC,Water and Sewer Conservation Systems,0,Clean and/or repair
+1457,BSYNC,Water and Sewer Conservation Systems,0,Implement training and/or documentation
+1458,BSYNC,Water and Sewer Conservation Systems,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1459,BSYNC,Water and Sewer Conservation Systems,0,Other
