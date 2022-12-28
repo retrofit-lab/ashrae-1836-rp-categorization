@@ -14,8 +14,6 @@
 library(tidyverse)
 library(tidytext)
 library(tokenizers) # for 1-n gram tokenization
-library(writexl)    # for exporting Excel workbook
-
 
 
 ### Step 1: Import relevant files (EEM sample and tag list)
@@ -114,6 +112,11 @@ sheet_1_tagged_eems <- dplyr::rename(sheet_1_tagged_eems,
                            uni_level_2 = V10, 
                            uni_level_3 = V11)
 
+# For the BSYNC sample, use the code in the next line. For the 5% random sample, un-comment the second line of code.
+write_csv(sheet_1_tagged_eems, "../results/bsync-sample/sheet-1-tagged-eems.csv")
+# For the 5% random sample use the code below
+# write_csv(sheet_1_tagged_eems, "../results/random-5-percent-sample/sheet-1-tagged-eems.csv")
+
 ## Sheet 2: Un-tagged EEMs
 
 tagged_eems <- sheet_1_tagged_eems %>% 
@@ -122,12 +125,21 @@ tagged_eems <- sheet_1_tagged_eems %>%
 
 sheet_2_untagged_eems <- anti_join(sample_eems, tagged_eems)
 
+# For the BSYNC sample, use the code in the next line. For the 5% random sample, un-comment the second line of code.
+write_csv(sheet_2_untagged_eems, "../results/bsync-sample/sheet-2-untagged-eems.csv")
+# For the 5% random sample use the code below
+# write_csv(sheet_2_untagged_eems, "../results/random-5-percent-sample/sheet-2-untagged-eems.csv")
 
 ## Sheet 3: Top tags in the EEM sample with counts
 
 sheet_3_top_tags <- tagged_tokens %>% 
   select(keyword) %>% 
   count(keyword, sort = TRUE)
+
+# For the BSYNC sample, use the code in the next line. For the 5% random sample, un-comment the second line of code.
+write_csv(sheet_3_top_tags, "../results/bsync-sample/sheet-3-top-tags.csv")
+# For the 5% random sample use the code below
+# write_csv(sheet_3_top_tags, "../results/random-5-percent-sample/sheet-3-top-tags.csv")
 
 ## Sheet 4: Top untagged words in the EEM sample with counts
 
@@ -139,6 +151,11 @@ sheet_4_untagged_words <- untagged_tokens %>%
   select(-id) %>% 
   count(tokens, sort = TRUE)
 
+# For the BSYNC sample, use the code in the next line. For the 5% random sample, un-comment the second line of code.
+write_csv(sheet_4_untagged_words, "../results/bsync-sample/sheet-4-untagged-words.csv")
+# For the 5% random sample use the code below
+# write_csv(sheet_4_untagged_words, "../results/random-5-percent-sample/sheet-4-untagged-words.csv")
+
 ## Sheet 5: Top untagged bigrams in the EEM sample with counts
 
 sheet_5_untagged_bigrams <- untagged_tokens %>% 
@@ -146,16 +163,10 @@ sheet_5_untagged_bigrams <- untagged_tokens %>%
   select(-id) %>% 
   count(tokens, sort = TRUE)
 
-
-# Export workbook
-excel_sheets <- list(`Tagged EEMs` = sheet_1_tagged_eems, 
-                     `Untagged EEMs` = sheet_2_untagged_eems,
-                     `Top tags` = sheet_3_top_tags,
-                     `Untagged words` = sheet_4_untagged_words,
-                     `Untagged bigrams` = sheet_5_untagged_bigrams)
-
-#write_xlsx(excel_sheets, "sample-eems-categorized-using-1836rp.xlsx")
-write_xlsx(excel_sheets, "bsync-eems-categorized-using-1836rp.xlsx")
+# For the BSYNC sample, use the code in the next line. For the 5% random sample, un-comment the second line of code.
+write_csv(sheet_5_untagged_bigrams, "../results/bsync-sample/sheet-5-untagged-bigrams.csv")
+# For the 5% random sample use the code below
+# write_csv(sheet_5_untagged_bigrams, "../results/random-5-percent-sample/sheet-5-untagged-bigrams.csv")
 
 
 
