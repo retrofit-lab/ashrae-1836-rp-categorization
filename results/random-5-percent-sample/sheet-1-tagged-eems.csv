@@ -1,0 +1,178 @@
+eem_id,document,cat_lev1,cat_lev2,eem_name,tags,type,uni_code,uni_level_1,uni_level_2,uni_level_3
+10,1651RP,Daylighting,Passive,High ceilings,ceiling,Element,C3030,INTERIORS,Interior Finishes,Ceiling Finishes
+24,1651RP,Daylighting,Passive,Use of interzone luminous ceilings,ceiling,Element,C3030,INTERIORS,Interior Finishes,Ceiling Finishes
+35,1651RP,Envelope,Fenestration,Heat absorbing blinds,blind,Element,E2010,EQUIPMENT & FURNISHINGS,Furnishings,Fixed Furnishings
+36,1651RP,Envelope,Fenestration,Manual Internal Window shades,manual,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+36,1651RP,Envelope,Fenestration,Manual Internal Window shades,Wind,Descriptor,D3010,SERVICES,HVAC,Energy Supply
+36,1651RP,Envelope,Fenestration,Manual Internal Window shades,shade,Element,E2010,EQUIPMENT & FURNISHINGS,Furnishings,Fixed Furnishings
+60,1651RP,Envelope,Infiltration,High Performance Air Barrier to Reduce Infiltration,Air barrier,Descriptor,B2010,SHELL,Exterior Enclosure,Exterior Walls
+60,1651RP,Envelope,Infiltration,High Performance Air Barrier to Reduce Infiltration,infiltration,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+69,1651RP,Envelope,Opaque,Dynamic Wall Insulation,Insulation,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+120,1651RP,HVAC,Control,Optimize multiple chiller sequencing.,Chiller,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+123,1651RP,HVAC,Control,Outdoor reset for supply hot water temperature,Reset,Descriptor,D3060,SERVICES,HVAC,Controls & Instrumentation
+123,1651RP,HVAC,Control,Outdoor reset for supply hot water temperature,Supply,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+123,1651RP,HVAC,Control,Outdoor reset for supply hot water temperature,Supply hot water temperature,Descriptor,D3060,SERVICES,HVAC,Controls & Instrumentation
+123,1651RP,HVAC,Control,Outdoor reset for supply hot water temperature,Hot water,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+132,1651RP,HVAC,Control,Thermostat setback/setup,Thermostat,Element,D3060,SERVICES,HVAC,Controls & Instrumentation
+132,1651RP,HVAC,Control,Thermostat setback/setup,Setback,Descriptor,D3060,SERVICES,HVAC,Controls & Instrumentation
+162,1651RP,HVAC,Distribution Equipment Efficiency,Pipe insulation for condensate return from coils to boiler,Pipe,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+162,1651RP,HVAC,Distribution Equipment Efficiency,Pipe insulation for condensate return from coils to boiler,Insulation,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+162,1651RP,HVAC,Distribution Equipment Efficiency,Pipe insulation for condensate return from coils to boiler,Return,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+162,1651RP,HVAC,Distribution Equipment Efficiency,Pipe insulation for condensate return from coils to boiler,Boiler,Element,D3020,SERVICES,HVAC,Heat Generating Systems
+173,1651RP,HVAC,Distribution Pressure Drop,High Performance Diffusers,Diffuser,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+179,1651RP,HVAC,Distribution Pressure Drop,Piping Connectors for Reduced Static Pressure,Static pressure,Descriptor,D3060,SERVICES,HVAC,Controls & Instrumentation
+185,1651RP,HVAC,Heating Efficiency,Electronic ignition for gas burners,Electronic,Descriptor,D5020,SERVICES,Electrical,Lighting and Branch Wiring
+185,1651RP,HVAC,Heating Efficiency,Electronic ignition for gas burners,Burner,Element,D3020,SERVICES,HVAC,Heat Generating Systems
+209,1651RP,HVAC,System,Absorption chillers,Absorption chiller,Descriptor,D3030,SERVICES,HVAC,Cooling Generating Systems
+209,1651RP,HVAC,System,Absorption chillers,Chiller,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+287,1651RP,HVAC,System,Variable Speed Water Loop Heat Pumps,Heat pump,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+287,1651RP,HVAC,System,Variable Speed Water Loop Heat Pumps,Pump,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+342,1651RP,Internal Load,Equipment,High performance motors,Motor,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+537,BEQ,HVAC System,0,"In humid climates, supply air with a temperature above the dew point to prevent condensation on cold surfaces.",Supply,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+585,BEQ,Refrigeration,0,Install high specific-efficiency (Btu/W) condensers. E,Condenser,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+633,BEQ,Energy Generation,0,Reduce overpumping on chilled-water systems.,Chilled water,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+797,STD100,REFRIGERATION,Reduce Loads,Replace lights with LED strip lights with motion sensors in refrigerated cases and spaces.,LED,Descriptor,D5020,SERVICES,Electrical,Lighting and Branch Wiring
+797,STD100,REFRIGERATION,Reduce Loads,Replace lights with LED strip lights with motion sensors in refrigerated cases and spaces.,motion,Descriptor,D5020,SERVICES,Electrical,Lighting and Branch Wiring
+797,STD100,REFRIGERATION,Reduce Loads,Replace lights with LED strip lights with motion sensors in refrigerated cases and spaces.,Refrigerated case,Element,E1090,EQUIPMENT & FURNISHINGS,Equipment,Other Equipment
+823,STD100,WATER SYSTEMS,Domestic Hot-Water Systems,"Install gray water heat recovery from showers, dishwashers, and washing machines.",Heat recovery,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+823,STD100,WATER SYSTEMS,Domestic Hot-Water Systems,"Install gray water heat recovery from showers, dishwashers, and washing machines.",Shower,Element,D2010,SERVICES,Plumbing,Plumbing Fixtures
+823,STD100,WATER SYSTEMS,Domestic Hot-Water Systems,"Install gray water heat recovery from showers, dishwashers, and washing machines.",washing machine,Element,E1090,EQUIPMENT & FURNISHINGS,Equipment,Other Equipment
+897,STD100,NONRESIDENTIAL LIGHTING,Lighting Controls,"Reduce operating hours for lighting systems through the use of controls and building management systems. This includes the use of shut-off controls, such as time switches.",controls,Element,D3060,SERVICES,HVAC,Controls & Instrumentation
+923,STD100,RESIDENTIAL LIGHTING,Interior,"Install vacancy sensors to automatically turn off lighting in closets, storage, work rooms, garages, and exterior buildings when the space has been vacated for 15 minutes.",vacancy,Descriptor,D5020,SERVICES,Electrical,Lighting and Branch Wiring
+932,STD100,APPLIANCES,0,"Install appliances (clothes washers, dehumidifiers, dishwashers, freezers, refrigerators, room air cleaners and purifiers, office equipment, and televisions) that are certified as ENERGY STAR compliant.",Clothes washer,Element,E1090,EQUIPMENT & FURNISHINGS,Equipment,Other Equipment
+932,STD100,APPLIANCES,0,"Install appliances (clothes washers, dehumidifiers, dishwashers, freezers, refrigerators, room air cleaners and purifiers, office equipment, and televisions) that are certified as ENERGY STAR compliant.",Refrigerator,Element,E1090,EQUIPMENT & FURNISHINGS,Equipment,Other Equipment
+932,STD100,APPLIANCES,0,"Install appliances (clothes washers, dehumidifiers, dishwashers, freezers, refrigerators, room air cleaners and purifiers, office equipment, and televisions) that are certified as ENERGY STAR compliant.",Equipment,Element,E10,EQUIPMENT & FURNISHINGS,Equipment,Unassigned
+932,STD100,APPLIANCES,0,"Install appliances (clothes washers, dehumidifiers, dishwashers, freezers, refrigerators, room air cleaners and purifiers, office equipment, and televisions) that are certified as ENERGY STAR compliant.",ENERGY STAR,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+1013,BCL,Envelope,Form,Merge FloorspaceJs with Model,Floor,Element,B1010,SHELL,Superstructure,Floor Construction
+1045,BCL,Envelope,Opaque,Set Exterior Walls and Floors to Adiabatic,Exterior Wall,Element,B2010,SHELL,Exterior Enclosure,Exterior Walls
+1045,BCL,Envelope,Opaque,Set Exterior Walls and Floors to Adiabatic,Floor,Element,B1010,SHELL,Superstructure,Floor Construction
+1047,BCL,Envelope,Opaque,Increase R-value of Insulation for Exterior Walls to a Specific Value,Insulation,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+1047,BCL,Envelope,Opaque,Increase R-value of Insulation for Exterior Walls to a Specific Value,Exterior Wall,Element,B2010,SHELL,Exterior Enclosure,Exterior Walls
+1065,BCL,Equipment,Equipment Controls,Reduce Night Time Electric Equipment Loads,Equipment,Element,E10,EQUIPMENT & FURNISHINGS,Equipment,Unassigned
+1071,BCL,Equipment,Electric Equipment,Set Electric Equipment loads by EPD,Equipment,Element,E10,EQUIPMENT & FURNISHINGS,Equipment,Unassigned
+1118,BCL,HVAC,Cooling,Set Air-Cooled Unitary Heat Pump COP,air cooled,Descriptor,D3030,SERVICES,HVAC,Cooling Generating Systems
+1118,BCL,HVAC,Cooling,Set Air-Cooled Unitary Heat Pump COP,Heat pump,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+1118,BCL,HVAC,Cooling,Set Air-Cooled Unitary Heat Pump COP,Pump,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+1266,BSYNC,Building Envelope Modifications,0,Add attic/knee wall insulation,Insulation,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+1284,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Add energy recovery,Energy recovery,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+1286,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Separate SHW from heating,SHW,Element,D2020,SERVICES,Plumbing,Domestic Water Distribution
+1315,BSYNC,Data center energy conservation improvements,0,Implement server virtualization,Server,Element,E1010,EQUIPMENT & FURNISHINGS,Equipment,Commercial Equipment
+1316,BSYNC,Data center energy conservation improvements,0,Upgrade servers,Server,Element,E1010,EQUIPMENT & FURNISHINGS,Equipment,Commercial Equipment
+1372,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Add VSD motor controller,VSD,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+1372,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Add VSD motor controller,Motor,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+1384,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Repair or replace HVAC damper and controller,Damper,Element,D3040,SERVICES,HVAC,Distribution Systems
+1437,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install solar thermal SHW,Solar thermal,Descriptor,D3010,SERVICES,HVAC,Energy Supply
+1437,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install solar thermal SHW,SHW,Element,D2020,SERVICES,Plumbing,Domestic Water Distribution
+1452,BSYNC,Water and Sewer Conservation Systems,0,Install low-flow faucets and showerheads,Low flow,Descriptor,D2010,SERVICES,Plumbing,Plumbing Fixtures
+1452,BSYNC,Water and Sewer Conservation Systems,0,Install low-flow faucets and showerheads,faucet,Element,D2010,SERVICES,Plumbing,Plumbing Fixtures
+1452,BSYNC,Water and Sewer Conservation Systems,0,Install low-flow faucets and showerheads,showerhead,Element,D2010,SERVICES,Plumbing,Plumbing Fixtures
+1494,CBES,HVAC - Economizer,0,Economizer Maintenance,Economizer,Element,D3040,SERVICES,HVAC,Distribution Systems
+1533,CBES,HVAC - Whole System,0,"Upgrade to VRF System, Single Story (9.5 EER, 3.2 COP)",VRF,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+1553,CBES,Refrigeration Case,0,High Refrigerant Charge Adjustment (>= 20% rated charge),Refrigerant,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+1558,CBES,Service Hot Water,0,Efficiency Upgrade to Electric Instantaneous Water Heater (0.95),instantaneous,Descriptor,D2020,SERVICES,Plumbing,Domestic Water Distribution
+1558,CBES,Service Hot Water,0,Efficiency Upgrade to Electric Instantaneous Water Heater (0.95),Water heater,Element,D2020,SERVICES,Plumbing,Domestic Water Distribution
+1564,DOTY,ENVELOPE,0,Cool Roof,Cool roof,Descriptor,B3010,SHELL,Roofing,Roof Coverings
+1564,DOTY,ENVELOPE,0,Cool Roof,Roof,Element,B3010,SHELL,Roofing,Roof Coverings
+1575,DOTY,LIGHTING,0,LED Lighting - Emerging Technology,LED,Descriptor,D5020,SERVICES,Electrical,Lighting and Branch Wiring
+1611,DOTY,BOILERS AND DISTRICT HEATING,0,Lower Steam Pressure,Steam,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+1648,ATT,Boiler Plant Improvements,0,Convert gas-fired unit to boiler loop,Boiler,Element,D3020,SERVICES,HVAC,Heat Generating Systems
+1651,ATT,Boiler Plant Improvements,0,Decentralize boiler,Boiler,Element,D3020,SERVICES,HVAC,Heat Generating Systems
+1663,ATT,Building Envelope Modifications,0,Close elevator and/or stairwell shaft vents,Elevator,Element,D1010,SERVICES,Conveying,Elevators & Lifts
+1696,ATT,Chiller Plant Improvements,0,Add or replace cooling tower,Cooling tower,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+1719,ATT,Data-Center Improvements,0,Implement server virtualization,Server,Element,E1010,EQUIPMENT & FURNISHINGS,Equipment,Commercial Equipment
+1768,ATT,Heating; Ventilating and Air Conditioning,0,Convert CV system to VAV system,VAV,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+1784,ATT,Heating; Ventilating and Air Conditioning,0,Replace or modify AHU,AHU,Element,D3040,SERVICES,HVAC,Distribution Systems
+1796,ATT,Lighting Improvements,0,Replace diffusers,Diffuser,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+1870,IEA46,Building Envelope,Windows,"Replace existing fenestration (toplighting and/or sidelighting) with dual-glazed ""low-e"" glass wherever possible to reduce thermal gain.",Low e,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+1895,IEA46,HVAC Systems,HVAC distribution systems,Reset VAV system supply-air temperature set point when system is at minimum speed to provide adequate ventilation.,Reset,Descriptor,D3060,SERVICES,HVAC,Controls & Instrumentation
+1895,IEA46,HVAC Systems,HVAC distribution systems,Reset VAV system supply-air temperature set point when system is at minimum speed to provide adequate ventilation.,VAV,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+1895,IEA46,HVAC Systems,HVAC distribution systems,Reset VAV system supply-air temperature set point when system is at minimum speed to provide adequate ventilation.,Supply,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+1895,IEA46,HVAC Systems,HVAC distribution systems,Reset VAV system supply-air temperature set point when system is at minimum speed to provide adequate ventilation.,Supply air temperature,Descriptor,D3060,SERVICES,HVAC,Controls & Instrumentation
+1896,IEA46,HVAC Systems,HVAC distribution systems,"If conversion to VAV is impractical for CAV systems, reset supply-air temperatures in response to load. Dynamically control heating duct temperatures as low as possible, and cooling duct temperatures as high as possible, while meeting the load.",VAV,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+1896,IEA46,HVAC Systems,HVAC distribution systems,"If conversion to VAV is impractical for CAV systems, reset supply-air temperatures in response to load. Dynamically control heating duct temperatures as low as possible, and cooling duct temperatures as high as possible, while meeting the load.",Reset,Descriptor,D3060,SERVICES,HVAC,Controls & Instrumentation
+1896,IEA46,HVAC Systems,HVAC distribution systems,"If conversion to VAV is impractical for CAV systems, reset supply-air temperatures in response to load. Dynamically control heating duct temperatures as low as possible, and cooling duct temperatures as high as possible, while meeting the load.",Supply,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+1896,IEA46,HVAC Systems,HVAC distribution systems,"If conversion to VAV is impractical for CAV systems, reset supply-air temperatures in response to load. Dynamically control heating duct temperatures as low as possible, and cooling duct temperatures as high as possible, while meeting the load.",Supply air temperature,Descriptor,D3060,SERVICES,HVAC,Controls & Instrumentation
+1896,IEA46,HVAC Systems,HVAC distribution systems,"If conversion to VAV is impractical for CAV systems, reset supply-air temperatures in response to load. Dynamically control heating duct temperatures as low as possible, and cooling duct temperatures as high as possible, while meeting the load.",Duct,Element,D3040,SERVICES,HVAC,Distribution Systems
+1897,IEA46,HVAC Systems,HVAC distribution systems,Use high-efficiency fans and pumps; replace or trim impellers of existing fans and pumps if they have excessive capacity relative to peak demand.,Fan,Element,D3040,SERVICES,HVAC,Distribution Systems
+1897,IEA46,HVAC Systems,HVAC distribution systems,Use high-efficiency fans and pumps; replace or trim impellers of existing fans and pumps if they have excessive capacity relative to peak demand.,Pump,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+1956,IEA46,Refrigeration,Reduce loads,Install low/no ASH refrigerated case doors.,Refrigerated case,Element,E1090,EQUIPMENT & FURNISHINGS,Equipment,Other Equipment
+2003,IEA46,Energy Generation and Distribution,Boiler system,Install condensing economizers.,Economizer,Element,D3040,SERVICES,HVAC,Distribution Systems
+2014,IEA46,Energy Generation and Distribution,Boiler system,"Preheat combustion air, feed water, or fuel oil with reclaimed waste heat from boiler blowdown and/or flue gases.",Boiler,Element,D3020,SERVICES,HVAC,Heat Generating Systems
+2039,IEA46,Energy Generation and Distribution,Chiller system,Isolate offline chillers and cooling towers.,Chiller,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+2039,IEA46,Energy Generation and Distribution,Chiller system,Isolate offline chillers and cooling towers.,Cooling tower,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+2053,IEA46,Energy Generation and Distribution,Chiller system,Optimize plant controls to raise evaporator temperature as high as possible while meeting loads of the system. Also optimize condenser water temperature control to achieve best combination of chiller and tower efficiency.,controls,Element,D3060,SERVICES,HVAC,Controls & Instrumentation
+2053,IEA46,Energy Generation and Distribution,Chiller system,Optimize plant controls to raise evaporator temperature as high as possible while meeting loads of the system. Also optimize condenser water temperature control to achieve best combination of chiller and tower efficiency.,Condenser,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+2053,IEA46,Energy Generation and Distribution,Chiller system,Optimize plant controls to raise evaporator temperature as high as possible while meeting loads of the system. Also optimize condenser water temperature control to achieve best combination of chiller and tower efficiency.,Chiller,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+2113,IEA46,Residential Lighting,Interior,Evaluate adding daylight sensing controls for general illumination lighting in rooms with windows or skylights. Use in combination with dimming systems so the electric light level can be adjusted based on the amount of daylight available,controls,Element,D3060,SERVICES,HVAC,Controls & Instrumentation
+2113,IEA46,Residential Lighting,Interior,Evaluate adding daylight sensing controls for general illumination lighting in rooms with windows or skylights. Use in combination with dimming systems so the electric light level can be adjusted based on the amount of daylight available,Wind,Descriptor,D3010,SERVICES,HVAC,Energy Supply
+2113,IEA46,Residential Lighting,Interior,Evaluate adding daylight sensing controls for general illumination lighting in rooms with windows or skylights. Use in combination with dimming systems so the electric light level can be adjusted based on the amount of daylight available,Skylight,Element,B3020,SHELL,Roofing,Roof Openings
+2113,IEA46,Residential Lighting,Interior,Evaluate adding daylight sensing controls for general illumination lighting in rooms with windows or skylights. Use in combination with dimming systems so the electric light level can be adjusted based on the amount of daylight available,BAS,Element,D3060,SERVICES,HVAC,Controls & Instrumentation
+2121,IEA46,"Electric Systems, Motors",0,"Replace existing 3-phase, 1 HP and greater electric motors with premium efficiency motors (often a better choice than rewinding motors).",Motor,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+2165,IEA46,Process Systems,Painting,"Use ultrafiltration/reverse osmosis (UF/RO) for wastewater cleaning. When the water-based paint is used, processing equipment must be regularly cleaned with water. A typical painting operation requires significant amount of water to clean, all of it must be disposed of as hazardous waste. Reducing this hazardous waste therefore reduces transportation and incineration energy associated with its removal. A combined UF/RO process cleans wastewater to the point where it is again suitable for cleaning purpose. The UF/RO can recover 95% of the waste water.",BAS,Element,D3060,SERVICES,HVAC,Controls & Instrumentation
+2165,IEA46,Process Systems,Painting,"Use ultrafiltration/reverse osmosis (UF/RO) for wastewater cleaning. When the water-based paint is used, processing equipment must be regularly cleaned with water. A typical painting operation requires significant amount of water to clean, all of it must be disposed of as hazardous waste. Reducing this hazardous waste therefore reduces transportation and incineration energy associated with its removal. A combined UF/RO process cleans wastewater to the point where it is again suitable for cleaning purpose. The UF/RO can recover 95% of the waste water.",Equipment,Element,E10,EQUIPMENT & FURNISHINGS,Equipment,Unassigned
+2184,IEA46,Process Systems,Welding,Select shielding gas with reduced fume generation for the GMAW and Flux Cored Arc Welding (FCAW) processes. Argon-based shielding gases with the lowest percentages of oxygen or carbon dioxide will minimize fume for both GMAW and FCAW. The fume generation rate can be cut almost in half by changing from 100% CO2 shielding gas to a mixture of Argon with 25% CO2 shielding gas. A further reduction in fume generation rate can be achieved by use of a shielding gas containing Argon with only 5% CO2 along with the appropriate electrode,Argon,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+2184,IEA46,Process Systems,Welding,Select shielding gas with reduced fume generation for the GMAW and Flux Cored Arc Welding (FCAW) processes. Argon-based shielding gases with the lowest percentages of oxygen or carbon dioxide will minimize fume for both GMAW and FCAW. The fume generation rate can be cut almost in half by changing from 100% CO2 shielding gas to a mixture of Argon with 25% CO2 shielding gas. A further reduction in fume generation rate can be achieved by use of a shielding gas containing Argon with only 5% CO2 along with the appropriate electrode,BAS,Element,D3060,SERVICES,HVAC,Controls & Instrumentation
+2211,IEA46,Process Systems,Catering facilities,Install electronically commutated motor for walk-in cooler and freezer evaporator fan.,Electronic,Descriptor,D5020,SERVICES,Electrical,Lighting and Branch Wiring
+2211,IEA46,Process Systems,Catering facilities,Install electronically commutated motor for walk-in cooler and freezer evaporator fan.,electronically commutated motor,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+2211,IEA46,Process Systems,Catering facilities,Install electronically commutated motor for walk-in cooler and freezer evaporator fan.,Motor,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+2211,IEA46,Process Systems,Catering facilities,Install electronically commutated motor for walk-in cooler and freezer evaporator fan.,Fan,Element,D3040,SERVICES,HVAC,Distribution Systems
+2212,IEA46,Process Systems,Catering facilities,Use Energy Star rated deep fat fryer.,ENERGY STAR,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+2253,IEA46,Process Systems,Process control,Replace air filters regularly.,Filter,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+2262,IEA46,Process Systems,Process control,Upgrade inefficient chillers.,Chiller,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+2307,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Hot Water,Low Flow Showerheads,Low flow,Descriptor,D2010,SERVICES,Plumbing,Plumbing Fixtures
+2307,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Hot Water,Low Flow Showerheads,showerhead,Element,D2010,SERVICES,Plumbing,Plumbing Fixtures
+2325,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,HVAC End Use,High Efficiency Furnace,Furnace,Element,D3050,SERVICES,HVAC,Terminal & Package Units
+2400,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Miscellaneous End Use,High Efficiency Transformer,Transformer,Element,D5010,SERVICES,Electrical,Electrical Service & Distribution
+2437,ILTRM,RESIDENTIAL MEASURES,HVAC End Use,ENERGY STAR Ceiling Fan,ENERGY STAR,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+2437,ILTRM,RESIDENTIAL MEASURES,HVAC End Use,ENERGY STAR Ceiling Fan,ceiling,Element,C3030,INTERIORS,Interior Finishes,Ceiling Finishes
+2437,ILTRM,RESIDENTIAL MEASURES,HVAC End Use,ENERGY STAR Ceiling Fan,Ceiling fan,Element,E2010,EQUIPMENT & FURNISHINGS,Furnishings,Fixed Furnishings
+2437,ILTRM,RESIDENTIAL MEASURES,HVAC End Use,ENERGY STAR Ceiling Fan,Fan,Element,D3040,SERVICES,HVAC,Distribution Systems
+2451,ILTRM,RESIDENTIAL MEASURES,Lighting End Use,LED Specialty Lamps,LED,Descriptor,D5020,SERVICES,Electrical,Lighting and Branch Wiring
+2451,ILTRM,RESIDENTIAL MEASURES,Lighting End Use,LED Specialty Lamps,Lamp,Element,D5020,SERVICES,Electrical,Lighting and Branch Wiring
+2511,IEA11,REGULATION,0,"Special considerations, roof top air conditioning units",Roof,Element,B3010,SHELL,Roofing,Roof Coverings
+2545,IEA11,HEATING,0,Reduce number of on-line boilers as load reduces.,Boiler,Element,D3020,SERVICES,HVAC,Heat Generating Systems
+2567,IEA11,HEATING,0,Use of exhaust air as heat source for heat pumps.,Exhaust,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+2567,IEA11,HEATING,0,Use of exhaust air as heat source for heat pumps.,Heat pump,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+2567,IEA11,HEATING,0,Use of exhaust air as heat source for heat pumps.,Pump,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+2592,IEA11,COOLING,0,Heat recovery of condenser heat.,Heat recovery,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+2592,IEA11,COOLING,0,Heat recovery of condenser heat.,Condenser,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+2599,IEA11,COOLING,0,Minimise adverse external influences on cooling tower and air cooled condenser,Cooling tower,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+2599,IEA11,COOLING,0,Minimise adverse external influences on cooling tower and air cooled condenser,air cooled,Descriptor,D3030,SERVICES,HVAC,Cooling Generating Systems
+2599,IEA11,COOLING,0,Minimise adverse external influences on cooling tower and air cooled condenser,Condenser,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+2664,IEA11,LIGHTING,0,"Clean interior wall surfaces, repaint with lighter colors",Interior wall,Element,C1010,INTERIORS,Interior Construction,Partitions
+2688,IEA11,MISCELLANEOUS,0,Reduce condensing temperatures.,Condensing temperature,Descriptor,D3060,SERVICES,HVAC,Controls & Instrumentation
+2728,REMDB,Ceilings/Roofs,Unfinished Attic,Insulate Ceiling with Closed Cell Spray Foam,ceiling,Element,C3030,INTERIORS,Interior Finishes,Ceiling Finishes
+2785,REMDB,Space Conditioning,Ducts,Install Uninsulated Ducts,Duct,Element,D3040,SERVICES,HVAC,Distribution Systems
+2787,REMDB,Space Conditioning,Ducts,Seal and Insulate Ducts (Total Leakage),Duct,Element,D3040,SERVICES,HVAC,Distribution Systems
+2795,REMDB,Space Conditioning,Ground Source Heat Pump,Remove Heat Pump,Heat pump,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+2795,REMDB,Space Conditioning,Ground Source Heat Pump,Remove Heat Pump,Pump,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+2922,NYTRM,COMMERCIAL AND INDUSTRIAL MEASURES,"HEATING, VENTILATION AND AIR CONDITIONING (HVAC) - CONTROL",ENERGY MANAGEMENT SYSTEM (EMS) - GUEST ROOM,Energy management system,Element,D3060,SERVICES,HVAC,Controls & Instrumentation
+2922,NYTRM,COMMERCIAL AND INDUSTRIAL MEASURES,"HEATING, VENTILATION AND AIR CONDITIONING (HVAC) - CONTROL",ENERGY MANAGEMENT SYSTEM (EMS) - GUEST ROOM,EMS,Element,D3060,SERVICES,HVAC,Controls & Instrumentation
+2940,NYTRM,COMMERCIAL AND INDUSTRIAL MEASURES,REFRIGERATION,REFRIGERATED CASE NIGHT COVER,Refrigerated case,Element,E1090,EQUIPMENT & FURNISHINGS,Equipment,Other Equipment
+2946,THUM,Operational Energy Conservation Opportunities,0,Reduce Flow and Temperature of Hot Water,Hot water,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+2969,THUM,HVAC Equipment Energy Conservation Opportunities,0,Recirculate Exhaust Air Using Activated Carbon Filters.,Exhaust,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+2969,THUM,HVAC Equipment Energy Conservation Opportunities,0,Recirculate Exhaust Air Using Activated Carbon Filters.,Filter,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+3005,WSU,Envelope,Reduce Heat Losses-Windows/Doors,Install Movable Insulation - Operable insulating slats,Insulation,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+3005,WSU,Envelope,Reduce Heat Losses-Windows/Doors,Install Movable Insulation - Operable insulating slats,Operable,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+3037,WSU,HVAC Systems,Air Distribution Systems,Reduce System Flow Rates - Variable speed drive motor for VAV,Variable speed drive,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+3037,WSU,HVAC Systems,Air Distribution Systems,Reduce System Flow Rates - Variable speed drive motor for VAV,Motor,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+3037,WSU,HVAC Systems,Air Distribution Systems,Reduce System Flow Rates - Variable speed drive motor for VAV,VAV,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+3047,WSU,HVAC Systems,Water/Steam Distribution,Reduce System Flow Rates - Primary/secondary pumping with variable speed motors,Pump,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+3047,WSU,HVAC Systems,Water/Steam Distribution,Reduce System Flow Rates - Primary/secondary pumping with variable speed motors,Motor,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+3109,WSU,Refrigeration,Reduce Refrigeration System Losses,Increase Insulation of Refrigerated Area,Insulation,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+3149,WULF,BOILER PLANT,DRAFT CONTROL,Correct defects in flue systems and boiler room ventilation that cause draft problems.,Boiler,Element,D3020,SERVICES,HVAC,Heat Generating Systems
+3155,WULF,BOILER PLANT,FIRESIDES AND WATERSIDES,Install soot blowers in boilers that burn sooting fuels.,Boiler,Element,D3020,SERVICES,HVAC,Heat Generating Systems
+3197,WULF,CHILLER PLANT,EQUIPMENT SCHEDULING AND OPERATING PRACTICES,Install power switching that prevents unnecessary operation of spare pumps.,Pump,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+3208,WULF,CHILLER PLANT,CONDENSER AND EVAPORATOR HEAT TRANSFER EFFICIENCY,"In chilled water systems, install turbulators in the evaporator tubes.",Chilled water,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+3232,WULF,CHILLER PLANT,SYSTEM DESIGN FOR EFFICIENT LOW-LOAD COOLING,"If a facility has several chiller plants, provide cross connections that allow shutting down the least efficient chillers.",Chiller,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+3237,WULF,CHILLER PLANT,EXPLOITING LOW AMBIENT TEMPERATURES FOR WATER CHILLING,Install a closed-loop atmospheric cooling unit in the chilled water circuit.,Chilled water,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+3247,WULF,SERVICE WATER SYSTEMS,REDUCING SERVICE WATER CONSUMPTION,Install shower valves that allow easy control of temperature and flow rate.,Shower,Element,D2010,SERVICES,Plumbing,Plumbing Fixtures
+3358,WULF,ROOM CONDITIONING UNITS AND SELF-CONTAINED HVAC EQUIPMENT,SELF-CONTAINED AIR CONDITIONERS AND THROUGH-WALL HEAT PUMPS,Install high-efficiency replacement fan motors.,Fan,Element,D3040,SERVICES,HVAC,Distribution Systems
+3358,WULF,ROOM CONDITIONING UNITS AND SELF-CONTAINED HVAC EQUIPMENT,SELF-CONTAINED AIR CONDITIONERS AND THROUGH-WALL HEAT PUMPS,Install high-efficiency replacement fan motors.,Motor,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+3376,WULF,ROOM CONDITIONING UNITS AND SELF-CONTAINED HVAC EQUIPMENT,HEAT PUMP LOOP SYSTEMS (ADDITIONAL MEASURES),Add thermal storage to the loop system.,thermal storage,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
+3384,WULF,BUILDING AIR LEAKAGE,PERSONNEL DOORS,"Install effective closers on exterior doors. - If manual opening of doors is not acceptable, install automatic doors or door openers.",Exterior door,Element,B2030,SHELL,Exterior Enclosure,Exterior Doors
+3384,WULF,BUILDING AIR LEAKAGE,PERSONNEL DOORS,"Install effective closers on exterior doors. - If manual opening of doors is not acceptable, install automatic doors or door openers.",manual,Descriptor,X0000,Unassigned,Unassigned,Unassigned
+3417,WULF,BUILDING INSULATION,WALLS AND SOFFITS,Increase the thermal resistance of the panels in curtain walls.,curtain,Element,E2010,EQUIPMENT & FURNISHINGS,Furnishings,Fixed Furnishings
+3455,WULF,ARTIFICIAL LIGHTING,"LAMPS AND FIXTURES, FLUORESCENT",Replace fluorescent lamps with high-efficiency or reduced- wattage types.,Fluorescent,Descriptor,D5020,SERVICES,Electrical,Lighting and Branch Wiring
+3455,WULF,ARTIFICIAL LIGHTING,"LAMPS AND FIXTURES, FLUORESCENT",Replace fluorescent lamps with high-efficiency or reduced- wattage types.,Lamp,Element,D5020,SERVICES,Electrical,Lighting and Branch Wiring
+3483,WULF,ARTIFICIAL LIGHTING,FIXTURE MAINTENANCE AND MARKING,Clean fixtures and lamps at appropriate intervals.,Lamp,Element,D5020,SERVICES,Electrical,Lighting and Branch Wiring

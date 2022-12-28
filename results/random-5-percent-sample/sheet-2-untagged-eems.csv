@@ -1,0 +1,66 @@
+eem_id,document,cat_lev1,cat_lev2,eem_name
+73,1651RP,Envelope,Opaque,High-speed doors between heated/cooled building space and unconditioned space in the areas with high-traffic
+80,1651RP,Envelope,Opaque,large reservoirs of water for thermal mass within zone
+304,1651RP,HVAC,Ventilation,Hybrid/Mixed Mode Ventilation
+501,BEQ,HVAC System,0,"Where cooling is provided by multiple units, maintain proper sequencing to achieve maximum efficiency while meeting required load."
+562,BEQ,HVAC System,0,Reduce operating hours of simultaneously heating and cooling systems.
+590,BEQ,Refrigeration,0,Calibrate pressure transducers to optimize suction pressure.
+683,BEQ,Other EEMs,0,"Reduce demand charges through load shedding, operational changes, and procedural changes."
+698,STD100,BUILDING ENVELOPE,Walls,Consider converting internal courtyard into an atrium to reduce external wall surface.
+781,STD100,HVAC SYSTEMS,Building Automation and Control Systems,Adjust housekeeping schedule to minimize HVAC use.
+808,STD100,REFRIGERATION,Improve System Operating Efficiency,Install mechanical subcooling
+967,BCL,Electric Lighting,Electric Lighting Controls,Change Lighting Schedule by Space Type
+977,BCL,Electric Lighting,Electric Lighting Controls,Radiance Daylighting Measure
+1049,BCL,Envelope,Opaque,SetExtWallToGroundBoundaryConditionByStory
+1093,BCL,HVAC,Distribution,Change Overhead Ventilation to Displacement Ventilation
+1125,BCL,HVAC,Cooling,Set COP for Single Speed DX Cooling Units
+1136,BCL,HVAC,Whole System,GSHP with DOAS (More Design Parameters)
+1142,BCL,HVAC,Whole System,Ideal Loads Options
+1148,BCL,HVAC,Whole System,AedgOfficeHvacAshpDoas
+1161,BCL,HVAC,Whole System,EnableIdealAirLoadsForAllZones
+1262,BSYNC,Building Envelope Modifications,0,Insulate thermal bypasses
+1302,BSYNC,Chiller Plant Improvements,0,Clean and/or repair
+1303,BSYNC,Chiller Plant Improvements,0,Implement training and/or documentation
+1304,BSYNC,Chiller Plant Improvements,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1311,BSYNC,"Conveyance Systems (e.g., Elevators)",0,"Upgrade operating protocols, calibration, and/or sequencing"
+1334,BSYNC,Energy Cost Reduction Through Rate Adjustments,0,Energy cost reduction through rate adjustments - uncategorized
+1342,BSYNC,Energy/Utility Distribution Systems,0,Clean and/or repair
+1362,BSYNC,Lighting Improvements,0,Install timers
+1531,CBES,HVAC - Whole System,0,"Upgrade toVRF System, Single Story (11 EER, 3.3 COP)"
+1563,DOTY,ENVELOPE,0,Exterior Color
+1735,ATT,Electric Motors and Drives,0,Clean and/or repair
+1737,ATT,Electric Motors and Drives,0,Other
+1738,ATT,Electric Motors and Drives,0,Replace with higher efficiency
+1750,ATT,Energy Related Process Improvements,0,Implement industrial process improvements
+1755,ATT,Energy/Utility Distribution Systems,0,Clean and/or repair
+1758,ATT,Energy/Utility Distribution Systems,0,Implement training and/or documentation
+1787,ATT,Heating; Ventilating and Air Conditioning,0,"Upgrade operating protocols, calibration, and/or sequencing"
+1794,ATT,Lighting Improvements,0,Install timers
+1823,ATT,Service Hot Water System,0,Implement training and/or documentation
+1879,IEA46,Building Envelope,Doors,Seal top and bottom of building.
+1929,IEA46,HVAC Systems,HVAC distribution systems,"In reheat systems, making adjustments as necessary to minimize reheat energy consumption while maintaining indoor environmental quality."
+2146,IEA46,Process Systems,General process improvement,Optimize overtime by analyzing the causes and correcting them.
+2150,IEA46,Process Systems,General process improvement,Improve working conditions to improve productivity by increasing building ventilation.
+2187,IEA46,Process Systems,Welding,"Avoid short-time conditions with spot welding, changing over to medium-time conditions."
+2196,IEA46,Process Systems,Welding,Use dock seals for truck docks.
+2365,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Lighting End Use,Lighting Power Density
+2390,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Compressed Air,Efficient Refrigerated Compressed Air Dryer
+2392,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Compressed Air,Efficient Desiccant Compressed Air Dryer
+2408,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Miscellaneous End Use,Commercial Weather Stripping
+2425,ILTRM,RESIDENTIAL MEASURES,HVAC End Use,Central Air Conditioning
+2470,IEA11,ENVELOPE,0,Close convective paths in shafts and stairwells
+2516,IEA11,REGULATION,0,Minimise stratification in heating season
+2547,IEA11,HEATING,0,Reduce blowdown losses.
+2648,IEA11,SERVICE HOT WATER,0,Install pressure reducing valves.
+2649,IEA11,SERVICE HOT WATER,0,lnstall trace heating on dead legs
+2756,REMDB,Lighting,Flood Light,Replace Flood Light
+2773,REMDB,Space Conditioning,Central Air Conditioner,Install Central Air Conditioner
+2882,NYTRM,COMMERCIAL AND INDUSTRIAL MEASURES,APPLIANCE,COMBINATION OVEN
+2943,THUM,Operational Energy Conservation Opportunities,0,Reduce System Operating Hours
+2944,THUM,Operational Energy Conservation Opportunities,0,Reduce Space Loads Due to Ventilation
+3040,WSU,HVAC Systems,Air Distribution Systems,Reduce Ventilation Loads - Reduce ventilation rate to minimum
+3062,WSU,HVAC Systems,Cooling Plant,Select More Efficient Cooling System - Use evaporative cooling
+3207,WULF,CHILLER PLANT,CONDENSER AND EVAPORATOR HEAT TRANSFER EFFICIENCY,"In wet cooling systems, adjust the bleed rate to maintain proper water conditions with minimum water consumption. - Install and maintain an automatic bleed control."
+3424,WULF,CONTROL AND USE OF SUNLIGHT,REDUCING COOLING LOAD: WINDOWS & SKYLIGHTS,Install internal shading devices.
+3436,WULF,CONTROL AND USE OF SUNLIGHT,DAYLIGHTING,Install a system of light shelves and shading.
+3481,WULF,ARTIFICIAL LIGHTING,LIGHTING LAYOUT,"Install a separate control circuit for each lighting element that operates on a distinct schedule. - Where light fixtures are needed in a predictable variety of patterns, install programmable switches."
