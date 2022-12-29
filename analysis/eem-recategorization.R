@@ -20,7 +20,7 @@ library(tokenizers) # for 1-n gram tokenization
 # Load categorization tags
 tag_list <- read_csv("../data/categorization-tags.csv")
 
-# Load one of the two samples provided with the script or a custom EEM list:
+# Load one of the two samples provided with the script or a custom EEM list
 sample_eems <- read_csv("../data/sample-eems.csv") # 5% random sample of EEMs from the main list
 #sample_eems <- read_csv("../data/building-sync.csv") # List of BuildingSync EEMs
 
