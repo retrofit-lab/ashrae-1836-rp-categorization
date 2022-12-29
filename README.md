@@ -69,15 +69,13 @@ The second list contains all of the EEMs in BuildingSync and is named [building-
 |   1241|BSYNC    |Advanced Metering Systems |        0|Other                                                       |
 
 ### ASHRAE 1836-RP 5% sample ground truth
-Two ground truth files contain manually assigned re-categorizations for each EEM in the example EEM lists. These files are not required for EEM categorization (or re-categorization), and are only used to compute Metrics 3 and 4. The first ground truth file corresponds to the 5% sampple of EEMs and is named [sample-eems-ground-truth.csv](data/sample-eems-ground-truth.csv). The file contains the same five headers as the list of EEMs, plus a sixth `uni_code_manual` column that lists the manual UNIFORMAT assignment for each EEM.  EEMs that were unable to be assigned manually are listed as "NONE". 
+Two ground truth files contain manually assigned re-categorizations for each EEM in the example EEM lists. These files are not required for EEM categorization (or re-categorization), and are only used to compute the performance metrics (metrics 3 and 4). The first ground truth file corresponds to the 5% sampple of EEMs and is named [sample-eems-ground-truth.csv](data/sample-eems-ground-truth.csv). The file contains the same five headers as the list of EEMs, plus a sixth `uni_code_manual` column that lists the manual UNIFORMAT assignment for each EEM.  EEMs that were unable to be assigned manually are listed as "NONE". 
 
 ### BuildingSync ground truth
 The second ground truth file corresponds to the list of BuildingSync EEMs and is named [building-sync-ground-truth.csv](data/building-sync-ground-truth.csv).  It follows the same six column format as the 5% random sample. 
 
 ### User-defined data
-In order to use a different list of categorization tags (or add to/amend this seed list) add the new list to the `/data/` folder and update the file name in the R script.  The list of categorization tags provided by the user should have the same six column format with the headers shown above. 
-
-In order to categorize a different list of EEMs, add the new list to the `/data/` folder and update the file name in the R script. The list of EEMs provided by the user should have the same five column format with the headers shown above.  The input data needs to follow this header structure regardless of  whether the list of EEMs has a prior categorization system associated with it or not. The column `eem_id` should contain a unique ID for each EEM. If your EEM list does not have any original categorization system associated with it, keep the dummy columns `cat_lev1` and `cat_lev2` empty. 
+In order to use a different list of categorization tags, EEMs, or ground truth, add the new list to the `/data/` folder and update the file name where necessary in in the R script.  User-provided input data should follow the same header and column format shown above. For user-defined EEM lists, note that the input data needs to follow the required header structure regardless of whether the list of EEMs has a prior categorization system associated with it or not. The column `eem_id` should contain a unique ID for each EEM. If your EEM list does not have any original categorization system associated with it, keep the dummy columns `cat_lev1` and `cat_lev2` empty. 
 
 ## Analysis
 The R script [eem-recategorization.R](analysis/eem-recategorization.R) categorizes an existing list of EEMs according to the standardized categorization system developed in 1836-RP.
