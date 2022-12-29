@@ -189,11 +189,16 @@ For the first five tokens, the dataframe is now:
 ### Results
 
 #### Tagged and untagged EEMs
-The script then exports five CSV files by filtering this dataframe.  Sheet 1 contains the tagged EEMs along with their original as well as new categorization.  Sheet 2 contains the untagged EEMs from the sample along with their original categorization system. Sheet 3 contains the top tags from the list of categorization tags that occur most frequently within the sample. Sheets 4 and 5 contain the most frequent un-tagged words and bigrams respectively from within the sample of EEMs.
-
-The first five EEMs from Sheet 1 are shown below. If multiple tags are present in the EEM, each tag gets its own row in the re-categorized list.
-
-    | eem_id|document |cat_lev1    |cat_lev2     |eem_name                           |tags    |type       |uni_code |uni_level_1             |uni_level_2       |uni_level_3       |
+The script then exports five CSV files:
+- `sheet-1-tagged-eems`: Tagged EEMs from the sample along with their original and new categorizations
+- `sheet-2-untagged-eems`: Untagged EEMs from the sample along with their original categorizations
+- `sheet-3-top-tags`: Most frequently occurring tagged terms from the sample along with their counts
+- `sheet-4-untagged-words`: Most frequently occurring un-tagged terms from the sample along with their counts   
+- `sheet-5-untagged-bigrams`: Most frequently occurring un-tagged bigrams from the sample along with their counts     
+   
+To illustrate the results, the first five EEMs from `sheet-1-tagged-eems` are shown below. If multiple tags are present in the EEM, each tag gets its own row in the re-categorized list.
+    
+| eem_id|document |cat_lev1    |cat_lev2     |eem_name                           |tags    |type       |uni_code |uni_level_1             |uni_level_2       |uni_level_3       |
 |------:|:--------|:-----------|:------------|:----------------------------------|:-------|:----------|:--------|:-----------------------|:-----------------|:-----------------|
 |     10|1651RP   |Daylighting |Passive      |High ceilings                      |ceiling |Element    |C3030    |INTERIORS               |Interior Finishes |Ceiling Finishes  |
 |     24|1651RP   |Daylighting |Passive      |Use of interzone luminous ceilings |ceiling |Element    |C3030    |INTERIORS               |Interior Finishes |Ceiling Finishes  |
@@ -201,9 +206,7 @@ The first five EEMs from Sheet 1 are shown below. If multiple tags are present i
 |     36|1651RP   |Envelope    |Fenestration |Manual Internal Window shades      |manual  |Descriptor |X0000    |Unassigned              |Unassigned        |Unassigned        |
 |     36|1651RP   |Envelope    |Fenestration |Manual Internal Window shades      |Wind    |Descriptor |D3010    |SERVICES                |HVAC              |Energy Supply     |
 
-When EEMs remain untagged it is generally for one of several reasons: (1) a relevant tag present in the EEM name is missing from the list of categorization tags, (2) the EEM name uses a synonymous, abbreviated, or different form of a tag present in the tag list, (3) the EEM name does not actually contain a building element.
-    
-The first five EEMs from Sheet 2 are shown below.  Examining the results, we see that EEM 73 illustrates error (2) above; it contains the plural term "doors", but the relevant categorization tags are "interior door" and "exterior door."  The rest of the EEM names illustrate error (3) and do no contain any element tags.   
+The first five EEMs from `sheet-2-untagged-eems` are shown below.  When EEMs remain untagged it is generally for one of several reasons: (1) a relevant tag present in the EEM name is missing from the list of categorization tags, (2) the EEM name uses a synonymous, abbreviated, or different form of a tag present in the tag list, (3) the EEM name does not actually contain a building element.  Examining the results, we see that EEM 73 illustrates error (2) above; it contains the plural term "doors", but the relevant categorization tags are "interior door" and "exterior door."  The rest of the EEM names illustrate error (3) and do not contain any element tags.   
     
 | eem_id|document |cat_lev1      |cat_lev2    |eem_name                                                                                                                           |
 |------:|:--------|:-------------|:-----------|:----------------------------------------------------------------------------------------------------------------------------------|
