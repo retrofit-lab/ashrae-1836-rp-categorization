@@ -23,7 +23,7 @@ The repository is divided into three directories:
 - `/results/`: Output produced by R script
 
 ## Objective
-Energy Efficiency Measures (EEMs) play a central role in building energy modeling, energy auditing, and energy data collection and exchange. Despite their importance, there is currently no standardized way to describe or categorize EEMs in industry. This lack of standardization severely limits the ability to communicate the intent of an EEM clearly and consistently, and to perform “apples-to-apples” comparisons of measure savings and cost effectiveness. The goal of this study is to develop and test a standardized system for categorizing EEMs. 
+Energy Efficiency Measures (EEMs) play a central role in building energy modeling, energy auditing, and energy data collection and exchange. Despite their importance, there is currently no standardized way to describe or categorize EEMs in industry. This lack of standardization severely limits the ability to communicate the intent of an EEM clearly and consistently, and to perform “apples-to-apples” comparisons of measure savings and cost effectiveness. The goal of this study was to develop and test a standardized system for categorizing EEMs. 
 
 The standardized categorization system developed in 1836-RP consists of a three-level hierarchy of building elements based on UNIFORMAT, a standard classification system for building elements and related sitework. An individual EEM is categorized on the hierarchy using an element “tag” (i.e., keyword) present in the EEM name that links the EEM with a single UNFORMAT category.  The EEM name may also contain one or more descriptor tags that are not used for categorization, but may provide useful additional information for sorting and analyzing a group of EEMs.
 
@@ -68,7 +68,7 @@ In order to use a different list of EEMs, add the new list to the `/data/` folde
 The input data provided by the user should have five columns, with the headers as shown in Table 1.  The input data needs to follow this header structure regardless of  whether the list of EEMs has a prior categorization system associated with it or not. The column `eem_id` should contain a unique ID for each EEM. The column `document` should contain the name of the source of the EEM list (e.g., reference document, organization). The column `cat_lev1` should contain the original categorization for the EEM. If there are sub-categories associated with the EEM, these should go in the column `cat_lev2`. If a second level of categorization is not available, leave this column empty. Finally, the EEM names go in the column `eem_name`. If your EEM list does not have any original categorization system associated with it, keep the dummy columns `cat_lev1` and `cat_lev2` empty.
 
 ## Analysis
-The R script `text-mining.R` replicates the analysis from the paper.
+The R script [eem-recategorization.R](analysis/eem-recategorization.R) categorizes an existing list of EEMs according to the standardized categorization system developed in 1836-RP.
 
 ### Step 1: Import data
 It is recommended that you update to the latest versions of both R and RStudio (if using RStudio) prior to running this script. 
