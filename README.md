@@ -10,6 +10,10 @@ This repository contains the data and code for the paper "Developing a standardi
     - [BuildingSync list of EEMs](#buildingsync-list-of-eems)   
     - [User-defined list](#user-defined-list)  
 - [Analysis](#analysis)  
+    - [Setup](#setup)  
+    - [Search, tag, and categorize](#search-tag-and-categorize)  
+    - [Results](#results)  
+
     - [Step 1: Import data](#step-1-import-data)  
     - [Step 2: Pre-processing](#step-2-pre-processing)  
     - [Step 3: Search, tag, and categorize](#step-3-search-tag-and-categorize)  
@@ -31,14 +35,27 @@ The standardized categorization system developed in 1836-RP consists of a three-
 There are three datasets associated with this project. 
 
 ### ASHRAE 1836-RP categorization tags
-To categorize the list of EEMs, the R script uses a seed list of categorization tags that was developed during 1836-RP. The file [categorization-tags.csv](data/categorization-tags.csv) contains the element and descriptor type tags, along with their associated UNIFORMAT categories. The CSV file containing the categorization tags consists of six columns. The column `keyword` contains the tags to be used for categorization. The column `Type` provides information regarding whether the tag is an element tag or a descriptor tag. The remaining columns `uni_code`, `uni_level_1`, `uni_level_2`, and `uni_level_3` contain the UNIFORMAT category associated with that tag.
+To categorize the list of EEMs, the R script uses a seed list of categorization tags that was developed during 1836-RP. The file [categorization-tags.csv](data/categorization-tags.csv) contains the element and descriptor type tags, along with their associated UNIFORMAT categories. The CSV file containing the categorization tags consists of six columns, as shown in Table 1. The column `keyword` contains the tags to be used for categorization. The column `Type` provides information regarding whether the tag is an element tag or a descriptor tag. The remaining columns `uni_code`, `uni_level_1`, `uni_level_2`, and `uni_level_3` contain the UNIFORMAT category associated with that tag.
+
+Table 1: First 5 observations from the list of categorization tags
+
+|keyword           |type    |uni_code |uni_level_1  |uni_level_2           |uni_level_3          |
+|:-----------------|:-------|:--------|:------------|:---------------------|:--------------------|
+|Foundation wall   |Element |A1010    |SUBSTRUCTURE |Foundations           |Standard Foundations |
+|Slab              |Element |A1030    |SUBSTRUCTURE |Foundations           |Slab on Grade        |
+|Basement wall     |Element |A2020    |SUBSTRUCTURE |Basement Construction |Basement Walls       |
+|Building envelope |Element |B        |SHELL        |Unassigned            |Unassigned           |
+|envelope          |Element |B        |SHELL        |Unassigned            |Unassigned           |
+|Floor             |Element |B1010    |SHELL        |Superstructure        |Floor Construction   |
+
+In order to use a different list of categorization tags (or add to/amend this seed list), use the same header structure shown in Table 1 and add the new list to the `/data/` folder and update the file name in the R script.  
 
 ### ASHRAE 1836-RP 5% sample of EEMs
 Two example EEM lists are provided as Comma Separated Values (CSV) files along with the R script. The first example list is a random sample of 5% of the EEMs from the 1836-RP main list of EEMs [eem-list-main.csv](https://github.com/retrofit-lab/ashrae-1836-rp-text-mining/blob/main/README.md#ashrae-1836-rp-main-list-of-eems) and is named [sample-eems.csv](data/sample-eems.csv). 
 
-The dataset contains five columns, with the headers as shown in Table 1. Table 1 below shows the first 5 EEMs from the 5% random sample. The EEM IDs from the main list of 1836-RP EEMs are shown in the `eem_id` column, the source document is shown in the `document` column, the original categorization in the source document is shown in the `cat_lev1` column, the sub-categorization in the original source document (if present) is shown in the `cat_lev2` column, and the EEM name is given in the `eem_name` column.
+The dataset contains five columns, with the headers as shown in Table 2. Table 2 shows the first 5 EEMs from the 5% random sample. The EEM IDs from the main list of 1836-RP EEMs are shown in the `eem_id` column, the source document is shown in the `document` column, the original categorization in the source document is shown in the `cat_lev1` column, the sub-categorization in the original source document (if present) is shown in the `cat_lev2` column, and the EEM name is given in the `eem_name` column.
 
-Table 1: First 5 observations from the 5% sample EEM list
+Table 2: First 5 observations from the 5% sample EEM list
 
 | eem_id|document |cat_lev1    |cat_lev2     |eem_name                                            |
 |------:|:--------|:-----------|:------------|:---------------------------------------------------|
@@ -49,9 +66,9 @@ Table 1: First 5 observations from the 5% sample EEM list
 |     60|1651RP   |Envelope    |Infiltration |High Performance Air Barrier to Reduce Infiltration |
 
 ### BuildingSync list of EEMs
-The second list contains all of the EEMs in BuildingSync and is named [building-sync.csv](data/building-sync.csv).  It follows the same five column format as the 5% random sample.   
+The second list contains all of the EEMs in BuildingSync and is named [building-sync.csv](data/building-sync.csv).  It follows the same five column format as the 5% random sample, as shown in Table 3.   
 
-Table 2: First 5 observations from the BuildingSync EEM list
+Table 3: First 5 observations from the BuildingSync EEM list
 
 | eem_id|document |cat_lev1                  | cat_lev2|eem_name                                                    |
 |------:|:--------|:-------------------------|--------:|:-----------------------------------------------------------|
@@ -63,12 +80,49 @@ Table 2: First 5 observations from the BuildingSync EEM list
 |   1242|BSYNC    |Boiler Plant Improvements |        0|Replace boiler                                              |
 
 ### User-defined list
-In order to use a different list of EEMs, add the new list to the `/data/` folder and update the file name in the R script. Make sure to keep the same folder structure as this GitHub repository and remember to set the working directory to the location of the R script.
+In order to categorize a different list of EEMs, add the new list to the `/data/` folder and update the file name in the R script. Make sure to keep the same folder structure as this GitHub repository and remember to set the working directory to the location of the R script.
 
 The input data provided by the user should have five columns, with the headers as shown in Table 1.  The input data needs to follow this header structure regardless of  whether the list of EEMs has a prior categorization system associated with it or not. The column `eem_id` should contain a unique ID for each EEM. The column `document` should contain the name of the source of the EEM list (e.g., reference document, organization). The column `cat_lev1` should contain the original categorization for the EEM. If there are sub-categories associated with the EEM, these should go in the column `cat_lev2`. If a second level of categorization is not available, leave this column empty. Finally, the EEM names go in the column `eem_name`. If your EEM list does not have any original categorization system associated with it, keep the dummy columns `cat_lev1` and `cat_lev2` empty.
 
 ## Analysis
 The R script [eem-recategorization.R](analysis/eem-recategorization.R) categorizes an existing list of EEMs according to the standardized categorization system developed in 1836-RP.
+
+### Setup
+
+#### Load packages
+First, load (or install if you do not already have them installed) the packages required for data handling and tokenization.
+
+```
+# Load required packages
+library(tidyverse)
+library(tidytext)
+library(tokenizers) # for 1-n gram tokenization
+```
+
+#### Import data
+Import the list of categorization tags and the list of EEMs to be categorized. The relative filepaths in this script follow the same directory structure as this Github repository, and it is recommended that you use this same structure.  You might have to use `setwd()` to set the working directory to the location of the R script.  
+
+```
+tag_list <- read_csv("../data/categorization-tags.csv")
+sample_eems <- read_csv("../data/sample-eems.csv")
+# Use sample-eems.csv or building-sync.csv or your custom EEM list
+```
+
+#### Tokenize EEMs
+Import the list of categorization tags and the list of EEMs to be categorized. The relative filepaths in this script follow the same directory structure as this Github repository, and it is recommended that you use this same structure.  You might have to use `setwd()` to set the working directory to the location of the R script.  
+
+
+
+
+### Search, tag, and categorize
+It is recommended that you update to the latest versions of both R and RStudio (if using RStudio) prior to running this script. 
+
+### Results
+It is recommended that you update to the latest versions of both R and RStudio (if using RStudio) prior to running this script. 
+
+
+
+#####################
 
 ### Step 1: Import data
 It is recommended that you update to the latest versions of both R and RStudio (if using RStudio) prior to running this script. 
