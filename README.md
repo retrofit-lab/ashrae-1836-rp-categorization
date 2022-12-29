@@ -8,6 +8,8 @@ This repository contains the data and code for the paper "Developing a standardi
     - [ASHRAE 1836-RP categorization tags](#ashrae-1836-rp-categorization-tags)
     - [ASHRAE 1836-RP 5% sample of EEMs](#ashrae-1836-rp-5-sample-of-eems)
     - [BuildingSync list of EEMs](#buildingsync-list-of-eems)   
+    - [ASHRAE 1836-RP 5% sample ground truth](#ashrae-1836-rp-5-sample-ground-truth)
+    - [BuildingSync ground truth](#buildingsync-ground-truth) 
     - [User-defined data](#user-defined-data)  
 - [Analysis](#analysis)  
     - [Setup](#setup)  
@@ -80,9 +82,7 @@ Table 3: First 5 observations from the BuildingSync EEM list
 ### User-defined data
 In order to use a different list of categorization tags (or add to/amend this seed list) add the new list to the `/data/` folder and update the file name in the R script.  The input data for the list of EEMs provided by the user should have six columns, with the headers as shown in Table 1.
 
-In order to categorize a different list of EEMs, add the new list to the `/data/` folder and update the file name in the R script. Make sure to keep the same folder structure as this GitHub repository and remember to set the working directory to the location of the R script.  
-
-The input data for the list of EEMs provided by the user should have five columns, with the headers as shown in Tables 2 and 3.  The input data needs to follow this header structure regardless of  whether the list of EEMs has a prior categorization system associated with it or not. The column `eem_id` should contain a unique ID for each EEM. The column `document` should contain the name of the source of the EEM list (e.g., reference document, organization). The column `cat_lev1` should contain the original categorization for the EEM. If there are sub-categories associated with the EEM, these should go in the column `cat_lev2`. If a second level of categorization is not available, leave this column empty. Finally, the EEM names go in the column `eem_name`. If your EEM list does not have any original categorization system associated with it, keep the dummy columns `cat_lev1` and `cat_lev2` empty.
+In order to categorize a different list of EEMs, add the new list to the `/data/` folder and update the file name in the R script. The input data for the list of EEMs provided by the user should have five columns, with the headers as shown in Tables 2 and 3.  The input data needs to follow this header structure regardless of  whether the list of EEMs has a prior categorization system associated with it or not. The column `eem_id` should contain a unique ID for each EEM. The column `document` should contain the name of the source of the EEM list (e.g., reference document, organization). The column `cat_lev1` should contain the original categorization for the EEM. If there are sub-categories associated with the EEM, these should go in the column `cat_lev2`. If a second level of categorization is not available, leave this column empty. Finally, the EEM names go in the column `eem_name`. If your EEM list does not have any original categorization system associated with it, keep the dummy columns `cat_lev1` and `cat_lev2` empty.
 
 ## Analysis
 The R script [eem-recategorization.R](analysis/eem-recategorization.R) categorizes an existing list of EEMs according to the standardized categorization system developed in 1836-RP.
