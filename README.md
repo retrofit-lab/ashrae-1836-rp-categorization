@@ -42,7 +42,6 @@ Table 1: First 5 observations from the list of categorization tags
 |Basement wall     |Element |A2020    |SUBSTRUCTURE |Basement Construction |Basement Walls       |
 |Building envelope |Element |B        |SHELL        |Unassigned            |Unassigned           |
 |envelope          |Element |B        |SHELL        |Unassigned            |Unassigned           |
-|Floor             |Element |B1010    |SHELL        |Superstructure        |Floor Construction   |
 
 ### ASHRAE 1836-RP 5% sample of EEMs
 Two example EEM lists are provided as Comma Separated Values (CSV) files along with the R script. The first example list is a random sample of 5% of the EEMs from the 1836-RP main list of EEMs [eem-list-main.csv](https://github.com/retrofit-lab/ashrae-1836-rp-text-mining/blob/main/README.md#ashrae-1836-rp-main-list-of-eems) and is named [sample-eems.csv](data/sample-eems.csv). 
@@ -71,7 +70,6 @@ Table 3: First 5 observations from the BuildingSync EEM list
 |   1239|BSYNC    |Advanced Metering Systems |        0|Implement training and/or documentation                     |
 |   1240|BSYNC    |Advanced Metering Systems |        0|Upgrade operating protocols, calibration, and/or sequencing |
 |   1241|BSYNC    |Advanced Metering Systems |        0|Other                                                       |
-|   1242|BSYNC    |Boiler Plant Improvements |        0|Replace boiler                                              |
 
 ### ASHRAE 1836-RP 5% sample ground truth
 >> TEXT TK
@@ -117,15 +115,84 @@ Import the list of categorization tags and the list of EEMs to be categorized. T
 ### Search, tag, and categorize
 The automatic tagger and categorizer code searches for the categorization tags within the tokenized EEM names. Every time it finds a match, it tags that EEM with all the information associated with that particular tag. This includes the tag, the tag type and the UNIFORMAT category associated with the tag.  This produces a 
 
+>> Some EEMS are tagged and some are left untagged
+
 
 
 
 ### Results
 
 #### Tagged and untagged EEMs
->> TEXT TK
->> 5 
- The EEMs that remain untagged are compiled in a separate list. The script also uncovers the top categorization tags that show up within the EEM sample as well as the top un-tagged words and bigrams in the sample.
+The script then exports five CSV files.  Sheet 1 contains the tagged EEMs along with their original as well as new categorization.  Sheet 2 contains the untagged EEMs from the sample along with their original categorization system. Sheet 3 contains the top tags from the list of categorization tags that occur most frequently within the sample. Sheets 4 and 5 contain the most frequent un-tagged words and bigrams respectively from within the sample of EEMs.
+
+As an example, the first five EEMs from Sheet 1 are shown below in Table 4. If multiple tags are present in the EEM, each tag gets its own row in the re-categorized list.
+
+Table 4: EEM list recategorized
+
+| eem_id|document |cat_lev1    |cat_lev2     |eem_name                           |tags    |type       |uni_code |uni_level_1             |uni_level_2       |uni_level_3       |
+|------:|:--------|:-----------|:------------|:----------------------------------|:-------|:----------|:--------|:-----------------------|:-----------------|:-----------------|
+|     10|1651RP   |Daylighting |Passive      |High ceilings                      |ceiling |Element    |C3030    |INTERIORS               |Interior Finishes |Ceiling Finishes  |
+|     24|1651RP   |Daylighting |Passive      |Use of interzone luminous ceilings |ceiling |Element    |C3030    |INTERIORS               |Interior Finishes |Ceiling Finishes  |
+|     35|1651RP   |Envelope    |Fenestration |Heat absorbing blinds              |blind   |Element    |E2010    |EQUIPMENT & FURNISHINGS |Furnishings       |Fixed Furnishings |
+|     36|1651RP   |Envelope    |Fenestration |Manual Internal Window shades      |manual  |Descriptor |X0000    |Unassigned              |Unassigned        |Unassigned        |
+|     36|1651RP   |Envelope    |Fenestration |Manual Internal Window shades      |Wind    |Descriptor |D3010    |SERVICES                |HVAC              |Energy Supply     |
+
+When EEMs remain untagged it is generally for one of three reasons: (1) because a relevant tag is missing from the list of categorization tags, (2) because the EEM used a synonymous or abbreviated form of a tag present in the tag list, (3) the EEM name does not actually contain a building element. Table 3 shows the first five EEMs in the list that remain untagged after the script is run.  For example, EEM 73 contains the plural term "doors", but the relevant categorization tags are "interior door" and "exterior door."  As another example, the EEM name for EEM 80 does not contain an element tag.  
+
+Table 3: Untagged EEMs from the list
+
+| eem_id|document |cat_lev1      |cat_lev2    |eem_name                                                                                                                           |
+|------:|:--------|:-------------|:-----------|:----------------------------------------------------------------------------------------------------------------------------------|
+|     73|1651RP   |Envelope      |Opaque      |High-speed doors between heated/cooled building space and unconditioned space in the areas with high-traffic                       |
+|     80|1651RP   |Envelope      |Opaque      |large reservoirs of water for thermal mass within zone                                                                             |
+|    304|1651RP   |HVAC          |Ventilation |Hybrid/Mixed Mode Ventilation                                                                                                      |
+|    501|BEQ      |HVAC System   |0           |Where cooling is provided by multiple units, maintain proper sequencing to achieve maximum efficiency while meeting required load. |
+|    562|BEQ      |HVAC System   |0           |Reduce operating hours of simultaneously heating and cooling systems.                                                              |
+ 
+
+
+
+
+| eem_id|document |cat_lev1      |cat_lev2    |eem_name                                                                                                                           |
+|------:|:--------|:-------------|:-----------|:----------------------------------------------------------------------------------------------------------------------------------|
+|     73|1651RP   |Envelope      |Opaque      |High-speed doors between heated/cooled building space and unconditioned space in the areas with high-traffic                       |
+|     80|1651RP   |Envelope      |Opaque      |large reservoirs of water for thermal mass within zone                                                                             |
+|    304|1651RP   |HVAC          |Ventilation |Hybrid/Mixed Mode Ventilation                                                                                                      |
+|    501|BEQ      |HVAC System   |0           |Where cooling is provided by multiple units, maintain proper sequencing to achieve maximum efficiency while meeting required load. |
+|    562|BEQ      |HVAC System   |0           |Reduce operating hours of simultaneously heating and cooling systems.                                                              |
+|    590|BEQ      |Refrigeration |0           |Calibrate pressure transducers to optimize suction pressure.                                                  
+
+
+
+(without their original categories) are shown below in Table 4. The 1836-RP seed list of categorization tags were able to tag `r tagged_eem_count` out of `r total_eem_count` EEMs in the sample. While the table displays both element and descriptor type tags, only the element tags should be used for categorization. The descriptor tags are present to provide additional information. Some descriptor tags like "cool roof" will always belong to a single UNIFORMAT category and are therefore pre-assigned to that category (in this case B3010 Roof Coverings). Other descriptor tags like "insulation" could belong to multiple different categories depending upon the building system being affected and are therefore left unassigned. If multiple tags are present in the EEM, each tag gets its own row in the re-categorized list.
+
+
+Table 4: EEM list recategorized
+
+| eem_id|eem_name                                            |tags         |type       |uni_code |uni_level_1             |uni_level_2        |uni_level_3       |
+|------:|:---------------------------------------------------|:------------|:----------|:--------|:-----------------------|:------------------|:-----------------|
+|     10|High ceilings                                       |ceiling      |Element    |C3030    |INTERIORS               |Interior Finishes  |Ceiling Finishes  |
+|     24|Use of interzone luminous ceilings                  |ceiling      |Element    |C3030    |INTERIORS               |Interior Finishes  |Ceiling Finishes  |
+|     35|Heat absorbing blinds                               |blind        |Element    |E2010    |EQUIPMENT & FURNISHINGS |Furnishings        |Fixed Furnishings |
+|     36|Manual Internal Window shades                       |manual       |Descriptor |X0000    |Unassigned              |Unassigned         |Unassigned        |
+|     36|Manual Internal Window shades                       |Wind         |Descriptor |D3010    |SERVICES                |HVAC               |Energy Supply     |
+|     36|Manual Internal Window shades                       |shade        |Element    |E2010    |EQUIPMENT & FURNISHINGS |Furnishings        |Fixed Furnishings |
+|     60|High Performance Air Barrier to Reduce Infiltration |Air barrier  |Descriptor |B2010    |SHELL                   |Exterior Enclosure |Exterior Walls    |
+|     60|High Performance Air Barrier to Reduce Infiltration |infiltration |Descriptor |X0000    |Unassigned              |Unassigned         |Unassigned        |
+
+
+The categorization script works fairly well in categorizing the EEMs according to UNIFORMAT based on the building element affected. However, some EEMs still get mis-categorized or remain untagged. As noted in the 1836-RP Final Report, there are two major reasons for untagged EEMs: either because a relevant tag is missing from the seed list of categorization tags, or because the EEM used a synonymous or abbreviated form of a tag present in the tag list. Table 3 shows the first five EEMs in the list that remain untagged after the script is run. The EEM "Consider converting internal courtyard into an atrium to reduce external wall surface." remains untagged because it uses the term "external wall" intead of "exterior wall" which is a tag in the seed list. The EEMs "Central Air Conditioning" and "Install Central Air Conditioner" remains untagged because no tag currently exists for "air conditioning" in the seed list. 
+
+Table 3: Untagged EEMs from the list
+
+| eem_id|document |cat_lev1    |cat_lev2    |eem_name                                                                                                                           |
+|------:|:--------|:-----------|:-----------|:----------------------------------------------------------------------------------------------------------------------------------|
+|     73|1651RP   |Envelope    |Opaque      |High-speed doors between heated/cooled building space and unconditioned space in the areas with high-traffic                       |
+|     80|1651RP   |Envelope    |Opaque      |large reservoirs of water for thermal mass within zone                                                                             |
+|    304|1651RP   |HVAC        |Ventilation |Hybrid/Mixed Mode Ventilation                                                                                                      |
+|    501|BEQ      |HVAC System |0           |Where cooling is provided by multiple units, maintain proper sequencing to achieve maximum efficiency while meeting required load. |
+|    562|BEQ      |HVAC System |0           |Reduce operating hours of simultaneously heating and cooling systems.                                                              |
+
 
 
 #### Performance metrics
