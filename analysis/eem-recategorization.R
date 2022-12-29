@@ -1,5 +1,5 @@
 ## -----------------------------------------------------------------------------------------------
-## Title: EEM-recategorization.R
+## Title: eem-recategorization.R
 ## Purpose: Categorizes EEM lists according to the standardized EEM categorization system using
 ## the categorization tags developed during 1836-RP
 ## Author: Apoorv Khanuja and Amanda Webb
@@ -20,13 +20,13 @@ library(tokenizers) # for 1-n gram tokenization
 # Load categorization tags
 tag_list <- read_csv("../data/categorization-tags.csv")
 
-# Load one of the two samples provided with the script or a custom EEM list
+# Load one of the two samples provided with the script or a custom EEM list:
 sample_eems <- read_csv("../data/sample-eems.csv") # 5% random sample of EEMs from the main list
 #sample_eems <- read_csv("../data/building-sync.csv") # List of BuildingSync EEMs
 
 # Load the manually assigned categories for the EEM samples (For calculating metrics 3 and 4)
-#ground_truth_sample <- read_csv("../data/sample-eems-ground-truth.csv") # Ground truth for the 5% random sample 
-ground_truth_bsync <- read_csv("../data/building-sync-ground-truth.csv") # Ground truth for the BuildingSync sample
+ground_truth <- read_csv("../data/sample-eems-ground-truth.csv") # Ground truth for the 5% random sample 
+#ground_truth <- read_csv("../data/building-sync-ground-truth.csv") # Ground truth for the BuildingSync sample
 
 ### Step 2: Pre-processing
 
@@ -49,7 +49,6 @@ token_1_5grams <- tokenize_ngrams(sample_eems$eem_name, lowercase = TRUE, n = 5,
 
 # Map the list as a dataframe
 eem_tokens <- map_df(token_1_5grams, ~as.data.frame(.x), .id="id")
-
 eem_tokens$id <- as.numeric(eem_tokens$id)
 eem_tokens <- dplyr::rename(eem_tokens, tokens = .x)
 
@@ -179,9 +178,8 @@ categorized_eem_count <- categorized_tokens$id %>% unique() %>% length()
 paste0("Percent EEMs categorized = ", round(100*categorized_eem_count/total_eem_count,1))
 
 ## Metric 3: Percentage of EEMs that got categorized manually
-# @ALW: Do we also count the EEMs that were assigned a higher level category?
 
-manually_categorized_count <- ground_truth_bsync %>% 
+manually_categorized_count <- ground_truth %>% 
   filter(uni_code_manual != "NONE") %>% 
   nrow()
 
@@ -192,7 +190,7 @@ paste0("Percent EEMs categorized manually = ", round(100*manually_categorized_co
 # Using both element and descriptor tags
 compare_auto_manual <- sheet_1_tagged_eems %>% 
   select(eem_id, uni_code) %>% 
-  inner_join(ground_truth_bsync) %>% 
+  inner_join(ground_truth) %>% 
   mutate(is_correct = ifelse(uni_code == uni_code_manual, 1, 0))
 
 correct_categorization_count <- compare_auto_manual %>% 
@@ -208,7 +206,7 @@ paste0("Percent EEMs categorized correctly using both element and descriptor tag
 compare_auto_manual_2 <- sheet_1_tagged_eems %>% 
   filter(type == "Element") %>% 
   select(eem_id, uni_code) %>% 
-  inner_join(ground_truth_bsync) %>% 
+  inner_join(ground_truth) %>% 
   mutate(is_correct = ifelse(uni_code == uni_code_manual, 1, 0))
 
 correct_categorization_count_2 <- compare_auto_manual_2 %>% 
@@ -218,4 +216,4 @@ correct_categorization_count_2 <- compare_auto_manual_2 %>%
   nrow()
 
 paste0("Percent EEMs categorized correctly using only element tags = ", 
-       round(100*correct_categorization_count/manually_categorized_count,1))
+       round(100*correct_categorization_count_2/manually_categorized_count,1))
