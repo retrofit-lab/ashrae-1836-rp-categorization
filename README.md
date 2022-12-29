@@ -69,10 +69,26 @@ The second list contains all of the EEMs in BuildingSync and is named [building-
 |   1241|BSYNC    |Advanced Metering Systems |        0|Other                                                       |
 
 ### ASHRAE 1836-RP 5% sample ground truth
-Two ground truth files contain manually assigned re-categorizations for each EEM in the example EEM lists. These files are not required for EEM categorization (or re-categorization), and are only used to compute the performance metrics (metrics 3 and 4). The first ground truth file corresponds to the 5% sampple of EEMs and is named [sample-eems-ground-truth.csv](data/sample-eems-ground-truth.csv). The file contains the same five headers as the list of EEMs, plus a sixth `uni_code_manual` column that lists the manual UNIFORMAT assignment for each EEM.  EEMs that were unable to be assigned manually are listed as "NONE". 
+Two ground truth files contain manually assigned re-categorizations for each EEM in the example EEM lists. These files are not required for EEM categorization (or re-categorization), and are only used to compute the performance metrics (metrics 3 and 4). The first ground truth file corresponds to the 5% sampple of EEMs and is named [sample-eems-ground-truth.csv](data/sample-eems-ground-truth.csv). The file contains the same five headers as the list of EEMs, plus a sixth `uni_code_manual` column that lists the manual UNIFORMAT assignment for each EEM.  EEMs that were unable to be assigned manually are listed as "NONE". The first five EEMs from the 5% random sample ground truth: 
+
+| eem_id|document |cat_lev1    |cat_lev2     |eem_name                                            |uni_code_manual |
+|------:|:--------|:-----------|:------------|:---------------------------------------------------|:---------------|
+|     10|1651RP   |Daylighting |Passive      |High ceilings                                       |C3030           |
+|     24|1651RP   |Daylighting |Passive      |Use of interzone luminous ceilings                  |C3030           |
+|     35|1651RP   |Envelope    |Fenestration |Heat absorbing blinds                               |E2010           |
+|     36|1651RP   |Envelope    |Fenestration |Manual Internal Window shades                       |E2010           |
+|     60|1651RP   |Envelope    |Infiltration |High Performance Air Barrier to Reduce Infiltration |B               |
 
 ### BuildingSync ground truth
-The second ground truth file corresponds to the list of BuildingSync EEMs and is named [building-sync-ground-truth.csv](data/building-sync-ground-truth.csv).  It follows the same six column format as the 5% random sample. 
+The second ground truth file corresponds to the list of BuildingSync EEMs and is named [building-sync-ground-truth.csv](data/building-sync-ground-truth.csv).  It follows the same six column format as the 5% random sample.  The first five EEMs from the BuildingSync ground truth:  
+
+| eem_id|document |cat_lev1                  | cat_lev2|eem_name                                                    |uni_code_manual |
+|------:|:--------|:-------------------------|--------:|:-----------------------------------------------------------|:---------------|
+|   1237|BSYNC    |Advanced Metering Systems |        0|Install advanced metering systems                           |D5010           |
+|   1238|BSYNC    |Advanced Metering Systems |        0|Clean and/or repair                                         |D5010           |
+|   1239|BSYNC    |Advanced Metering Systems |        0|Implement training and/or documentation                     |D5010           |
+|   1240|BSYNC    |Advanced Metering Systems |        0|Upgrade operating protocols, calibration, and/or sequencing |D5010           |
+|   1241|BSYNC    |Advanced Metering Systems |        0|Other                                                       |D5010           |
 
 ### User-defined data
 In order to use a different list of categorization tags, EEMs, or ground truth, add the new list to the `/data/` folder and update the file name where necessary in in the R script.  User-provided input data should follow the same header and column format shown above. For user-defined EEM lists, note that the input data needs to follow the required header structure regardless of whether the list of EEMs has a prior categorization system associated with it or not. The column `eem_id` should contain a unique ID for each EEM. If your EEM list does not have any original categorization system associated with it, keep the dummy columns `cat_lev1` and `cat_lev2` empty. 
