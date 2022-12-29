@@ -31,7 +31,9 @@ The standardized categorization system developed in 1836-RP consists of a three-
 There are three datasets associated with this project. 
 
 ### ASHRAE 1836-RP categorization tags
-To categorize the list of EEMs, the R script uses a seed list of categorization tags that was developed during 1836-RP. The file [categorization-tags.csv](data/categorization-tags.csv) contains the element and descriptor type tags, along with their associated UNIFORMAT categories. The CSV file containing the categorization tags consists of six columns, as shown in Table 1. The column `keyword` contains the tags to be used for categorization. The column `Type` provides information regarding whether the tag is an element tag or a descriptor tag. The remaining columns `uni_code`, `uni_level_1`, `uni_level_2`, and `uni_level_3` contain the UNIFORMAT category associated with that tag.
+To categorize the list of EEMs, the R script uses a seed list of categorization tags that was developed during 1836-RP. The file [categorization-tags.csv](data/categorization-tags.csv) contains the element and descriptor type tags, along with their associated UNIFORMAT categories. The CSV file containing the categorization tags consists of six columns, as shown in Table 1. The column `keyword` contains the tags to be used for categorization. The column `Type` provides information regarding whether the tag is an element tag or a descriptor tag. The remaining columns `uni_code`, `uni_level_1`, `uni_level_2`, and `uni_level_3` contain the UNIFORMAT category associated with that tag. 
+
+Some descriptor tags like "cool roof" will always belong to a single UNIFORMAT category and are therefore pre-assigned to that category (in this case B3010 Roof Coverings). Other descriptor tags like "insulation" could belong to multiple categories depending upon the building element affected and are therefore left unassigned and given the uni_code X0000.
 
 Table 1: First 5 observations from the list of categorization tags
 
@@ -149,55 +151,38 @@ Table 3: Untagged EEMs from the list
 |    501|BEQ      |HVAC System   |0           |Where cooling is provided by multiple units, maintain proper sequencing to achieve maximum efficiency while meeting required load. |
 |    562|BEQ      |HVAC System   |0           |Reduce operating hours of simultaneously heating and cooling systems.                                                              |
  
-
-
-
-
-| eem_id|document |cat_lev1      |cat_lev2    |eem_name                                                                                                                           |
-|------:|:--------|:-------------|:-----------|:----------------------------------------------------------------------------------------------------------------------------------|
-|     73|1651RP   |Envelope      |Opaque      |High-speed doors between heated/cooled building space and unconditioned space in the areas with high-traffic                       |
-|     80|1651RP   |Envelope      |Opaque      |large reservoirs of water for thermal mass within zone                                                                             |
-|    304|1651RP   |HVAC          |Ventilation |Hybrid/Mixed Mode Ventilation                                                                                                      |
-|    501|BEQ      |HVAC System   |0           |Where cooling is provided by multiple units, maintain proper sequencing to achieve maximum efficiency while meeting required load. |
-|    562|BEQ      |HVAC System   |0           |Reduce operating hours of simultaneously heating and cooling systems.                                                              |
-|    590|BEQ      |Refrigeration |0           |Calibrate pressure transducers to optimize suction pressure.                                                  
-
-
-
-(without their original categories) are shown below in Table 4. The 1836-RP seed list of categorization tags were able to tag `r tagged_eem_count` out of `r total_eem_count` EEMs in the sample. While the table displays both element and descriptor type tags, only the element tags should be used for categorization. The descriptor tags are present to provide additional information. Some descriptor tags like "cool roof" will always belong to a single UNIFORMAT category and are therefore pre-assigned to that category (in this case B3010 Roof Coverings). Other descriptor tags like "insulation" could belong to multiple different categories depending upon the building system being affected and are therefore left unassigned. If multiple tags are present in the EEM, each tag gets its own row in the re-categorized list.
-
-
-Table 4: EEM list recategorized
-
-| eem_id|eem_name                                            |tags         |type       |uni_code |uni_level_1             |uni_level_2        |uni_level_3       |
-|------:|:---------------------------------------------------|:------------|:----------|:--------|:-----------------------|:------------------|:-----------------|
-|     10|High ceilings                                       |ceiling      |Element    |C3030    |INTERIORS               |Interior Finishes  |Ceiling Finishes  |
-|     24|Use of interzone luminous ceilings                  |ceiling      |Element    |C3030    |INTERIORS               |Interior Finishes  |Ceiling Finishes  |
-|     35|Heat absorbing blinds                               |blind        |Element    |E2010    |EQUIPMENT & FURNISHINGS |Furnishings        |Fixed Furnishings |
-|     36|Manual Internal Window shades                       |manual       |Descriptor |X0000    |Unassigned              |Unassigned         |Unassigned        |
-|     36|Manual Internal Window shades                       |Wind         |Descriptor |D3010    |SERVICES                |HVAC               |Energy Supply     |
-|     36|Manual Internal Window shades                       |shade        |Element    |E2010    |EQUIPMENT & FURNISHINGS |Furnishings        |Fixed Furnishings |
-|     60|High Performance Air Barrier to Reduce Infiltration |Air barrier  |Descriptor |B2010    |SHELL                   |Exterior Enclosure |Exterior Walls    |
-|     60|High Performance Air Barrier to Reduce Infiltration |infiltration |Descriptor |X0000    |Unassigned              |Unassigned         |Unassigned        |
-
-
-The categorization script works fairly well in categorizing the EEMs according to UNIFORMAT based on the building element affected. However, some EEMs still get mis-categorized or remain untagged. As noted in the 1836-RP Final Report, there are two major reasons for untagged EEMs: either because a relevant tag is missing from the seed list of categorization tags, or because the EEM used a synonymous or abbreviated form of a tag present in the tag list. Table 3 shows the first five EEMs in the list that remain untagged after the script is run. The EEM "Consider converting internal courtyard into an atrium to reduce external wall surface." remains untagged because it uses the term "external wall" intead of "exterior wall" which is a tag in the seed list. The EEMs "Central Air Conditioning" and "Install Central Air Conditioner" remains untagged because no tag currently exists for "air conditioning" in the seed list. 
-
-Table 3: Untagged EEMs from the list
-
-| eem_id|document |cat_lev1    |cat_lev2    |eem_name                                                                                                                           |
-|------:|:--------|:-----------|:-----------|:----------------------------------------------------------------------------------------------------------------------------------|
-|     73|1651RP   |Envelope    |Opaque      |High-speed doors between heated/cooled building space and unconditioned space in the areas with high-traffic                       |
-|     80|1651RP   |Envelope    |Opaque      |large reservoirs of water for thermal mass within zone                                                                             |
-|    304|1651RP   |HVAC        |Ventilation |Hybrid/Mixed Mode Ventilation                                                                                                      |
-|    501|BEQ      |HVAC System |0           |Where cooling is provided by multiple units, maintain proper sequencing to achieve maximum efficiency while meeting required load. |
-|    562|BEQ      |HVAC System |0           |Reduce operating hours of simultaneously heating and cooling systems.                                                              |
-
-
-
 #### Performance metrics
->> TEXT TK
->> 3 metrics
+The script then computes summary metrics to quantify the performance of the automated tagging system.  Metric 1 is the percentage of EEMs in the list that are tagged with at least one tag. 
+
+```
+> tagged_eem_count <- tagged_tokens$id %>% unique() %>% length()
+> total_eem_count <- sample_eems %>% nrow()
+> paste0("Percent EEMs tagged = ", round(100*tagged_eem_count/total_eem_count,1))
+[1] "Percent EEMs tagged = 62.4"
+```
+
+Metric 2 is the percentage of EEMs in the list that are categorized, i.e., are tagged with at least one element tag.  If you prefer to compute metric 2 based on the number of EEMs that are categorized using either an element or descriptor tag (excluding unassigned descriptor tags), use the first (commented out) filter criteria instead.  
+
+```
+> categorized_tokens <- tagged_tokens %>% 
++   #filter(uni_code != "X0000") # Use this if you want to see both the descriptor and element tags
++   filter(type == "Element")
+> categorized_eem_count <- categorized_tokens$id %>% unique() %>% length()
+> paste0("Percent EEMs categorized = ", round(100*categorized_eem_count/total_eem_count,1))
+[1] "Percent EEMs categorized = 41"
+```
+
+Metric 3 is the percentage of categorized EEMs in the list that are categorized correctly, i.e., the automatic categorization matches the ground truth categorization. 
+
+```
+> CODE TK METRIC 3
+```
+
+
+
+
+
+
 
 
 #####################
