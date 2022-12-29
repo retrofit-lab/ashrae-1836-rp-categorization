@@ -1,5 +1,65 @@
-# ASHRAE 1836-RP categorization
-This repository contains the data and code for the paper [TEXT TK] published in *Science and Technology for the Built Environment*. This study was conducted as part of ASHRAE Research Project 1836, Developing a standardized categorization system for energy efficiency measures.
+# Developing a standardized categorization system for energy efficiency measures (1836-RP)
+This repository contains the data and code for the paper "Developing a standardized categorization system for energy efficiency measures (1836-RP)" submitted to *Science and Technology for the Built Environment*. This study was conducted as part of ASHRAE Research Project 1836, Developing a standardized categorization system for energy efficiency measures.
+
+## Contents  
+- [Repository Structure](#repository-structure)  
+- [Objective](#objective)  
+- [Data](#data)  
+    - [ASHRAE 1836-RP 5% sample of EEMs](#ashrae-1836-rp-5-sample-of-eems)
+    - [BuildingSync list of EEMs](#buildingsync-list-of-eems)   
+    - [User-defined list](#user-defined-list)  
+- [Analysis](#analysis)  
+    - [Step 1: Import data](#step-1-import-data)  
+    - [Step 2: Pre-processing](#step-2-pre-processing)  
+    - [Step 3: Search, tag, and categorize](#step-3-search-tag-and-categorize)  
+    - [Step 4: Export data](#step-4-export-data)  
+    - [Step 5: Compute performance metrics](#step-5-compute-performance-metrics)  
+
+## Repository Structure
+The repository is divided into three directories:
+- `/data/`: List(s) of EEMs to be categorized (or re-categorized).  
+- `/analysis/`: R script for EEM categorization
+- `/results/`: Output produced by R script
+
+## Objective
+TEXT TK
+
+## Data
+There is one dataset associated with this project. 
+>> Two samples
+
+### ASHRAE 1836-RP 5% sample of EEMs
+The file [eem-list-main.csv](data/eem-list-main.csv) contains the complete list of 3,490 EEMs assembled and analyzed as part of 1836-RP.  This data file is used for the text mining analysis in [text-mining.R](analysis/text-mining.R).  The EEMs were collected from 16 different source documents during the 1836-RP literature review from September 2019 through July 2020.  An initial list of suggested sources was provided by the members of the 1836-RP Project Advisory Board, and additional documents were added through the authors’ literature review.  In order for a source to be included in the review, it needed to contain a list of EEMs.
+
+### BuildingSync list of EEMs
+The file [eem-list-main.csv](data/eem-list-main.csv) contains the complete list of 3,490 EEMs assembled and analyzed as part of 1836-RP.  This data file is used for the text mining analysis in [text-mining.R](analysis/text-mining.R).  The EEMs were collected from 16 different source documents during the 1836-RP literature review from September 2019 through July 2020.  An initial list of suggested sources was provided by the members of the 1836-RP Project Advisory Board, and additional documents were added through the authors’ literature review.  In order for a source to be included in the review, it needed to contain a list of EEMs.
+
+### User-defined list
+The file [eem-list-main.csv](data/eem-list-main.csv) contains the complete list of 3,490 EEMs assembled and analyzed as part of 1836-RP.  This data file is used for the text mining analysis in [text-mining.R](analysis/text-mining.R).  The EEMs were collected from 16 different source documents during the 1836-RP literature review from September 2019 through July 2020.  An initial list of suggested sources was provided by the members of the 1836-RP Project Advisory Board, and additional documents were added through the authors’ literature review.  In order for a source to be included in the review, it needed to contain a list of EEMs.
+
+## Analysis
+The R script `text-mining.R` replicates the analysis from the paper.
+
+### Step 1: Import data
+It is recommended that you update to the latest versions of both R and RStudio (if using RStudio) prior to running this script. 
+
+
+### Step 2: Pre-processing
+It is recommended that you update to the latest versions of both R and RStudio (if using RStudio) prior to running this script. 
+
+
+### Step 3: Search, tag, and categorize
+It is recommended that you update to the latest versions of both R and RStudio (if using RStudio) prior to running this script. 
+
+### Step 4: Export data
+It is recommended that you update to the latest versions of both R and RStudio (if using RStudio) prior to running this script. 
+
+### Step 5: Compute performance metrics
+It is recommended that you update to the latest versions of both R and RStudio (if using RStudio) prior to running this script.
+
+
+
+#####################
 
 ## Overview
 This document describes how to categorize (or re-categorize) energy efficiency measures (EEMs) according to the standardized categorization system developed during ASHRAE 1836-RP, using the accompanying R script [EEM-recategorization.R](analysis/EEM-recategorization.R). The categorization system developed in 1836-RP consists of a three-level hierarchy of building elements based on UNIFORMAT, a standard classification system for building elements and related sitework. An individual EEM is categorized on the hierarchy using an element “tag” (i.e., keyword) present in the EEM name that links the EEM with a single UNFORMAT category.  The EEM name may also contain an action tag and/or one or more descriptor tags.  These are not used for categorization, but may provide useful additional information for sorting and analyzing a group of EEMs.
@@ -9,12 +69,6 @@ The script categorizes an existing list of EEMs according to the standardized ca
 To categorize the list of EEMs, the R script uses a seed list of categorization tags that was developed during 1836-RP. The file [categorization-tags.csv](data/categorization-tags.csv) contains the element and descriptor type tags, along with their associated UNIFORMAT categories. The CSV file containing the categorization tags consists of six columns. The column `keyword` contains the tags to be used for categorization. The column `Type` provides information regarding whether the tag is an element tag or a descriptor tag. The remaining columns `uni_code`, `uni_level_1`, `uni_level_2`, and `uni_level_3` contain the UNIFORMAT category associated with that tag.
 
 The R script searches for these tags within the EEM names and every time it finds a match, it tags the EEM with the tags and the associated UNIFORMAT category. Only the element tags are used for categorization purposes, however, the descriptor tags provide additional useful information and are also included in the Excel output. The results of 1836-RP showed that verb meaning in EEMs can be ambiguous and vary with context, and the action tags are therefore not used in the categorization analysis.
-
-## Repository Structure
-The repository is divided into three directories:
-- `/data/`: Sample EEM lists used to demonstrate the EEM categorization script and the standardized categorization system
-- `/analysis/`: R script for EEM categorization
-- `/results/`: Output produced by R script
 
 ## Import Data
 
