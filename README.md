@@ -69,11 +69,10 @@ The second list contains all of the EEMs in BuildingSync and is named [building-
 |   1241|BSYNC    |Advanced Metering Systems |        0|Other                                                       |
 
 ### ASHRAE 1836-RP 5% sample ground truth
->> TEXT TK
->>  Ground truth is not required for categorization, but for some of the metrics... 
+Two ground truth files contain manually assigned re-categorizations for each EEM in the example EEM lists. These files are not required for EEM categorization (or re-categorization), and are only used to compute Metrics 3 and 4. The first ground truth file corresponds to the 5% sampple of EEMs and is named [sample-eems-ground-truth.csv](data/sample-eems-ground-truth.csv). The file contains the same five headers as the list of EEMs, plus a sixth `uni_code_manual` column that lists the manual UNIFORMAT assignment for each EEM.  EEMs that were unable to be assigned manually are listed as "NONE". 
 
 ### BuildingSync ground truth
->> TEXT TK
+The second ground truth file corresponds to the list of BuildingSync EEMs and is named [building-sync-ground-truth.csv](data/building-sync-ground-truth.csv).  It follows the same six column format as the 5% random sample. 
 
 ### User-defined data
 In order to use a different list of categorization tags (or add to/amend this seed list) add the new list to the `/data/` folder and update the file name in the R script.  The list of categorization tags provided by the user should have the same six column format with the headers shown above. 
