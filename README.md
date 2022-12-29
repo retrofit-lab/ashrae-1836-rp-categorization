@@ -120,29 +120,75 @@ tag_token_counts <- tokenized_tag_list %>%
   count(keyword)
 ```
   
-This produces a token count for each tag. 
+This produces a token count for each tag.  For the first five tags:  
 
-|keyword              |  n|
-|:--------------------|--:|
-|Absorption chiller   |  2|
-|Advanced power strip |  3|
-|AHU                  |  1|
-|Air barrier          |  2|
-|air cooled           |  2|
+```
+   keyword                     n
+   <chr>                   <int>
+ 1 Absorption chiller          2
+ 2 Advanced power strip        3
+ 3 AHU                         1
+ 4 Air barrier                 2
+ 5 air cooled                  2
+ ```
 
-For the ASHRAE 1836-RP categorization tags, the tags range from 1 to 5 words in length. So, in order to look for these tags within the EEM names, the EEM names need to be tokenized as n-grams where n ranges from 1 to 5.
+For the ASHRAE 1836-RP categorization tags, the tags range from 1 to 5 words in length. In order to look for these tags within the EEM names, the EEM names need to be tokenized as n-grams where n ranges from 1 to 5.
 
+```
+## Tokenize EEM names
+# create a list of tokens for each EEM name
+token_1_5grams <- tokenize_ngrams(sample_eems$eem_name, lowercase = TRUE, n = 5, n_min = 1)
 
+# Map the list as a dataframe
+eem_tokens <- map_df(token_1_5grams, ~as.data.frame(.x), .id="id")
+eem_tokens$id <- as.numeric(eem_tokens$id)
+eem_tokens <- dplyr::rename(eem_tokens, tokens = .x)
+```
 
+This produces a dataframe with the tokens from each EEM as separate rows.  For example, the EEM "High ceilings" is tokenized into three possible tokens: "high", "high ceilings", and "ceilings".  For the first five tokens: 
 
-
+```
+  id        tokens
+1  1          high
+2  1 high ceilings
+3  1      ceilings
+4  2           use
+5  2        use of
+```
 
 ### Search, tag, and categorize
-The automatic tagger and categorizer code searches for the categorization tags within the tokenized EEM names. Every time it finds a match, it tags that EEM with all the information associated with that particular tag. This includes the tag, the tag type and the UNIFORMAT category associated with the tag.  This produces a 
+The automatic tagger and categorizer code searches for the categorization tags within the tokenized EEM names. Every time it finds a match, it tags that EEM with all the information associated with that particular tag. This includes the tag, the tag type and the UNIFORMAT category associated with the tag.  Tokens that do not have a matching tagged are left untagged with an <NA>.
+
+```
+# Tagging all tokens with relevant categorization tags
+# and using them to re-categorize the EEMs according to UNIFORMAT
+
+for (i in 1:nrow(tag_list)) {
+  for (j in 1:nrow(eem_tokens)) {
+    # Look for keywords (tag_list, column 1) in EEM name tokens (eem_tokens, column 2)
+    # Add corresponding tags and associated UNIFORMAT category to the EEM name tokens
+    if(grepl(paste0("^", tag_list[i,1]), eem_tokens[j,2], ignore.case=TRUE) == 1){
+      eem_tokens[j,3] <- tag_list[i,1] # keyword
+      eem_tokens[j,4] <- tag_list[i,2] # tag type
+      eem_tokens[j,5] <- tag_list[i,3] # UNI code
+      eem_tokens[j,6] <- tag_list[i,4] # UNI level 1 category
+      eem_tokens[j,7] <- tag_list[i,5] # UNI level 2 category
+      eem_tokens[j,8] <- tag_list[i,6] # UNI level 3 category
+    }
+  }
+}
+```
 
 >> Some EEMS are tagged and some are left untagged
 
-
+```
+  id        tokens keyword    type uni_code uni_level_1       uni_level_2      uni_level_3
+1  1          high    <NA>    <NA>     <NA>        <NA>              <NA>             <NA>
+2  1 high ceilings    <NA>    <NA>     <NA>        <NA>              <NA>             <NA>
+3  1      ceilings ceiling Element    C3030   INTERIORS Interior Finishes Ceiling Finishes
+4  2           use    <NA>    <NA>     <NA>        <NA>              <NA>             <NA>
+5  2        use of    <NA>    <NA>     <NA>        <NA>              <NA>             <NA>
+```
 
 
 ### Results
