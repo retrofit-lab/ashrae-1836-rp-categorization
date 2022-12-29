@@ -8,17 +8,11 @@ This repository contains the data and code for the paper "Developing a standardi
     - [ASHRAE 1836-RP categorization tags](#ashrae-1836-rp-categorization-tags)
     - [ASHRAE 1836-RP 5% sample of EEMs](#ashrae-1836-rp-5-sample-of-eems)
     - [BuildingSync list of EEMs](#buildingsync-list-of-eems)   
-    - [User-defined list](#user-defined-list)  
+    - [User-defined data](#user-defined-data)  
 - [Analysis](#analysis)  
     - [Setup](#setup)  
     - [Search, tag, and categorize](#search-tag-and-categorize)  
     - [Results](#results)  
-
-    - [Step 1: Import data](#step-1-import-data)  
-    - [Step 2: Pre-processing](#step-2-pre-processing)  
-    - [Step 3: Search, tag, and categorize](#step-3-search-tag-and-categorize)  
-    - [Step 4: Export data](#step-4-export-data)  
-    - [Step 5: Compute performance metrics](#step-5-compute-performance-metrics)  
 
 ## Repository Structure
 The repository is divided into three directories:
@@ -47,8 +41,6 @@ Table 1: First 5 observations from the list of categorization tags
 |Building envelope |Element |B        |SHELL        |Unassigned            |Unassigned           |
 |envelope          |Element |B        |SHELL        |Unassigned            |Unassigned           |
 |Floor             |Element |B1010    |SHELL        |Superstructure        |Floor Construction   |
-
-In order to use a different list of categorization tags (or add to/amend this seed list), use the same header structure shown in Table 1 and add the new list to the `/data/` folder and update the file name in the R script.  
 
 ### ASHRAE 1836-RP 5% sample of EEMs
 Two example EEM lists are provided as Comma Separated Values (CSV) files along with the R script. The first example list is a random sample of 5% of the EEMs from the 1836-RP main list of EEMs [eem-list-main.csv](https://github.com/retrofit-lab/ashrae-1836-rp-text-mining/blob/main/README.md#ashrae-1836-rp-main-list-of-eems) and is named [sample-eems.csv](data/sample-eems.csv). 
@@ -79,10 +71,18 @@ Table 3: First 5 observations from the BuildingSync EEM list
 |   1241|BSYNC    |Advanced Metering Systems |        0|Other                                                       |
 |   1242|BSYNC    |Boiler Plant Improvements |        0|Replace boiler                                              |
 
-### User-defined list
-In order to categorize a different list of EEMs, add the new list to the `/data/` folder and update the file name in the R script. Make sure to keep the same folder structure as this GitHub repository and remember to set the working directory to the location of the R script.
+### ASHRAE 1836-RP 5% sample ground truth
+>> TEXT TK
 
-The input data provided by the user should have five columns, with the headers as shown in Table 1.  The input data needs to follow this header structure regardless of  whether the list of EEMs has a prior categorization system associated with it or not. The column `eem_id` should contain a unique ID for each EEM. The column `document` should contain the name of the source of the EEM list (e.g., reference document, organization). The column `cat_lev1` should contain the original categorization for the EEM. If there are sub-categories associated with the EEM, these should go in the column `cat_lev2`. If a second level of categorization is not available, leave this column empty. Finally, the EEM names go in the column `eem_name`. If your EEM list does not have any original categorization system associated with it, keep the dummy columns `cat_lev1` and `cat_lev2` empty.
+### BuildingSync ground truth
+>> TEXT TK
+
+### User-defined data
+In order to use a different list of categorization tags (or add to/amend this seed list) add the new list to the `/data/` folder and update the file name in the R script.  The input data for the list of EEMs provided by the user should have six columns, with the headers as shown in Table 1.
+
+In order to categorize a different list of EEMs, add the new list to the `/data/` folder and update the file name in the R script. Make sure to keep the same folder structure as this GitHub repository and remember to set the working directory to the location of the R script.  
+
+The input data for the list of EEMs provided by the user should have five columns, with the headers as shown in Tables 2 and 3.  The input data needs to follow this header structure regardless of  whether the list of EEMs has a prior categorization system associated with it or not. The column `eem_id` should contain a unique ID for each EEM. The column `document` should contain the name of the source of the EEM list (e.g., reference document, organization). The column `cat_lev1` should contain the original categorization for the EEM. If there are sub-categories associated with the EEM, these should go in the column `cat_lev2`. If a second level of categorization is not available, leave this column empty. Finally, the EEM names go in the column `eem_name`. If your EEM list does not have any original categorization system associated with it, keep the dummy columns `cat_lev1` and `cat_lev2` empty.
 
 ## Analysis
 The R script [eem-recategorization.R](analysis/eem-recategorization.R) categorizes an existing list of EEMs according to the standardized categorization system developed in 1836-RP.
@@ -115,11 +115,22 @@ Import the list of categorization tags and the list of EEMs to be categorized. T
 
 
 ### Search, tag, and categorize
-It is recommended that you update to the latest versions of both R and RStudio (if using RStudio) prior to running this script. 
+The automatic tagger and categorizer code searches for the categorization tags within the tokenized EEM names. Every time it finds a match, it tags that EEM with all the information associated with that particular tag. This includes the tag, the tag type and the UNIFORMAT category associated with the tag.  This produces a 
+
+
+
 
 ### Results
-It is recommended that you update to the latest versions of both R and RStudio (if using RStudio) prior to running this script. 
 
+#### Tagged and untagged EEMs
+>> TEXT TK
+>> 5 
+ The EEMs that remain untagged are compiled in a separate list. The script also uncovers the top categorization tags that show up within the EEM sample as well as the top un-tagged words and bigrams in the sample.
+
+
+#### Performance metrics
+>> TEXT TK
+>> 3 metrics
 
 
 #####################
