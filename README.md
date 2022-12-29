@@ -5,6 +5,7 @@ This repository contains the data and code for the paper "Developing a standardi
 - [Repository Structure](#repository-structure)  
 - [Objective](#objective)  
 - [Data](#data)  
+    - [ASHRAE 1836-RP categorization tags](#ashrae-1836-rp-categorization-tags)
     - [ASHRAE 1836-RP 5% sample of EEMs](#ashrae-1836-rp-5-sample-of-eems)
     - [BuildingSync list of EEMs](#buildingsync-list-of-eems)   
     - [User-defined list](#user-defined-list)  
@@ -22,20 +23,49 @@ The repository is divided into three directories:
 - `/results/`: Output produced by R script
 
 ## Objective
-TEXT TK
+Energy Efficiency Measures (EEMs) play a central role in building energy modeling, energy auditing, and energy data collection and exchange. Despite their importance, there is currently no standardized way to describe or categorize EEMs in industry. This lack of standardization severely limits the ability to communicate the intent of an EEM clearly and consistently, and to perform “apples-to-apples” comparisons of measure savings and cost effectiveness. The goal of this study is to develop and test a standardized system for categorizing EEMs. 
+
+The standardized categorization system developed in 1836-RP consists of a three-level hierarchy of building elements based on UNIFORMAT, a standard classification system for building elements and related sitework. An individual EEM is categorized on the hierarchy using an element “tag” (i.e., keyword) present in the EEM name that links the EEM with a single UNFORMAT category.  The EEM name may also contain one or more descriptor tags that are not used for categorization, but may provide useful additional information for sorting and analyzing a group of EEMs.
 
 ## Data
-There is one dataset associated with this project. 
->> Two samples
+There are three datasets associated with this project. 
+
+### ASHRAE 1836-RP categorization tags
+To categorize the list of EEMs, the R script uses a seed list of categorization tags that was developed during 1836-RP. The file [categorization-tags.csv](data/categorization-tags.csv) contains the element and descriptor type tags, along with their associated UNIFORMAT categories. The CSV file containing the categorization tags consists of six columns. The column `keyword` contains the tags to be used for categorization. The column `Type` provides information regarding whether the tag is an element tag or a descriptor tag. The remaining columns `uni_code`, `uni_level_1`, `uni_level_2`, and `uni_level_3` contain the UNIFORMAT category associated with that tag.
 
 ### ASHRAE 1836-RP 5% sample of EEMs
-The file [eem-list-main.csv](data/eem-list-main.csv) contains the complete list of 3,490 EEMs assembled and analyzed as part of 1836-RP.  This data file is used for the text mining analysis in [text-mining.R](analysis/text-mining.R).  The EEMs were collected from 16 different source documents during the 1836-RP literature review from September 2019 through July 2020.  An initial list of suggested sources was provided by the members of the 1836-RP Project Advisory Board, and additional documents were added through the authors’ literature review.  In order for a source to be included in the review, it needed to contain a list of EEMs.
+Two example EEM lists are provided as Comma Separated Values (CSV) files along with the R script. The first example list is a random sample of 5% of the EEMs from the 1836-RP main list of EEMs [eem-list-main.csv](https://github.com/retrofit-lab/ashrae-1836-rp-text-mining/blob/main/README.md#ashrae-1836-rp-main-list-of-eems) and is named [sample-eems.csv](data/sample-eems.csv). 
+
+The dataset contains five columns, with the headers as shown in Table 1. Table 1 below shows the first 5 EEMs from the 5% random sample. The EEM IDs from the main list of 1836-RP EEMs are shown in the `eem_id` column, the source document is shown in the `document` column, the original categorization in the source document is shown in the `cat_lev1` column, the sub-categorization in the original source document (if present) is shown in the `cat_lev2` column, and the EEM name is given in the `eem_name` column.
+
+Table 1: First 5 observations from the 5% sample EEM list
+
+| eem_id|document |cat_lev1    |cat_lev2     |eem_name                                            |
+|------:|:--------|:-----------|:------------|:---------------------------------------------------|
+|     10|1651RP   |Daylighting |Passive      |High ceilings                                       |
+|     24|1651RP   |Daylighting |Passive      |Use of interzone luminous ceilings                  |
+|     35|1651RP   |Envelope    |Fenestration |Heat absorbing blinds                               |
+|     36|1651RP   |Envelope    |Fenestration |Manual Internal Window shades                       |
+|     60|1651RP   |Envelope    |Infiltration |High Performance Air Barrier to Reduce Infiltration |
 
 ### BuildingSync list of EEMs
-The file [eem-list-main.csv](data/eem-list-main.csv) contains the complete list of 3,490 EEMs assembled and analyzed as part of 1836-RP.  This data file is used for the text mining analysis in [text-mining.R](analysis/text-mining.R).  The EEMs were collected from 16 different source documents during the 1836-RP literature review from September 2019 through July 2020.  An initial list of suggested sources was provided by the members of the 1836-RP Project Advisory Board, and additional documents were added through the authors’ literature review.  In order for a source to be included in the review, it needed to contain a list of EEMs.
+The second list contains all of the EEMs in BuildingSync and is named [building-sync.csv](data/building-sync.csv).  It follows the same five column format as the 5% random sample.   
+
+Table 2: First 5 observations from the BuildingSync EEM list
+
+| eem_id|document |cat_lev1                  | cat_lev2|eem_name                                                    |
+|------:|:--------|:-------------------------|--------:|:-----------------------------------------------------------|
+|   1237|BSYNC    |Advanced Metering Systems |        0|Install advanced metering systems                           |
+|   1238|BSYNC    |Advanced Metering Systems |        0|Clean and/or repair                                         |
+|   1239|BSYNC    |Advanced Metering Systems |        0|Implement training and/or documentation                     |
+|   1240|BSYNC    |Advanced Metering Systems |        0|Upgrade operating protocols, calibration, and/or sequencing |
+|   1241|BSYNC    |Advanced Metering Systems |        0|Other                                                       |
+|   1242|BSYNC    |Boiler Plant Improvements |        0|Replace boiler                                              |
 
 ### User-defined list
-The file [eem-list-main.csv](data/eem-list-main.csv) contains the complete list of 3,490 EEMs assembled and analyzed as part of 1836-RP.  This data file is used for the text mining analysis in [text-mining.R](analysis/text-mining.R).  The EEMs were collected from 16 different source documents during the 1836-RP literature review from September 2019 through July 2020.  An initial list of suggested sources was provided by the members of the 1836-RP Project Advisory Board, and additional documents were added through the authors’ literature review.  In order for a source to be included in the review, it needed to contain a list of EEMs.
+In order to use a different list of EEMs, add the new list to the `/data/` folder and update the file name in the R script. Make sure to keep the same folder structure as this GitHub repository and remember to set the working directory to the location of the R script.
+
+The input data provided by the user should have five columns, with the headers as shown in Table 1.  The input data needs to follow this header structure regardless of  whether the list of EEMs has a prior categorization system associated with it or not. The column `eem_id` should contain a unique ID for each EEM. The column `document` should contain the name of the source of the EEM list (e.g., reference document, organization). The column `cat_lev1` should contain the original categorization for the EEM. If there are sub-categories associated with the EEM, these should go in the column `cat_lev2`. If a second level of categorization is not available, leave this column empty. Finally, the EEM names go in the column `eem_name`. If your EEM list does not have any original categorization system associated with it, keep the dummy columns `cat_lev1` and `cat_lev2` empty.
 
 ## Analysis
 The R script `text-mining.R` replicates the analysis from the paper.
