@@ -108,8 +108,31 @@ sample_eems <- read_csv("../data/sample-eems.csv")
 # Use sample-eems.csv or building-sync.csv or your custom EEM list
 ```
 
-#### Tokenize EEMs
-Import the list of categorization tags and the list of EEMs to be categorized. The relative filepaths in this script follow the same directory structure as this Github repository, and it is recommended that you use this same structure.  You might have to use `setwd()` to set the working directory to the location of the R script.  
+#### Tokenize tags and EEMs
+Since the tags consist of n-grams where n>1 (e.g., words, bigrams, trigrams), the EEM names need to be tokenized as sequences of n-grams.  To determine the number of n in n-grams to be used to tokenize the EEM names, we first tokenize the tags and count the range of number of tokens in the categorization tag list.
+
+```
+tokenized_tag_list <- tag_list %>% 
+  select(keyword) %>% 
+  unnest_tokens(word, keyword, token = "words", drop = FALSE)
+
+tag_token_counts <- tokenized_tag_list %>% 
+  count(keyword)
+```
+  
+This produces a token count for each tag. 
+
+|keyword              |  n|
+|:--------------------|--:|
+|Absorption chiller   |  2|
+|Advanced power strip |  3|
+|AHU                  |  1|
+|Air barrier          |  2|
+|air cooled           |  2|
+
+For the ASHRAE 1836-RP categorization tags, the tags range from 1 to 5 words in length. So, in order to look for these tags within the EEM names, the EEM names need to be tokenized as n-grams where n ranges from 1 to 5.
+
+
 
 
 
