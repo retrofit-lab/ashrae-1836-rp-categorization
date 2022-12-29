@@ -45,7 +45,7 @@ Some descriptor tags like "cool roof" will always belong to a single UNIFORMAT c
 |envelope          |Element |B        |SHELL        |Unassigned            |Unassigned           |
 
 ### ASHRAE 1836-RP 5% sample of EEMs
-Two example EEM lists are provided as Comma Separated Values (CSV) files along with the R script. The first example list is a random sample of 5% of the EEMs from the 1836-RP main list of EEMs [eem-list-main.csv](https://github.com/retrofit-lab/ashrae-1836-rp-text-mining/blob/main/README.md#ashrae-1836-rp-main-list-of-eems) and is named [sample-eems.csv](data/sample-eems.csv). 
+Two example EEM lists are provided as Comma Separated Values (CSV) files along with the R script. The first example list is a random sample of 5% of the EEMs from the 1836-RP main list of EEMs from the repo [ashrae-1836-rp-text-mining](https://github.com/retrofit-lab/ashrae-1836-rp-text-mining) and is named [sample-eems.csv](data/sample-eems.csv). 
 
 The dataset contains five columns. The EEM IDs from the main list of 1836-RP EEMs are shown in the `eem_id` column, the source document is shown in the `document` column, the original categorization in the source document is shown in the `cat_lev1` column, the sub-categorization in the original source document (if present) is shown in the `cat_lev2` column, and the EEM name is given in the `eem_name` column.  The first five EEMs from the 5% random sample:
 
