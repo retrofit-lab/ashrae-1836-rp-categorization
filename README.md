@@ -206,7 +206,7 @@ For the first five tokens, the dataframe is now:
 
 ### Results
 
-#### Tagged and untagged EEMs
+#### List of tagged and untagged EEMs
 The script then exports six CSV files:
 - `sheet-1-tagged-eems`: Tagged EEMs from the sample along with their original and new categorizations
 - `sheet-2-untagged-eems`: Untagged EEMs from the sample along with their original categorizations
