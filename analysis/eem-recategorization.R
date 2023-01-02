@@ -159,6 +159,57 @@ sheet_5_untagged_bigrams <- untagged_tokens %>%
 write_csv(sheet_5_untagged_bigrams, "../results/random-5-percent-sample/sheet-5-untagged-bigrams.csv") # For the 5% random sample 
 #write_csv(sheet_5_untagged_bigrams, "../results/bsync-sample/sheet-5-untagged-bigrams.csv") # For the BSYNC sample
 
+## Sheet 6: ground truth matching
+
+# Extract unique rows from within EEM name tokens
+tagged_untagged_tokens <- eem_tokens %>% 
+  select(- tokens) %>%
+  unique() # this unique preserves only 1 instance of the tag within each EEM (even if that tag shows up multiple times)
+
+# Merge these tokens with the original EEM sample
+sheet_6_ground_truth_matching <- data.frame()
+
+for (i in 1:nrow(tagged_untagged_tokens)){
+  sheet_6_ground_truth_matching[i,1] <- ground_truth[tagged_untagged_tokens$id[i], 1]
+  sheet_6_ground_truth_matching[i,2] <- ground_truth[tagged_untagged_tokens$id[i], 2]
+  sheet_6_ground_truth_matching[i,3] <- ground_truth[tagged_untagged_tokens$id[i], 3]
+  sheet_6_ground_truth_matching[i,4] <- ground_truth[tagged_untagged_tokens$id[i], 4]
+  sheet_6_ground_truth_matching[i,5] <- ground_truth[tagged_untagged_tokens$id[i], 5]
+  sheet_6_ground_truth_matching[i,6] <- tagged_untagged_tokens[i, 2]
+  sheet_6_ground_truth_matching[i,7] <- tagged_untagged_tokens[i, 3]
+  sheet_6_ground_truth_matching[i,8] <- tagged_untagged_tokens[i, 4]
+  sheet_6_ground_truth_matching[i,9] <- ground_truth[tagged_untagged_tokens$id[i], 6]
+}
+
+sheet_6_ground_truth_matching <- dplyr::rename(sheet_6_ground_truth_matching, 
+                                               tags = V6, 
+                                               type = V7, 
+                                               uni_code = V8)
+
+
+# However, for tagged EEMs, the above dataframe also preserves an untagged row with NA values
+# But we only need NA values for untagged EEMs. So remove the NA rows from the tagged EEMs
+sheet_6_ground_truth_matching_tagged <- sheet_6_ground_truth_matching %>% 
+  filter(!eem_id %in% sheet_2_untagged_eems$eem_id) %>% 
+  na.omit()
+
+sheet_6_ground_truth_matching_untagged <- sheet_6_ground_truth_matching %>% 
+  filter(eem_id %in% sheet_2_untagged_eems$eem_id)
+
+sheet_6_ground_truth_matching <- sheet_6_ground_truth_matching_tagged %>% 
+  bind_rows(sheet_6_ground_truth_matching_untagged) %>% 
+  arrange(eem_id)
+
+# Adding Indicator columns
+sheet_6_ground_truth_matching <- sheet_6_ground_truth_matching %>% 
+  mutate(match = ifelse(uni_code == uni_code_manual, 1, 0))
+
+sheet_6_ground_truth_matching$match <- sheet_6_ground_truth_matching$match %>% replace_na(0)
+
+# Export results as CSV
+write_csv(sheet_6_ground_truth_matching, "../results/random-5-percent-sample/sheet-6-ground-truth-matching.csv") # For the 5% random sample 
+#write_csv(sheet_6_ground_truth_matching, "../results/bsync-sample/sheet-6-ground-truth-matching.csv") # For the BSYNC sample
+
 
 ### Step 5: Extract metrics of performance
 
@@ -170,17 +221,25 @@ paste0("Percent EEMs tagged = ", round(100*tagged_eem_count/total_eem_count,1))
 
 ## Metric 2: Percentage of EEMs that got categorized automatically
 
-categorized_tokens <- tagged_tokens %>% 
-  #filter(uni_code != "X0000") # Use this if you want to calculate Metric 2 using both the descriptor and element tags
-  filter(type == "Element") # Use this if you want to calculate Metric 2 using only element tags
+# Using both element and descriptor tags
+categorized_tokens_1 <- tagged_tokens %>% 
+  filter(uni_code != "X0000")
 
-categorized_eem_count <- categorized_tokens$id %>% unique() %>% length()
-paste0("Percent EEMs categorized = ", round(100*categorized_eem_count/total_eem_count,1))
+categorized_eem_count_1 <- categorized_tokens_1$id %>% unique() %>% length()
+paste0("Percent EEMs categorized = ", round(100*categorized_eem_count_1/total_eem_count,1))
+
+# Using only element tags
+categorized_tokens_2 <- tagged_tokens %>% 
+  filter(type == "Element") 
+
+categorized_eem_count_2 <- categorized_tokens_2$id %>% unique() %>% length()
+paste0("Percent EEMs categorized = ", round(100*categorized_eem_count_2/total_eem_count,1))
+
 
 ## Metric 3: Percentage of EEMs that got categorized manually
 
 manually_categorized_count <- ground_truth %>% 
-  filter(uni_code_manual != "NONE") %>% 
+  filter(uni_code_manual != "X0000") %>% 
   nrow()
 
 paste0("Percent EEMs categorized manually = ", round(100*manually_categorized_count/total_eem_count,1))
@@ -188,32 +247,24 @@ paste0("Percent EEMs categorized manually = ", round(100*manually_categorized_co
 ## Metric 4: Percentage of EEMs that got categorized correctly
 
 # Using both element and descriptor tags
-compare_auto_manual <- sheet_1_tagged_eems %>% 
-  select(eem_id, uni_code) %>% 
-  inner_join(ground_truth) %>% 
-  mutate(is_correct = ifelse(uni_code == uni_code_manual, 1, 0))
-
-correct_categorization_count <- compare_auto_manual %>% 
-  select(eem_id, is_correct) %>% 
+correct_categorization_count_1 <- sheet_6_ground_truth_matching %>% 
+  filter(uni_code != "X0000") %>% 
+  select(eem_id, match) %>% 
   unique() %>% 
-  filter(is_correct == 1) %>% 
+  filter(match == 1) %>% 
   nrow()
 
 paste0("Percent EEMs categorized correctly using both element and descriptor tags = ", 
-       round(100*correct_categorization_count/manually_categorized_count,1))
+       round(100*correct_categorization_count_1/categorized_eem_count_1,1))
 
 # Using only element tags
-compare_auto_manual_2 <- sheet_1_tagged_eems %>% 
+correct_categorization_count_2 <- sheet_6_ground_truth_matching %>% 
   filter(type == "Element") %>% 
-  select(eem_id, uni_code) %>% 
-  inner_join(ground_truth) %>% 
-  mutate(is_correct = ifelse(uni_code == uni_code_manual, 1, 0))
-
-correct_categorization_count_2 <- compare_auto_manual_2 %>% 
-  select(eem_id, is_correct) %>% 
+  select(eem_id, match) %>% 
   unique() %>% 
-  filter(is_correct == 1) %>% 
+  filter(match == 1) %>% 
   nrow()
 
+
 paste0("Percent EEMs categorized correctly using only element tags = ", 
-       round(100*correct_categorization_count_2/manually_categorized_count,1))
+       round(100*correct_categorization_count_2/categorized_eem_count_2,1))
