@@ -1,0 +1,258 @@
+eem_id,document,cat_lev1,cat_lev2,eem_name,tags,type,uni_code,uni_code_manual,match
+1237,BSYNC,Advanced Metering Systems,0,Install advanced metering systems,Meter,Element,D5010,D5010,1
+1238,BSYNC,Advanced Metering Systems,0,Clean and/or repair,NA,NA,NA,D5010,0
+1239,BSYNC,Advanced Metering Systems,0,Implement training and/or documentation,NA,NA,NA,D5010,0
+1240,BSYNC,Advanced Metering Systems,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,D5010,0
+1241,BSYNC,Advanced Metering Systems,0,Other,NA,NA,NA,D5010,0
+1242,BSYNC,Boiler Plant Improvements,0,Replace boiler,Boiler,Element,D3020,D3020,1
+1243,BSYNC,Boiler Plant Improvements,0,Replace burner,Burner,Element,D3020,D3020,1
+1244,BSYNC,Boiler Plant Improvements,0,Decentralize boiler,Boiler,Element,D3020,D3020,1
+1245,BSYNC,Boiler Plant Improvements,0,Insulate boiler room,Boiler,Element,D3020,D3020,1
+1246,BSYNC,Boiler Plant Improvements,0,Add energy recovery,Energy recovery,Descriptor,X0000,D3020,0
+1247,BSYNC,Boiler Plant Improvements,0,Convert gas-fired unit to boiler loop,Boiler,Element,D3020,D3020,1
+1248,BSYNC,Boiler Plant Improvements,0,Convert system from steam to hot water,Steam,Descriptor,X0000,D3020,0
+1248,BSYNC,Boiler Plant Improvements,0,Convert system from steam to hot water,Hot water,Descriptor,X0000,D3020,0
+1249,BSYNC,Boiler Plant Improvements,0,Clean and/or repair,NA,NA,NA,D3020,0
+1250,BSYNC,Boiler Plant Improvements,0,Implement training and/or documentation,NA,NA,NA,D3020,0
+1251,BSYNC,Boiler Plant Improvements,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,D3020,0
+1252,BSYNC,Boiler Plant Improvements,0,Convert to Cleaner Fuels,NA,NA,NA,D3020,0
+1253,BSYNC,Boiler Plant Improvements,0,Other,NA,NA,NA,D3020,0
+1254,BSYNC,Building Automation Systems/Energy Management Control Systems (EMCS),0,Add heat recovery,Heat recovery,Descriptor,X0000,D3060,0
+1255,BSYNC,Building Automation Systems/Energy Management Control Systems (EMCS),0,Add or upgrade BAS/EMS/EMCS,BAS,Element,D3060,D3060,1
+1255,BSYNC,Building Automation Systems/Energy Management Control Systems (EMCS),0,Add or upgrade BAS/EMS/EMCS,EMS,Element,D3060,D3060,1
+1255,BSYNC,Building Automation Systems/Energy Management Control Systems (EMCS),0,Add or upgrade BAS/EMS/EMCS,EMCS,Element,D3060,D3060,1
+1256,BSYNC,Building Automation Systems/Energy Management Control Systems (EMCS),0,Add or upgrade controls,controls,Element,D3060,D3060,1
+1257,BSYNC,Building Automation Systems/Energy Management Control Systems (EMCS),0,Convert pneumatic controls to DDC,Pneumatic,Descriptor,D3060,D3060,1
+1257,BSYNC,Building Automation Systems/Energy Management Control Systems (EMCS),0,Convert pneumatic controls to DDC,controls,Element,D3060,D3060,1
+1257,BSYNC,Building Automation Systems/Energy Management Control Systems (EMCS),0,Convert pneumatic controls to DDC,DDC,Descriptor,D3060,D3060,1
+1258,BSYNC,Building Automation Systems/Energy Management Control Systems (EMCS),0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,D3060,0
+1259,BSYNC,Building Automation Systems/Energy Management Control Systems (EMCS),0,Other,NA,NA,NA,D3060,0
+1260,BSYNC,Building Envelope Modifications,0,Air seal envelope,envelope,Element,B,B,1
+1261,BSYNC,Building Envelope Modifications,0,Increase wall insulation,Insulation,Descriptor,X0000,B2010,0
+1262,BSYNC,Building Envelope Modifications,0,Insulate thermal bypasses,NA,NA,NA,B,0
+1263,BSYNC,Building Envelope Modifications,0,Increase ceiling insulation,ceiling,Element,C3030,C3030,1
+1263,BSYNC,Building Envelope Modifications,0,Increase ceiling insulation,Insulation,Descriptor,X0000,C3030,0
+1264,BSYNC,Building Envelope Modifications,0,Increase roof insulation,Roof,Element,B3010,B3010,1
+1264,BSYNC,Building Envelope Modifications,0,Increase roof insulation,Insulation,Descriptor,X0000,B3010,0
+1265,BSYNC,Building Envelope Modifications,0,Insulate attic hatch / stair box,NA,NA,NA,C1020,0
+1266,BSYNC,Building Envelope Modifications,0,Add attic/knee wall insulation,Insulation,Descriptor,X0000,C1010,0
+1267,BSYNC,Building Envelope Modifications,0,Install cool/green roof,Green roof,Descriptor,B3010,B3010,1
+1267,BSYNC,Building Envelope Modifications,0,Install cool/green roof,Roof,Element,B3010,B3010,1
+1268,BSYNC,Building Envelope Modifications,0,Add shading devices,NA,NA,NA,B2010,0
+1269,BSYNC,Building Envelope Modifications,0,Add window films,Wind,Descriptor,D3010,B2020,0
+1270,BSYNC,Building Envelope Modifications,0,Install or replace solar screens,screen,Element,B2010,B2010,1
+1271,BSYNC,Building Envelope Modifications,0,Replace glazing,NA,NA,NA,B2020,0
+1272,BSYNC,Building Envelope Modifications,0,Replace windows,Wind,Descriptor,D3010,B2020,0
+1273,BSYNC,Building Envelope Modifications,0,Increase floor insulation,Floor,Element,B1010,B1010,1
+1273,BSYNC,Building Envelope Modifications,0,Increase floor insulation,Insulation,Descriptor,X0000,B1010,0
+1274,BSYNC,Building Envelope Modifications,0,Insulate foundation,NA,NA,NA,A1010,0
+1275,BSYNC,Building Envelope Modifications,0,Clean and/or repair,NA,NA,NA,B,0
+1276,BSYNC,Building Envelope Modifications,0,Close elevator and/or stairwell shaft vents,Elevator,Element,D1010,B3020,0
+1277,BSYNC,Building Envelope Modifications,0,Other,NA,NA,NA,B,0
+1278,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Add pipe insulation,Pipe,Descriptor,X0000,D3040,0
+1278,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Add pipe insulation,Insulation,Descriptor,X0000,D3040,0
+1279,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Repair and/or replace steam traps,Steam,Descriptor,X0000,D3040,0
+1280,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,"Retrofit and replace chiller plant pumping, piping, and controls",Chiller,Element,D3030,D3030,1
+1280,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,"Retrofit and replace chiller plant pumping, piping, and controls",Pump,Descriptor,X0000,D3030,0
+1280,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,"Retrofit and replace chiller plant pumping, piping, and controls",controls,Element,D3060,D3030,0
+1281,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Repair or replace existing condensate return systems or install new condensate return systems,Return,Descriptor,D3040,D3040,1
+1282,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Add recirculating pumps,Pump,Descriptor,X0000,D2020,0
+1283,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Replace or upgrade water heater,Water heater,Element,D2020,D2020,1
+1284,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Add energy recovery,Energy recovery,Descriptor,X0000,D3040,0
+1285,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Install solar hot water system,Hot water,Descriptor,X0000,D2020,0
+1286,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Separate SHW from heating,SHW,Element,D2020,D2020,1
+1287,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Replace with higher efficiency pump,Pump,Descriptor,X0000,D3040,0
+1288,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Replace with variable speed pump,Pump,Descriptor,X0000,D3040,0
+1289,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Install or upgrade master venting,NA,NA,NA,D3040,0
+1290,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Replace steam traps with orifice plates,Steam,Descriptor,X0000,D3040,0
+1291,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Install steam condensate heat recovery,Steam,Descriptor,X0000,D3040,0
+1291,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Install steam condensate heat recovery,Heat recovery,Descriptor,X0000,D3040,0
+1292,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Clean and/or repair,NA,NA,NA,D3040,0
+1293,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Implement training and/or documentation,NA,NA,NA,D3040,0
+1294,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,D3040,0
+1295,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Other,NA,NA,NA,D3040,0
+1296,BSYNC,Chiller Plant Improvements,0,Add energy recovery,Energy recovery,Descriptor,X0000,D3030,0
+1297,BSYNC,Chiller Plant Improvements,0,Install VSD on electric centrifugal chillers,VSD,Descriptor,X0000,D3030,0
+1297,BSYNC,Chiller Plant Improvements,0,Install VSD on electric centrifugal chillers,Centrifugal,Descriptor,X0000,D3030,0
+1297,BSYNC,Chiller Plant Improvements,0,Install VSD on electric centrifugal chillers,Chiller,Element,D3030,D3030,1
+1298,BSYNC,Chiller Plant Improvements,0,Replace chiller,Chiller,Element,D3030,D3030,1
+1299,BSYNC,Chiller Plant Improvements,0,Install gas cooling,NA,NA,NA,D3030,0
+1300,BSYNC,Chiller Plant Improvements,0,Add or repair economizer cycle,Economizer,Element,D3040,D3030,0
+1301,BSYNC,Chiller Plant Improvements,0,Add or replace cooling tower,Cooling tower,Element,D3030,D3030,1
+1302,BSYNC,Chiller Plant Improvements,0,Clean and/or repair,NA,NA,NA,D3030,0
+1303,BSYNC,Chiller Plant Improvements,0,Implement training and/or documentation,NA,NA,NA,D3030,0
+1304,BSYNC,Chiller Plant Improvements,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,D3030,0
+1305,BSYNC,Chiller Plant Improvements,0,Other,NA,NA,NA,D3030,0
+1306,BSYNC,"Conveyance Systems (e.g., Elevators)",0,Add elevator regenerative drives,Elevator,Element,D1010,D1010,1
+1307,BSYNC,"Conveyance Systems (e.g., Elevators)",0,Upgrade controls,controls,Element,D3060,D1010,0
+1308,BSYNC,"Conveyance Systems (e.g., Elevators)",0,Upgrade motors,Motor,Descriptor,X0000,D1010,0
+1309,BSYNC,"Conveyance Systems (e.g., Elevators)",0,Clean and/or repair,NA,NA,NA,D1010,0
+1310,BSYNC,"Conveyance Systems (e.g., Elevators)",0,Implement training and/or documentation,NA,NA,NA,D1010,0
+1311,BSYNC,"Conveyance Systems (e.g., Elevators)",0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,D1010,0
+1312,BSYNC,"Conveyance Systems (e.g., Elevators)",0,Other,NA,NA,NA,D1010,0
+1313,BSYNC,Data center energy conservation improvements,0,Improve data center efficiency,Data Center,Element,E1010,E1010,1
+1314,BSYNC,Data center energy conservation improvements,0,Implement hot aisle hold aisle design,NA,NA,NA,E1010,0
+1315,BSYNC,Data center energy conservation improvements,0,Implement server virtualization,Server,Element,E1010,E1010,1
+1316,BSYNC,Data center energy conservation improvements,0,Upgrade servers,Server,Element,E1010,E1010,1
+1317,BSYNC,Data center energy conservation improvements,0,Clean and/or repair,NA,NA,NA,E1010,0
+1318,BSYNC,Data center energy conservation improvements,0,Implement training and/or documentation,NA,NA,NA,E1010,0
+1319,BSYNC,Data center energy conservation improvements,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,E1010,0
+1320,BSYNC,Data center energy conservation improvements,0,Other,NA,NA,NA,E1010,0
+1321,BSYNC,Distributed Generation,0,Install CHP/cogeneration systems,CHP,Descriptor,D3010,D3010,1
+1321,BSYNC,Distributed Generation,0,Install CHP/cogeneration systems,cogeneration,Descriptor,D3010,D3010,1
+1322,BSYNC,Distributed Generation,0,Install fuel cells,Fuel cell,Descriptor,D3010,D3010,1
+1323,BSYNC,Distributed Generation,0,Install microturbines,Microturbine,Descriptor,D3010,D3010,1
+1324,BSYNC,Distributed Generation,0,Convert fuels,NA,NA,NA,D3010,0
+1325,BSYNC,Distributed Generation,0,Clean and/or repair,NA,NA,NA,D3010,0
+1326,BSYNC,Distributed Generation,0,Implement training and/or documentation,NA,NA,NA,D3010,0
+1327,BSYNC,Distributed Generation,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,D3010,0
+1328,BSYNC,Distributed Generation,0,Other,NA,NA,NA,D3010,0
+1329,BSYNC,Electrical Peak Shaving/Load Shifting,0,Install thermal energy storage,Thermal energy storage,Element,D3030,D3030,1
+1330,BSYNC,Electrical Peak Shaving/Load Shifting,0,Implement training and/or documentation,NA,NA,NA,X0000,0
+1331,BSYNC,Electrical Peak Shaving/Load Shifting,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,X0000,0
+1332,BSYNC,Electrical Peak Shaving/Load Shifting,0,Other,NA,NA,NA,X0000,0
+1333,BSYNC,Energy Cost Reduction Through Rate Adjustments,0,Change to more favorable rate schedule,NA,NA,NA,D5010,0
+1334,BSYNC,Energy Cost Reduction Through Rate Adjustments,0,Energy cost reduction through rate adjustments - uncategorized,NA,NA,NA,D5010,0
+1335,BSYNC,Energy Cost Reduction Through Rate Adjustments,0,Energy service billing and meter auditing recommendations,Meter,Element,D5010,D5010,1
+1336,BSYNC,Energy Cost Reduction Through Rate Adjustments,0,Change to lower energy cost supplier(s),NA,NA,NA,D5010,0
+1337,BSYNC,Energy Cost Reduction Through Rate Adjustments,0,Other,NA,NA,NA,D5010,0
+1338,BSYNC,Energy/Utility Distribution Systems,0,Implement power factor corrections,Power factor correction,Element,D5090,D5090,1
+1339,BSYNC,Energy/Utility Distribution Systems,0,Implement power quality upgrades,NA,NA,NA,D5090,0
+1340,BSYNC,Energy/Utility Distribution Systems,0,Upgrade transformers,Transformer,Element,D5010,D5010,1
+1341,BSYNC,Energy/Utility Distribution Systems,0,Install gas distribution systems,NA,NA,NA,D3010,0
+1342,BSYNC,Energy/Utility Distribution Systems,0,Clean and/or repair,NA,NA,NA,D3010,0
+1343,BSYNC,Energy/Utility Distribution Systems,0,Implement training and/or documentation,NA,NA,NA,D3010,0
+1344,BSYNC,Energy/Utility Distribution Systems,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,D3010,0
+1345,BSYNC,Energy/Utility Distribution Systems,0,Other,NA,NA,NA,D3010,0
+1346,BSYNC,Energy Related Process Improvements,0,Implement industrial process improvements,NA,NA,NA,X0000,0
+1347,BSYNC,Energy Related Process Improvements,0,Implement production and/or manufacturing improvements,NA,NA,NA,X0000,0
+1348,BSYNC,Energy Related Process Improvements,0,Clean and/or repair,NA,NA,NA,X0000,0
+1349,BSYNC,Energy Related Process Improvements,0,Implement training and/or documentation,NA,NA,NA,X0000,0
+1350,BSYNC,Energy Related Process Improvements,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,X0000,0
+1351,BSYNC,Energy Related Process Improvements,0,Other,NA,NA,NA,X0000,0
+1352,BSYNC,Future/Other ECMs,0,Other,NA,NA,NA,X0000,0
+1353,BSYNC,Lighting Improvements,0,Retrofit with CFLs,CFL,Descriptor,D5020,D5020,1
+1354,BSYNC,Lighting Improvements,0,Retrofit with T-5,T 5,Descriptor,D5020,D5020,1
+1355,BSYNC,Lighting Improvements,0,Retrofit with T-8,T 8,Descriptor,D5020,D5020,1
+1356,BSYNC,Lighting Improvements,0,Install spectrally enhanced lighting,NA,NA,NA,D5020,0
+1357,BSYNC,Lighting Improvements,0,Retrofit with fiber optic lighting technologies,NA,NA,NA,D5020,0
+1358,BSYNC,Lighting Improvements,0,Retrofit with light emitting diode technologies,light emitting diode,Descriptor,D5020,D5020,1
+1359,BSYNC,Lighting Improvements,0,Add daylight controls,Daylight control,Descriptor,D5020,D5020,1
+1359,BSYNC,Lighting Improvements,0,Add daylight controls,controls,Element,D3060,D5020,0
+1360,BSYNC,Lighting Improvements,0,Add occupancy sensors,occupancy,Descriptor,D5020,D5020,1
+1361,BSYNC,Lighting Improvements,0,Install photocell control,photocell,Descriptor,D5020,D5020,1
+1362,BSYNC,Lighting Improvements,0,Install timers,NA,NA,NA,D5020,0
+1363,BSYNC,Lighting Improvements,0,Replace diffusers,Diffuser,Descriptor,X0000,D5020,0
+1364,BSYNC,Lighting Improvements,0,Upgrade exit signs to LED,LED,Descriptor,D5020,D5020,1
+1365,BSYNC,Lighting Improvements,0,Upgrade exterior lighting,NA,NA,NA,D5020,0
+1366,BSYNC,Lighting Improvements,0,Clean and/or repair,NA,NA,NA,D5020,0
+1367,BSYNC,Lighting Improvements,0,Implement training and/or documentation,NA,NA,NA,D5020,0
+1368,BSYNC,Lighting Improvements,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,D5020,0
+1369,BSYNC,Lighting Improvements,0,Other,NA,NA,NA,D5020,0
+1370,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Add drive controls,controls,Element,D3060,X0000,0
+1371,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Replace with higher efficiency,NA,NA,NA,X0000,0
+1372,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Add VSD motor controller,VSD,Descriptor,X0000,X0000,1
+1372,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Add VSD motor controller,Motor,Descriptor,X0000,X0000,1
+1373,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Clean and/or repair,NA,NA,NA,X0000,0
+1374,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Implement training and/or documentation,NA,NA,NA,X0000,0
+1375,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,X0000,0
+1376,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Other,NA,NA,NA,X0000,0
+1377,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Replace or modify AHU,AHU,Element,D3040,D3040,1
+1378,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Improve distribution fans,Fan,Element,D3040,D3040,1
+1379,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Improve ventilation fans,Fan,Element,D3040,D3040,1
+1380,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Convert CV system to VAV system,VAV,Descriptor,D3040,D3040,1
+1381,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Repair leaks / seal ducts,Duct,Element,D3040,D3040,1
+1382,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Add duct insulation,Duct,Element,D3040,D3040,1
+1382,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Add duct insulation,Insulation,Descriptor,X0000,D3040,0
+1383,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Balance ventilation/distribution system,NA,NA,NA,D3040,0
+1384,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Repair or replace HVAC damper and controller,Damper,Element,D3040,D3040,1
+1385,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Replace burner,Burner,Element,D3020,D3020,1
+1386,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Replace package units,NA,NA,NA,D3050,0
+1387,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Replace packaged terminal units,Packaged terminal unit,Element,D3050,D3050,1
+1387,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Replace packaged terminal units,Terminal unit,Element,D3040,D3050,0
+1388,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install passive solar heating,NA,NA,NA,X0000,0
+1389,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Replace AC and heating units with ground coupled heat pump systems,Heat pump,Descriptor,X0000,D3030,0
+1389,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Replace AC and heating units with ground coupled heat pump systems,Pump,Descriptor,X0000,D3030,0
+1390,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Add enhanced dehumidification,NA,NA,NA,D3040,0
+1391,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install solar ventilation preheating system,NA,NA,NA,D3040,0
+1392,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Add or repair economizer,Economizer,Element,D3040,D3040,1
+1393,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Add energy recovery,Energy recovery,Descriptor,X0000,D3040,0
+1394,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Add or replace cooling tower,Cooling tower,Element,D3030,D3030,1
+1395,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install thermal destratification fans,Fan,Element,D3040,E2010,0
+1396,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install demand control ventilation,demand control,Descriptor,D3060,D3060,1
+1397,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install gas cooling,NA,NA,NA,D3030,0
+1398,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install air source heat pump,Heat pump,Descriptor,X0000,D3050,0
+1398,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install air source heat pump,Pump,Descriptor,X0000,D3050,0
+1399,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install variable refrigerant flow system,Variable refrigerant flow,Descriptor,D3040,D3040,1
+1399,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install variable refrigerant flow system,Refrigerant,Descriptor,X0000,D3040,0
+1400,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Capture and return condensate,Return,Descriptor,D3040,D3040,1
+1401,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Install or Upgrade Master Venting,NA,NA,NA,D3040,0
+1402,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Clean and/or repair,NA,NA,NA,X0000,0
+1403,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Implement training and/or documentation,NA,NA,NA,X0000,0
+1404,BSYNC,"Heating, Ventilating, and Air Conditioning",0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,X0000,0
+1405,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Other heating,NA,NA,NA,D3020,0
+1406,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Other cooling,NA,NA,NA,D3030,0
+1407,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Other ventilation,NA,NA,NA,D3040,0
+1408,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Other distribution,NA,NA,NA,D3040,0
+1409,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Other,NA,NA,NA,X0000,0
+1410,BSYNC,Appliance and plug-load reductions,0,Replace with ENERGY STAR rated,ENERGY STAR,Descriptor,X0000,E10,0
+1411,BSYNC,Appliance and plug-load reductions,0,Install plug load controls,controls,Element,D3060,E10,0
+1412,BSYNC,Appliance and plug-load reductions,0,Automatic shutdown or sleep mode for computers,Computer,Element,E1010,E1010,1
+1413,BSYNC,Appliance and plug-load reductions,0,De-lamp vending machines,Lamp,Element,D5020,E1010,0
+1413,BSYNC,Appliance and plug-load reductions,0,De-lamp vending machines,Vending Machine,Element,E1010,E1010,1
+1414,BSYNC,Appliance and plug-load reductions,0,Replace clothes dryers,Clothes dryer,Element,E1090,E1090,1
+1415,BSYNC,Appliance and plug-load reductions,0,Replace washing machines,washing machine,Element,E1090,E1090,1
+1416,BSYNC,Appliance and plug-load reductions,0,Clean and/or repair,NA,NA,NA,E10,0
+1417,BSYNC,Appliance and plug-load reductions,0,Implement training and/or documentation,NA,NA,NA,E10,0
+1418,BSYNC,Appliance and plug-load reductions,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,E10,0
+1419,BSYNC,Appliance and plug-load reductions,0,Other,NA,NA,NA,E10,0
+1420,BSYNC,Refrigeration,0,Replace ice/refrigeration equipment with high efficiency units,Equipment,Element,E10,E1090,0
+1421,BSYNC,Refrigeration,0,Replace air-cooled ice/refrigeration equipment,air cooled,Descriptor,D3030,E1090,0
+1421,BSYNC,Refrigeration,0,Replace air-cooled ice/refrigeration equipment,Equipment,Element,E10,E1090,0
+1422,BSYNC,Refrigeration,0,Replace refrigerators,Refrigerator,Element,E1090,E1090,1
+1423,BSYNC,Refrigeration,0,Clean and/or repair,NA,NA,NA,E1090,0
+1424,BSYNC,Refrigeration,0,Implement training and/or documentation,NA,NA,NA,E1090,0
+1425,BSYNC,Refrigeration,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,E1090,0
+1426,BSYNC,Refrigeration,0,Other,NA,NA,NA,E1090,0
+1427,BSYNC,Renewable Energy Systems,0,"Install landfill gas, wastewater treatment plant digester gas, or coal bed methane power plant",NA,NA,NA,D3010,0
+1428,BSYNC,Renewable Energy Systems,0,Install photovoltaic system,Photovoltaic,Descriptor,D3010,D3010,1
+1429,BSYNC,Renewable Energy Systems,0,Install wind energy system,Wind,Descriptor,D3010,D3010,1
+1430,BSYNC,Renewable Energy Systems,0,Install wood waste or other organic waste stream heating or power plant,NA,NA,NA,D3010,0
+1431,BSYNC,Renewable Energy Systems,0,Clean and/or repair,NA,NA,NA,D3010,0
+1432,BSYNC,Renewable Energy Systems,0,Implement training and/or documentation,NA,NA,NA,D3010,0
+1433,BSYNC,Renewable Energy Systems,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,D3010,0
+1434,BSYNC,Renewable Energy Systems,0,Other,NA,NA,NA,D3010,0
+1435,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Decrease SHW temperature,SHW,Element,D2020,D2020,1
+1436,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install SHW controls,SHW,Element,D2020,D2020,1
+1436,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install SHW controls,controls,Element,D3060,D2020,0
+1437,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install solar thermal SHW,Solar thermal,Descriptor,D3010,D2020,0
+1437,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install solar thermal SHW,SHW,Element,D2020,D2020,1
+1438,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install water pressure booster,NA,NA,NA,D2020,0
+1439,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Insulate SHW piping,SHW,Element,D2020,D2020,1
+1440,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Insulate SHW tank,SHW,Element,D2020,D2020,1
+1441,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Replace piping,NA,NA,NA,D2020,0
+1442,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Replace tankless coil,Tankless,Descriptor,D2020,D2020,1
+1443,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Separate SHW from heating,SHW,Element,D2020,D2020,1
+1444,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Upgrade SHW boiler,SHW,Element,D2020,D2020,1
+1444,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Upgrade SHW boiler,Boiler,Element,D3020,D2020,0
+1445,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install heat pump SHW system,Heat pump,Descriptor,X0000,D2020,0
+1445,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install heat pump SHW system,Pump,Descriptor,X0000,D2020,0
+1445,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install heat pump SHW system,SHW,Element,D2020,D2020,1
+1446,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install tankless water heaters,Tankless,Descriptor,D2020,D2020,1
+1446,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install tankless water heaters,Water heater,Element,D2020,D2020,1
+1447,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Clean and/or repair,NA,NA,NA,D2020,0
+1448,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Implement training and/or documentation,NA,NA,NA,D2020,0
+1449,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,D2020,0
+1450,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Other,NA,NA,NA,D2020,0
+1451,BSYNC,Category heading for measures that don't fit into another category,0,Other,NA,NA,NA,X0000,0
+1452,BSYNC,Water and Sewer Conservation Systems,0,Install low-flow faucets and showerheads,Low flow,Descriptor,D2010,D2010,1
+1452,BSYNC,Water and Sewer Conservation Systems,0,Install low-flow faucets and showerheads,faucet,Element,D2010,D2010,1
+1452,BSYNC,Water and Sewer Conservation Systems,0,Install low-flow faucets and showerheads,showerhead,Element,D2010,D2010,1
+1453,BSYNC,Water and Sewer Conservation Systems,0,Install low-flow plumbing equipment,Low flow,Descriptor,D2010,D2010,1
+1453,BSYNC,Water and Sewer Conservation Systems,0,Install low-flow plumbing equipment,Equipment,Element,E10,D2010,0
+1454,BSYNC,Water and Sewer Conservation Systems,0,Install onsite sewer treatment systems,NA,NA,NA,G3020,0
+1455,BSYNC,Water and Sewer Conservation Systems,0,Implement water efficient irrigation,NA,NA,NA,G2050,0
+1456,BSYNC,Water and Sewer Conservation Systems,0,Clean and/or repair,NA,NA,NA,X0000,0
+1457,BSYNC,Water and Sewer Conservation Systems,0,Implement training and/or documentation,NA,NA,NA,X0000,0
+1458,BSYNC,Water and Sewer Conservation Systems,0,"Upgrade operating protocols, calibration, and/or sequencing",NA,NA,NA,X0000,0
+1459,BSYNC,Water and Sewer Conservation Systems,0,Other,NA,NA,NA,X0000,0

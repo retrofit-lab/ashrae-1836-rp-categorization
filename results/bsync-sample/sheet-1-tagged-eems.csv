@@ -50,7 +50,7 @@ eem_id,document,cat_lev1,cat_lev2,eem_name,tags,type,uni_code,uni_level_1,uni_le
 1291,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Install steam condensate heat recovery,Heat recovery,Descriptor,X0000,Unassigned,Unassigned,Unassigned
 1296,BSYNC,Chiller Plant Improvements,0,Add energy recovery,Energy recovery,Descriptor,X0000,Unassigned,Unassigned,Unassigned
 1297,BSYNC,Chiller Plant Improvements,0,Install VSD on electric centrifugal chillers,VSD,Descriptor,X0000,Unassigned,Unassigned,Unassigned
-1297,BSYNC,Chiller Plant Improvements,0,Install VSD on electric centrifugal chillers,Centrifugal,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
+1297,BSYNC,Chiller Plant Improvements,0,Install VSD on electric centrifugal chillers,Centrifugal,Descriptor,X0000,Unassigned,Unassigned,Unassigned
 1297,BSYNC,Chiller Plant Improvements,0,Install VSD on electric centrifugal chillers,Chiller,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
 1298,BSYNC,Chiller Plant Improvements,0,Replace chiller,Chiller,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
 1300,BSYNC,Chiller Plant Improvements,0,Add or repair economizer cycle,Economizer,Element,D3040,SERVICES,HVAC,Distribution Systems
