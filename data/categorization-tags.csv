@@ -69,7 +69,6 @@ Evaporative cooler,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
 Thermal energy storage,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
 thermal storage,Element,D3030,SERVICES,HVAC,Cooling Generating Systems
 air cooled,Descriptor,D3030,SERVICES,HVAC,Cooling Generating Systems
-Centrifugal,Descriptor,D3030,SERVICES,HVAC,Cooling Generating Systems
 Reciprocating,Descriptor,D3030,SERVICES,HVAC,Cooling Generating Systems
 Screw,Descriptor,D3030,SERVICES,HVAC,Cooling Generating Systems
 Scroll,Descriptor,D3030,SERVICES,HVAC,Cooling Generating Systems
@@ -97,7 +96,6 @@ Supply,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
 Fancoil unit,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
 Radiator,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
 Axial,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
-Centrifugal,Descriptor,D3040,SERVICES,HVAC,Distribution Systems
 Energy recovery ventilator,Element,D3040,SERVICES,HVAC,Distribution Systems
 ERV,Element,D3040,SERVICES,HVAC,Distribution Systems
 Heat recovery ventilator,Element,D3040,SERVICES,HVAC,Distribution Systems
@@ -205,6 +203,7 @@ shade,Element,E2010,EQUIPMENT & FURNISHINGS,Furnishings,Fixed Furnishings
 blind,Element,E2010,EQUIPMENT & FURNISHINGS,Furnishings,Fixed Furnishings
 curtain,Element,E2010,EQUIPMENT & FURNISHINGS,Furnishings,Fixed Furnishings
 Ceiling fan,Element,E2010,EQUIPMENT & FURNISHINGS,Furnishings,Fixed Furnishings
+Centrifugal,Descriptor,X0000,Unassigned,Unassigned,Unassigned
 Insulation,Descriptor,X0000,Unassigned,Unassigned,Unassigned
 Air leakage,Descriptor,X0000,Unassigned,Unassigned,Unassigned
 air infiltration,Descriptor,X0000,Unassigned,Unassigned,Unassigned

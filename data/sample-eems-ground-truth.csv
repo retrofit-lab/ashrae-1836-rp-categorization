@@ -1,174 +1,174 @@
 eem_id,document,cat_lev1,cat_lev2,eem_name,uni_code_manual
-209,1651RP,HVAC,System,Absorption chillers,D3030
-1266,BSYNC,Building Envelope Modifications,0,Add attic/knee wall insulation,C1010
-1284,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Add energy recovery,D3040
-1696,ATT,Chiller Plant Improvements,0,Add or replace cooling tower,D3030
-3376,WULF,ROOM CONDITIONING UNITS AND SELF-CONTAINED HVAC EQUIPMENT,HEAT PUMP LOOP SYSTEMS (ADDITIONAL MEASURES),Add thermal storage to the loop system.,D3050
-1372,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Add VSD motor controller,X0000
-781,STD100,HVAC SYSTEMS,Building Automation and Control Systems,Adjust housekeeping schedule to minimize HVAC use.,X0000
-1148,BCL,HVAC,Whole System,AedgOfficeHvacAshpDoas,D3040
-2187,IEA46,Process Systems,Welding,"Avoid short-time conditions with spot welding, changing over to medium-time conditions.",X0000
-590,BEQ,Refrigeration,0,Calibrate pressure transducers to optimize suction pressure.,E1090
-2425,ILTRM,RESIDENTIAL MEASURES,HVAC End Use,Central Air Conditioning,D3050
-967,BCL,Electric Lighting,Electric Lighting Controls,Change Lighting Schedule by Space Type,D5020
-1093,BCL,HVAC,Distribution,Change Overhead Ventilation to Displacement Ventilation,D3040
-1302,BSYNC,Chiller Plant Improvements,0,Clean and/or repair,D3030
-1342,BSYNC,Energy/Utility Distribution Systems,0,Clean and/or repair,D3010
-1735,ATT,Electric Motors and Drives,0,Clean and/or repair,X0000
-1755,ATT,Energy/Utility Distribution Systems,0,Clean and/or repair,D3010
-3483,WULF,ARTIFICIAL LIGHTING,FIXTURE MAINTENANCE AND MARKING,Clean fixtures and lamps at appropriate intervals.,D5020
-2664,IEA11,LIGHTING,0,"Clean interior wall surfaces, repaint with lighter colors",C1010
-2470,IEA11,ENVELOPE,0,Close convective paths in shafts and stairwells,B
-1663,ATT,Building Envelope Modifications,0,Close elevator and/or stairwell shaft vents,B
-2882,NYTRM,COMMERCIAL AND INDUSTRIAL MEASURES,APPLIANCE,COMBINATION OVEN,E1090
-2408,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Miscellaneous End Use,Commercial Weather Stripping,X0000
-698,STD100,BUILDING ENVELOPE,Walls,Consider converting internal courtyard into an atrium to reduce external wall surface.,B2010
-1768,ATT,Heating; Ventilating and Air Conditioning,0,Convert CV system to VAV system,D3040
-1648,ATT,Boiler Plant Improvements,0,Convert gas-fired unit to boiler loop,D3020
-1564,DOTY,ENVELOPE,0,Cool Roof,B3010
-3149,WULF,BOILER PLANT,DRAFT CONTROL,Correct defects in flue systems and boiler room ventilation that cause draft problems.,D3020
-1651,ATT,Boiler Plant Improvements,0,Decentralize boiler,D3020
-69,1651RP,Envelope,Opaque,Dynamic Wall Insulation,B2010
-1494,CBES,HVAC - Economizer,0,Economizer Maintenance,D3040
-1558,CBES,Service Hot Water,0,Efficiency Upgrade to Electric Instantaneous Water Heater (0.95),D2020
-2392,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Compressed Air,Efficient Desiccant Compressed Air Dryer,X0000
-2390,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Compressed Air,Efficient Refrigerated Compressed Air Dryer,X0000
-185,1651RP,HVAC,Heating Efficiency,Electronic ignition for gas burners,D3020
-1161,BCL,HVAC,Whole System,EnableIdealAirLoadsForAllZones,X0000
-1334,BSYNC,Energy Cost Reduction Through Rate Adjustments,0,Energy cost reduction through rate adjustments - uncategorized,D5010
-2922,NYTRM,COMMERCIAL AND INDUSTRIAL MEASURES,"HEATING, VENTILATION AND AIR CONDITIONING (HVAC) - CONTROL",ENERGY MANAGEMENT SYSTEM (EMS) - GUEST ROOM,D3060
-2437,ILTRM,RESIDENTIAL MEASURES,HVAC End Use,ENERGY STAR Ceiling Fan,E2010
-2113,IEA46,Residential Lighting,Interior,Evaluate adding daylight sensing controls for general illumination lighting in rooms with windows or skylights. Use in combination with dimming systems so the electric light level can be adjusted based on the amount of daylight available,D5020
-1563,DOTY,ENVELOPE,0,Exterior Color,B2010
-1136,BCL,HVAC,Whole System,GSHP with DOAS (More Design Parameters),D3040
-35,1651RP,Envelope,Fenestration,Heat absorbing blinds,E2010
-2592,IEA11,COOLING,0,Heat recovery of condenser heat.,D3030
 10,1651RP,Daylighting,Passive,High ceilings,C3030
-2325,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,HVAC End Use,High Efficiency Furnace,D3050
-2400,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Miscellaneous End Use,High Efficiency Transformer,D5010
-60,1651RP,Envelope,Infiltration,High Performance Air Barrier to Reduce Infiltration,B
-173,1651RP,HVAC,Distribution Pressure Drop,High Performance Diffusers,D3040
-342,1651RP,Internal Load,Equipment,High performance motors,X0000
-1553,CBES,Refrigeration Case,0,High Refrigerant Charge Adjustment (>= 20% rated charge),E1090
-73,1651RP,Envelope,Opaque,High-speed doors between heated/cooled building space and unconditioned space in the areas with high-traffic,C1020
-304,1651RP,HVAC,Ventilation,Hybrid/Mixed Mode Ventilation,B2020
-1142,BCL,HVAC,Whole System,Ideal Loads Options,X0000
-3232,WULF,CHILLER PLANT,SYSTEM DESIGN FOR EFFICIENT LOW-LOAD COOLING,"If a facility has several chiller plants, provide cross connections that allow shutting down the least efficient chillers.",D3060
-1896,IEA46,HVAC Systems,HVAC distribution systems,"If conversion to VAV is impractical for CAV systems, reset supply-air temperatures in response to load. Dynamically control heating duct temperatures as low as possible, and cooling duct temperatures as high as possible, while meeting the load.",D3060
-1750,ATT,Energy Related Process Improvements,0,Implement industrial process improvements,X0000
-1315,BSYNC,Data center energy conservation improvements,0,Implement server virtualization,E1010
-1719,ATT,Data-Center Improvements,0,Implement server virtualization,E1010
-1303,BSYNC,Chiller Plant Improvements,0,Implement training and/or documentation,D3030
-1758,ATT,Energy/Utility Distribution Systems,0,Implement training and/or documentation,D3010
-1823,ATT,Service Hot Water System,0,Implement training and/or documentation,D2020 
-2150,IEA46,Process Systems,General process improvement,Improve working conditions to improve productivity by increasing building ventilation.,D3060
-3208,WULF,CHILLER PLANT,CONDENSER AND EVAPORATOR HEAT TRANSFER EFFICIENCY,"In chilled water systems, install turbulators in the evaporator tubes.",D3030
-537,BEQ,HVAC System,0,"In humid climates, supply air with a temperature above the dew point to prevent condensation on cold surfaces.",D3060
-1929,IEA46,HVAC Systems,HVAC distribution systems,"In reheat systems, making adjustments as necessary to minimize reheat energy consumption while maintaining indoor environmental quality.",D3040
-3207,WULF,CHILLER PLANT,CONDENSER AND EVAPORATOR HEAT TRANSFER EFFICIENCY,"In wet cooling systems, adjust the bleed rate to maintain proper water conditions with minimum water consumption. - Install and maintain an automatic bleed control.",D3030
-3109,WSU,Refrigeration,Reduce Refrigeration System Losses,Increase Insulation of Refrigerated Area,E1090
-1047,BCL,Envelope,Opaque,Increase R-value of Insulation for Exterior Walls to a Specific Value,B2010
-3417,WULF,BUILDING INSULATION,WALLS AND SOFFITS,Increase the thermal resistance of the panels in curtain walls.,B2020
-3237,WULF,CHILLER PLANT,EXPLOITING LOW AMBIENT TEMPERATURES FOR WATER CHILLING,Install a closed-loop atmospheric cooling unit in the chilled water circuit.,D3030
-3481,WULF,ARTIFICIAL LIGHTING,LIGHTING LAYOUT,"Install a separate control circuit for each lighting element that operates on a distinct schedule. - Where light fixtures are needed in a predictable variety of patterns, install programmable switches.",D5020
-3436,WULF,CONTROL AND USE OF SUNLIGHT,DAYLIGHTING,Install a system of light shelves and shading.,B2010
-932,STD100,APPLIANCES,0,"Install appliances (clothes washers, dehumidifiers, dishwashers, freezers, refrigerators, room air cleaners and purifiers, office equipment, and televisions) that are certified as ENERGY STAR compliant.",E10
-2773,REMDB,Space Conditioning,Central Air Conditioner,Install Central Air Conditioner,D3050
-2003,IEA46,Energy Generation and Distribution,Boiler system,Install condensing economizers.,D3020
-3384,WULF,BUILDING AIR LEAKAGE,PERSONNEL DOORS,"Install effective closers on exterior doors. - If manual opening of doors is not acceptable, install automatic doors or door openers.",B2030
-2211,IEA46,Process Systems,Catering facilities,Install electronically commutated motor for walk-in cooler and freezer evaporator fan.,E1090
-823,STD100,WATER SYSTEMS,Domestic Hot-Water Systems,"Install gray water heat recovery from showers, dishwashers, and washing machines.",D2020 
-585,BEQ,Refrigeration,0,Install high specific-efficiency (Btu/W) condensers. E,E1090
-3358,WULF,ROOM CONDITIONING UNITS AND SELF-CONTAINED HVAC EQUIPMENT,SELF-CONTAINED AIR CONDITIONERS AND THROUGH-WALL HEAT PUMPS,Install high-efficiency replacement fan motors.,D3050
-3424,WULF,CONTROL AND USE OF SUNLIGHT,REDUCING COOLING LOAD: WINDOWS & SKYLIGHTS,Install internal shading devices.,E2010
-1956,IEA46,Refrigeration,Reduce loads,Install low/no ASH refrigerated case doors.,E1090
-1452,BSYNC,Water and Sewer Conservation Systems,0,Install low-flow faucets and showerheads,D2010
-808,STD100,REFRIGERATION,Improve System Operating Efficiency,Install mechanical subcooling,E1090
-3005,WSU,Envelope,Reduce Heat Losses-Windows/Doors,Install Movable Insulation - Operable insulating slats,B2030
-3197,WULF,CHILLER PLANT,EQUIPMENT SCHEDULING AND OPERATING PRACTICES,Install power switching that prevents unnecessary operation of spare pumps.,D3030
-2648,IEA11,SERVICE HOT WATER,0,Install pressure reducing valves.,D2020
-3247,WULF,SERVICE WATER SYSTEMS,REDUCING SERVICE WATER CONSUMPTION,Install shower valves that allow easy control of temperature and flow rate.,D2010
-1437,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install solar thermal SHW,D2020 
-3155,WULF,BOILER PLANT,FIRESIDES AND WATERSIDES,Install soot blowers in boilers that burn sooting fuels.,D3020
-1362,BSYNC,Lighting Improvements,0,Install timers,D5020
-1794,ATT,Lighting Improvements,0,Install timers,D5020
-2785,REMDB,Space Conditioning,Ducts,Install Uninsulated Ducts,D3040
-923,STD100,RESIDENTIAL LIGHTING,Interior,"Install vacancy sensors to automatically turn off lighting in closets, storage, work rooms, garages, and exterior buildings when the space has been vacated for 15 minutes.",D5020
-2728,REMDB,Ceilings/Roofs,Unfinished Attic,Insulate Ceiling with Closed Cell Spray Foam,C3030
-1262,BSYNC,Building Envelope Modifications,0,Insulate thermal bypasses,B
-2039,IEA46,Energy Generation and Distribution,Chiller system,Isolate offline chillers and cooling towers.,D3030
-80,1651RP,Envelope,Opaque,large reservoirs of water for thermal mass within zone,B
-1575,DOTY,LIGHTING,0,LED Lighting - Emerging Technology,D5020
-2451,ILTRM,RESIDENTIAL MEASURES,Lighting End Use,LED Specialty Lamps,D5020
-2365,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Lighting End Use,Lighting Power Density,D5020
-2649,IEA11,SERVICE HOT WATER,0,lnstall trace heating on dead legs,D2020
-2307,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Hot Water,Low Flow Showerheads,D2010
-1611,DOTY,BOILERS AND DISTRICT HEATING,0,Lower Steam Pressure,D3020
+24,1651RP,Daylighting,Passive,Use of interzone luminous ceilings,C3030
+35,1651RP,Envelope,Fenestration,Heat absorbing blinds,E2010
 36,1651RP,Envelope,Fenestration,Manual Internal Window shades,E2010
-1013,BCL,Envelope,Form,Merge FloorspaceJs with Model,X0000
-2599,IEA11,COOLING,0,Minimise adverse external influences on cooling tower and air cooled condenser,D3030
-2516,IEA11,REGULATION,0,Minimise stratification in heating season,X0000
+60,1651RP,Envelope,Infiltration,High Performance Air Barrier to Reduce Infiltration,B
+69,1651RP,Envelope,Opaque,Dynamic Wall Insulation,B2010
+73,1651RP,Envelope,Opaque,High-speed doors between heated/cooled building space and unconditioned space in the areas with high-traffic,C1020
+80,1651RP,Envelope,Opaque,large reservoirs of water for thermal mass within zone,B
 120,1651RP,HVAC,Control,Optimize multiple chiller sequencing.,D3060
-2146,IEA46,Process Systems,General process improvement,Optimize overtime by analyzing the causes and correcting them.,X0000
-2053,IEA46,Energy Generation and Distribution,Chiller system,Optimize plant controls to raise evaporator temperature as high as possible while meeting loads of the system. Also optimize condenser water temperature control to achieve best combination of chiller and tower efficiency.,D3060
-1737,ATT,Electric Motors and Drives,0,Other,X0000
 123,1651RP,HVAC,Control,Outdoor reset for supply hot water temperature,D3060
+132,1651RP,HVAC,Control,Thermostat setback/setup,D3060
 162,1651RP,HVAC,Distribution Equipment Efficiency,Pipe insulation for condensate return from coils to boiler,D3040
+173,1651RP,HVAC,Distribution Pressure Drop,High Performance Diffusers,D3040
 179,1651RP,HVAC,Distribution Pressure Drop,Piping Connectors for Reduced Static Pressure,D3040
-2014,IEA46,Energy Generation and Distribution,Boiler system,"Preheat combustion air, feed water, or fuel oil with reclaimed waste heat from boiler blowdown and/or flue gases.",D3020
-977,BCL,Electric Lighting,Electric Lighting Controls,Radiance Daylighting Measure,X0000
-2969,THUM,HVAC Equipment Energy Conservation Opportunities,0,Recirculate Exhaust Air Using Activated Carbon Filters.,D3040
-2547,IEA11,HEATING,0,Reduce blowdown losses.,D3020
-2688,IEA11,MISCELLANEOUS,0,Reduce condensing temperatures.,D3060
-683,BEQ,Other EEMs,0,"Reduce demand charges through load shedding, operational changes, and procedural changes.",D5010
-2946,THUM,Operational Energy Conservation Opportunities,0,Reduce Flow and Temperature of Hot Water,X0000
-1065,BCL,Equipment,Equipment Controls,Reduce Night Time Electric Equipment Loads,E10
-2545,IEA11,HEATING,0,Reduce number of on-line boilers as load reduces.,D3020
-897,STD100,NONRESIDENTIAL LIGHTING,Lighting Controls,"Reduce operating hours for lighting systems through the use of controls and building management systems. This includes the use of shut-off controls, such as time switches.",D5020
+185,1651RP,HVAC,Heating Efficiency,Electronic ignition for gas burners,D3020
+209,1651RP,HVAC,System,Absorption chillers,D3030
+287,1651RP,HVAC,System,Variable Speed Water Loop Heat Pumps,D3050
+304,1651RP,HVAC,Ventilation,Hybrid/Mixed Mode Ventilation,B2020
+342,1651RP,Internal Load,Equipment,High performance motors,X0000
+501,BEQ,HVAC System,0,"Where cooling is provided by multiple units, maintain proper sequencing to achieve maximum efficiency while meeting required load.",D3060
+537,BEQ,HVAC System,0,"In humid climates, supply air with a temperature above the dew point to prevent condensation on cold surfaces.",D3060
 562,BEQ,HVAC System,0,Reduce operating hours of simultaneously heating and cooling systems.,X0000
+585,BEQ,Refrigeration,0,Install high specific-efficiency (Btu/W) condensers. E,E1090
+590,BEQ,Refrigeration,0,Calibrate pressure transducers to optimize suction pressure.,E1090
 633,BEQ,Energy Generation,0,Reduce overpumping on chilled-water systems.,D3040
-2944,THUM,Operational Energy Conservation Opportunities,0,Reduce Space Loads Due to Ventilation,X0000
-3047,WSU,HVAC Systems,Water/Steam Distribution,Reduce System Flow Rates - Primary/secondary pumping with variable speed motors,D3040
-3037,WSU,HVAC Systems,Air Distribution Systems,Reduce System Flow Rates - Variable speed drive motor for VAV,D3040
-2943,THUM,Operational Energy Conservation Opportunities,0,Reduce System Operating Hours,X0000
-3040,WSU,HVAC Systems,Air Distribution Systems,Reduce Ventilation Loads - Reduce ventilation rate to minimum,D3060
-2940,NYTRM,COMMERCIAL AND INDUSTRIAL MEASURES,REFRIGERATION,REFRIGERATED CASE NIGHT COVER,E1090
-2795,REMDB,Space Conditioning,Ground Source Heat Pump,Remove Heat Pump,D3050
-1384,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Repair or replace HVAC damper and controller,D3040
-2253,IEA46,Process Systems,Process control,Replace air filters regularly.,X0000
-1796,ATT,Lighting Improvements,0,Replace diffusers,D5020
-2121,IEA46,"Electric Systems, Motors",0,"Replace existing 3-phase, 1 HP and greater electric motors with premium efficiency motors (often a better choice than rewinding motors).",X0000
-1870,IEA46,Building Envelope,Windows,"Replace existing fenestration (toplighting and/or sidelighting) with dual-glazed ""low-e"" glass wherever possible to reduce thermal gain.",B2020
-2756,REMDB,Lighting,Flood Light,Replace Flood Light,D5020
-3455,WULF,ARTIFICIAL LIGHTING,"LAMPS AND FIXTURES, FLUORESCENT",Replace fluorescent lamps with high-efficiency or reduced- wattage types.,D5020
+683,BEQ,Other EEMs,0,"Reduce demand charges through load shedding, operational changes, and procedural changes.",D5010
+698,STD100,BUILDING ENVELOPE,Walls,Consider converting internal courtyard into an atrium to reduce external wall surface.,B2010
+781,STD100,HVAC SYSTEMS,Building Automation and Control Systems,Adjust housekeeping schedule to minimize HVAC use.,X0000
 797,STD100,REFRIGERATION,Reduce Loads,Replace lights with LED strip lights with motion sensors in refrigerated cases and spaces.,E1090
-1784,ATT,Heating; Ventilating and Air Conditioning,0,Replace or modify AHU,D3040
-1738,ATT,Electric Motors and Drives,0,Replace with higher efficiency,X0000
-1895,IEA46,HVAC Systems,HVAC distribution systems,Reset VAV system supply-air temperature set point when system is at minimum speed to provide adequate ventilation.,D3060
-2787,REMDB,Space Conditioning,Ducts,Seal and Insulate Ducts (Total Leakage),D3040
-1879,IEA46,Building Envelope,Doors,Seal top and bottom of building.,B2030
-3062,WSU,HVAC Systems,Cooling Plant,Select More Efficient Cooling System - Use evaporative cooling,D3030
-2184,IEA46,Process Systems,Welding,Select shielding gas with reduced fume generation for the GMAW and Flux Cored Arc Welding (FCAW) processes. Argon-based shielding gases with the lowest percentages of oxygen or carbon dioxide will minimize fume for both GMAW and FCAW. The fume generation rate can be cut almost in half by changing from 100% CO2 shielding gas to a mixture of Argon with 25% CO2 shielding gas. A further reduction in fume generation rate can be achieved by use of a shielding gas containing Argon with only 5% CO2 along with the appropriate electrode,X0000
-1286,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Separate SHW from heating,D2020
+808,STD100,REFRIGERATION,Improve System Operating Efficiency,Install mechanical subcooling,E1090
+823,STD100,WATER SYSTEMS,Domestic Hot-Water Systems,"Install gray water heat recovery from showers, dishwashers, and washing machines.",D2020 
+897,STD100,NONRESIDENTIAL LIGHTING,Lighting Controls,"Reduce operating hours for lighting systems through the use of controls and building management systems. This includes the use of shut-off controls, such as time switches.",D5020
+923,STD100,RESIDENTIAL LIGHTING,Interior,"Install vacancy sensors to automatically turn off lighting in closets, storage, work rooms, garages, and exterior buildings when the space has been vacated for 15 minutes.",D5020
+932,STD100,APPLIANCES,0,"Install appliances (clothes washers, dehumidifiers, dishwashers, freezers, refrigerators, room air cleaners and purifiers, office equipment, and televisions) that are certified as ENERGY STAR compliant.",E10
+967,BCL,Electric Lighting,Electric Lighting Controls,Change Lighting Schedule by Space Type,D5020
+977,BCL,Electric Lighting,Electric Lighting Controls,Radiance Daylighting Measure,X0000
+1013,BCL,Envelope,Form,Merge FloorspaceJs with Model,X0000
+1045,BCL,Envelope,Opaque,Set Exterior Walls and Floors to Adiabatic,B2010
+1047,BCL,Envelope,Opaque,Increase R-value of Insulation for Exterior Walls to a Specific Value,B2010
+1049,BCL,Envelope,Opaque,SetExtWallToGroundBoundaryConditionByStory,B2010
+1065,BCL,Equipment,Equipment Controls,Reduce Night Time Electric Equipment Loads,E10
+1071,BCL,Equipment,Electric Equipment,Set Electric Equipment loads by EPD,E10
+1093,BCL,HVAC,Distribution,Change Overhead Ventilation to Displacement Ventilation,D3040
 1118,BCL,HVAC,Cooling,Set Air-Cooled Unitary Heat Pump COP,D3050
 1125,BCL,HVAC,Cooling,Set COP for Single Speed DX Cooling Units,D3030
-1071,BCL,Equipment,Electric Equipment,Set Electric Equipment loads by EPD,E10
-1045,BCL,Envelope,Opaque,Set Exterior Walls and Floors to Adiabatic,B2010
-1049,BCL,Envelope,Opaque,SetExtWallToGroundBoundaryConditionByStory,B2010
-2511,IEA11,REGULATION,0,"Special considerations, roof top air conditioning units",D3050
-132,1651RP,HVAC,Control,Thermostat setback/setup,D3060
-2262,IEA46,Process Systems,Process control,Upgrade inefficient chillers.,D3030
+1136,BCL,HVAC,Whole System,GSHP with DOAS (More Design Parameters),D3040
+1142,BCL,HVAC,Whole System,Ideal Loads Options,X0000
+1148,BCL,HVAC,Whole System,AedgOfficeHvacAshpDoas,D3040
+1161,BCL,HVAC,Whole System,EnableIdealAirLoadsForAllZones,X0000
+1262,BSYNC,Building Envelope Modifications,0,Insulate thermal bypasses,B
+1266,BSYNC,Building Envelope Modifications,0,Add attic/knee wall insulation,C1010
+1284,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Add energy recovery,D3040
+1286,BSYNC,"Chilled Water, Hot Water, and Steam Distribution Systems",0,Separate SHW from heating,D2020
+1302,BSYNC,Chiller Plant Improvements,0,Clean and/or repair,D3030
+1303,BSYNC,Chiller Plant Improvements,0,Implement training and/or documentation,D3030
 1304,BSYNC,Chiller Plant Improvements,0,"Upgrade operating protocols, calibration, and/or sequencing",D3030
 1311,BSYNC,"Conveyance Systems (e.g., Elevators)",0,"Upgrade operating protocols, calibration, and/or sequencing",D1010
-1787,ATT,Heating; Ventilating and Air Conditioning,0,"Upgrade operating protocols, calibration, and/or sequencing",X0000
+1315,BSYNC,Data center energy conservation improvements,0,Implement server virtualization,E1010
 1316,BSYNC,Data center energy conservation improvements,0,Upgrade servers,E1010
-1533,CBES,HVAC - Whole System,0,"Upgrade to VRF System, Single Story (9.5 EER, 3.2 COP)",D3040
+1334,BSYNC,Energy Cost Reduction Through Rate Adjustments,0,Energy cost reduction through rate adjustments - uncategorized,D5010
+1342,BSYNC,Energy/Utility Distribution Systems,0,Clean and/or repair,D3010
+1362,BSYNC,Lighting Improvements,0,Install timers,D5020
+1372,BSYNC,Electric Motors and Drives Other than Those for Conveyance Systems,0,Add VSD motor controller,X0000
+1384,BSYNC,"Heating, Ventilating, and Air Conditioning",0,Repair or replace HVAC damper and controller,D3040
+1437,BSYNC,Service hot water (SHW) and domestic hot water (DHW) systems,0,Install solar thermal SHW,D2020 
+1452,BSYNC,Water and Sewer Conservation Systems,0,Install low-flow faucets and showerheads,D2010
+1494,CBES,HVAC - Economizer,0,Economizer Maintenance,D3040
 1531,CBES,HVAC - Whole System,0,"Upgrade toVRF System, Single Story (11 EER, 3.3 COP)",D3040
-2196,IEA46,Process Systems,Welding,Use dock seals for truck docks.,D2030
-2212,IEA46,Process Systems,Catering facilities,Use Energy Star rated deep fat fryer.,E1090
+1533,CBES,HVAC - Whole System,0,"Upgrade to VRF System, Single Story (9.5 EER, 3.2 COP)",D3040
+1553,CBES,Refrigeration Case,0,High Refrigerant Charge Adjustment (>= 20% rated charge),E1090
+1558,CBES,Service Hot Water,0,Efficiency Upgrade to Electric Instantaneous Water Heater (0.95),D2020
+1563,DOTY,ENVELOPE,0,Exterior Color,B2010
+1564,DOTY,ENVELOPE,0,Cool Roof,B3010
+1575,DOTY,LIGHTING,0,LED Lighting - Emerging Technology,D5020
+1611,DOTY,BOILERS AND DISTRICT HEATING,0,Lower Steam Pressure,D3020
+1648,ATT,Boiler Plant Improvements,0,Convert gas-fired unit to boiler loop,D3020
+1651,ATT,Boiler Plant Improvements,0,Decentralize boiler,D3020
+1663,ATT,Building Envelope Modifications,0,Close elevator and/or stairwell shaft vents,B
+1696,ATT,Chiller Plant Improvements,0,Add or replace cooling tower,D3030
+1719,ATT,Data-Center Improvements,0,Implement server virtualization,E1010
+1735,ATT,Electric Motors and Drives,0,Clean and/or repair,X0000
+1737,ATT,Electric Motors and Drives,0,Other,X0000
+1738,ATT,Electric Motors and Drives,0,Replace with higher efficiency,X0000
+1750,ATT,Energy Related Process Improvements,0,Implement industrial process improvements,X0000
+1755,ATT,Energy/Utility Distribution Systems,0,Clean and/or repair,D3010
+1758,ATT,Energy/Utility Distribution Systems,0,Implement training and/or documentation,D3010
+1768,ATT,Heating; Ventilating and Air Conditioning,0,Convert CV system to VAV system,D3040
+1784,ATT,Heating; Ventilating and Air Conditioning,0,Replace or modify AHU,D3040
+1787,ATT,Heating; Ventilating and Air Conditioning,0,"Upgrade operating protocols, calibration, and/or sequencing",X0000
+1794,ATT,Lighting Improvements,0,Install timers,D5020
+1796,ATT,Lighting Improvements,0,Replace diffusers,D5020
+1823,ATT,Service Hot Water System,0,Implement training and/or documentation,D2020 
+1870,IEA46,Building Envelope,Windows,"Replace existing fenestration (toplighting and/or sidelighting) with dual-glazed ""low-e"" glass wherever possible to reduce thermal gain.",B2020
+1879,IEA46,Building Envelope,Doors,Seal top and bottom of building.,B2030
+1895,IEA46,HVAC Systems,HVAC distribution systems,Reset VAV system supply-air temperature set point when system is at minimum speed to provide adequate ventilation.,D3060
+1896,IEA46,HVAC Systems,HVAC distribution systems,"If conversion to VAV is impractical for CAV systems, reset supply-air temperatures in response to load. Dynamically control heating duct temperatures as low as possible, and cooling duct temperatures as high as possible, while meeting the load.",D3060
 1897,IEA46,HVAC Systems,HVAC distribution systems,Use high-efficiency fans and pumps; replace or trim impellers of existing fans and pumps if they have excessive capacity relative to peak demand.,D3040
-2567,IEA11,HEATING,0,Use of exhaust air as heat source for heat pumps.,D3050
-24,1651RP,Daylighting,Passive,Use of interzone luminous ceilings,C3030
+1929,IEA46,HVAC Systems,HVAC distribution systems,"In reheat systems, making adjustments as necessary to minimize reheat energy consumption while maintaining indoor environmental quality.",D3040
+1956,IEA46,Refrigeration,Reduce loads,Install low/no ASH refrigerated case doors.,E1090
+2003,IEA46,Energy Generation and Distribution,Boiler system,Install condensing economizers.,D3020
+2014,IEA46,Energy Generation and Distribution,Boiler system,"Preheat combustion air, feed water, or fuel oil with reclaimed waste heat from boiler blowdown and/or flue gases.",D3020
+2039,IEA46,Energy Generation and Distribution,Chiller system,Isolate offline chillers and cooling towers.,D3030
+2053,IEA46,Energy Generation and Distribution,Chiller system,Optimize plant controls to raise evaporator temperature as high as possible while meeting loads of the system. Also optimize condenser water temperature control to achieve best combination of chiller and tower efficiency.,D3060
+2113,IEA46,Residential Lighting,Interior,Evaluate adding daylight sensing controls for general illumination lighting in rooms with windows or skylights. Use in combination with dimming systems so the electric light level can be adjusted based on the amount of daylight available,D5020
+2121,IEA46,"Electric Systems, Motors",0,"Replace existing 3-phase, 1 HP and greater electric motors with premium efficiency motors (often a better choice than rewinding motors).",X0000
+2146,IEA46,Process Systems,General process improvement,Optimize overtime by analyzing the causes and correcting them.,X0000
+2150,IEA46,Process Systems,General process improvement,Improve working conditions to improve productivity by increasing building ventilation.,D3060
 2165,IEA46,Process Systems,Painting,"Use ultrafiltration/reverse osmosis (UF/RO) for wastewater cleaning. When the water-based paint is used, processing equipment must be regularly cleaned with water. A typical painting operation requires significant amount of water to clean, all of it must be disposed of as hazardous waste. Reducing this hazardous waste therefore reduces transportation and incineration energy associated with its removal. A combined UF/RO process cleans wastewater to the point where it is again suitable for cleaning purpose. The UF/RO can recover 95% of the waste water.",X0000
-287,1651RP,HVAC,System,Variable Speed Water Loop Heat Pumps,D3050
-501,BEQ,HVAC System,0,"Where cooling is provided by multiple units, maintain proper sequencing to achieve maximum efficiency while meeting required load.",D3060
+2184,IEA46,Process Systems,Welding,Select shielding gas with reduced fume generation for the GMAW and Flux Cored Arc Welding (FCAW) processes. Argon-based shielding gases with the lowest percentages of oxygen or carbon dioxide will minimize fume for both GMAW and FCAW. The fume generation rate can be cut almost in half by changing from 100% CO2 shielding gas to a mixture of Argon with 25% CO2 shielding gas. A further reduction in fume generation rate can be achieved by use of a shielding gas containing Argon with only 5% CO2 along with the appropriate electrode,X0000
+2187,IEA46,Process Systems,Welding,"Avoid short-time conditions with spot welding, changing over to medium-time conditions.",X0000
+2196,IEA46,Process Systems,Welding,Use dock seals for truck docks.,D2030
+2211,IEA46,Process Systems,Catering facilities,Install electronically commutated motor for walk-in cooler and freezer evaporator fan.,E1090
+2212,IEA46,Process Systems,Catering facilities,Use Energy Star rated deep fat fryer.,E1090
+2253,IEA46,Process Systems,Process control,Replace air filters regularly.,X0000
+2262,IEA46,Process Systems,Process control,Upgrade inefficient chillers.,D3030
+2307,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Hot Water,Low Flow Showerheads,D2010
+2325,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,HVAC End Use,High Efficiency Furnace,D3050
+2365,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Lighting End Use,Lighting Power Density,D5020
+2390,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Compressed Air,Efficient Refrigerated Compressed Air Dryer,X0000
+2392,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Compressed Air,Efficient Desiccant Compressed Air Dryer,X0000
+2400,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Miscellaneous End Use,High Efficiency Transformer,D5010
+2408,ILTRM,COMMERCIAL AND INDUSTRIAL MEASURES,Miscellaneous End Use,Commercial Weather Stripping,X0000
+2425,ILTRM,RESIDENTIAL MEASURES,HVAC End Use,Central Air Conditioning,D3050
+2437,ILTRM,RESIDENTIAL MEASURES,HVAC End Use,ENERGY STAR Ceiling Fan,E2010
+2451,ILTRM,RESIDENTIAL MEASURES,Lighting End Use,LED Specialty Lamps,D5020
+2470,IEA11,ENVELOPE,0,Close convective paths in shafts and stairwells,B
+2511,IEA11,REGULATION,0,"Special considerations, roof top air conditioning units",D3050
+2516,IEA11,REGULATION,0,Minimise stratification in heating season,X0000
+2545,IEA11,HEATING,0,Reduce number of on-line boilers as load reduces.,D3020
+2547,IEA11,HEATING,0,Reduce blowdown losses.,D3020
+2567,IEA11,HEATING,0,Use of exhaust air as heat source for heat pumps.,D3050
+2592,IEA11,COOLING,0,Heat recovery of condenser heat.,D3030
+2599,IEA11,COOLING,0,Minimise adverse external influences on cooling tower and air cooled condenser,D3030
+2648,IEA11,SERVICE HOT WATER,0,Install pressure reducing valves.,D2020
+2649,IEA11,SERVICE HOT WATER,0,lnstall trace heating on dead legs,D2020
+2664,IEA11,LIGHTING,0,"Clean interior wall surfaces, repaint with lighter colors",C1010
+2688,IEA11,MISCELLANEOUS,0,Reduce condensing temperatures.,D3060
+2728,REMDB,Ceilings/Roofs,Unfinished Attic,Insulate Ceiling with Closed Cell Spray Foam,C3030
+2756,REMDB,Lighting,Flood Light,Replace Flood Light,D5020
+2773,REMDB,Space Conditioning,Central Air Conditioner,Install Central Air Conditioner,D3050
+2785,REMDB,Space Conditioning,Ducts,Install Uninsulated Ducts,D3040
+2787,REMDB,Space Conditioning,Ducts,Seal and Insulate Ducts (Total Leakage),D3040
+2795,REMDB,Space Conditioning,Ground Source Heat Pump,Remove Heat Pump,D3050
+2882,NYTRM,COMMERCIAL AND INDUSTRIAL MEASURES,APPLIANCE,COMBINATION OVEN,E1090
+2922,NYTRM,COMMERCIAL AND INDUSTRIAL MEASURES,"HEATING, VENTILATION AND AIR CONDITIONING (HVAC) - CONTROL",ENERGY MANAGEMENT SYSTEM (EMS) - GUEST ROOM,D3060
+2940,NYTRM,COMMERCIAL AND INDUSTRIAL MEASURES,REFRIGERATION,REFRIGERATED CASE NIGHT COVER,E1090
+2943,THUM,Operational Energy Conservation Opportunities,0,Reduce System Operating Hours,X0000
+2944,THUM,Operational Energy Conservation Opportunities,0,Reduce Space Loads Due to Ventilation,X0000
+2946,THUM,Operational Energy Conservation Opportunities,0,Reduce Flow and Temperature of Hot Water,X0000
+2969,THUM,HVAC Equipment Energy Conservation Opportunities,0,Recirculate Exhaust Air Using Activated Carbon Filters.,D3040
+3005,WSU,Envelope,Reduce Heat Losses-Windows/Doors,Install Movable Insulation - Operable insulating slats,B2030
+3037,WSU,HVAC Systems,Air Distribution Systems,Reduce System Flow Rates - Variable speed drive motor for VAV,D3040
+3040,WSU,HVAC Systems,Air Distribution Systems,Reduce Ventilation Loads - Reduce ventilation rate to minimum,D3060
+3047,WSU,HVAC Systems,Water/Steam Distribution,Reduce System Flow Rates - Primary/secondary pumping with variable speed motors,D3040
+3062,WSU,HVAC Systems,Cooling Plant,Select More Efficient Cooling System - Use evaporative cooling,D3030
+3109,WSU,Refrigeration,Reduce Refrigeration System Losses,Increase Insulation of Refrigerated Area,E1090
+3149,WULF,BOILER PLANT,DRAFT CONTROL,Correct defects in flue systems and boiler room ventilation that cause draft problems.,D3020
+3155,WULF,BOILER PLANT,FIRESIDES AND WATERSIDES,Install soot blowers in boilers that burn sooting fuels.,D3020
+3197,WULF,CHILLER PLANT,EQUIPMENT SCHEDULING AND OPERATING PRACTICES,Install power switching that prevents unnecessary operation of spare pumps.,D3030
+3207,WULF,CHILLER PLANT,CONDENSER AND EVAPORATOR HEAT TRANSFER EFFICIENCY,"In wet cooling systems, adjust the bleed rate to maintain proper water conditions with minimum water consumption. - Install and maintain an automatic bleed control.",D3030
+3208,WULF,CHILLER PLANT,CONDENSER AND EVAPORATOR HEAT TRANSFER EFFICIENCY,"In chilled water systems, install turbulators in the evaporator tubes.",D3030
+3232,WULF,CHILLER PLANT,SYSTEM DESIGN FOR EFFICIENT LOW-LOAD COOLING,"If a facility has several chiller plants, provide cross connections that allow shutting down the least efficient chillers.",D3060
+3237,WULF,CHILLER PLANT,EXPLOITING LOW AMBIENT TEMPERATURES FOR WATER CHILLING,Install a closed-loop atmospheric cooling unit in the chilled water circuit.,D3030
+3247,WULF,SERVICE WATER SYSTEMS,REDUCING SERVICE WATER CONSUMPTION,Install shower valves that allow easy control of temperature and flow rate.,D2010
+3358,WULF,ROOM CONDITIONING UNITS AND SELF-CONTAINED HVAC EQUIPMENT,SELF-CONTAINED AIR CONDITIONERS AND THROUGH-WALL HEAT PUMPS,Install high-efficiency replacement fan motors.,D3050
+3376,WULF,ROOM CONDITIONING UNITS AND SELF-CONTAINED HVAC EQUIPMENT,HEAT PUMP LOOP SYSTEMS (ADDITIONAL MEASURES),Add thermal storage to the loop system.,D3050
+3384,WULF,BUILDING AIR LEAKAGE,PERSONNEL DOORS,"Install effective closers on exterior doors. - If manual opening of doors is not acceptable, install automatic doors or door openers.",B2030
+3417,WULF,BUILDING INSULATION,WALLS AND SOFFITS,Increase the thermal resistance of the panels in curtain walls.,B2020
+3424,WULF,CONTROL AND USE OF SUNLIGHT,REDUCING COOLING LOAD: WINDOWS & SKYLIGHTS,Install internal shading devices.,E2010
+3436,WULF,CONTROL AND USE OF SUNLIGHT,DAYLIGHTING,Install a system of light shelves and shading.,B2010
+3455,WULF,ARTIFICIAL LIGHTING,"LAMPS AND FIXTURES, FLUORESCENT",Replace fluorescent lamps with high-efficiency or reduced- wattage types.,D5020
+3481,WULF,ARTIFICIAL LIGHTING,LIGHTING LAYOUT,"Install a separate control circuit for each lighting element that operates on a distinct schedule. - Where light fixtures are needed in a predictable variety of patterns, install programmable switches.",D5020
+3483,WULF,ARTIFICIAL LIGHTING,FIXTURE MAINTENANCE AND MARKING,Clean fixtures and lamps at appropriate intervals.,D5020
