@@ -112,9 +112,14 @@ library(tokenizers) # for 1-n gram tokenization
 Import the list of categorization tags, the list of EEMs to be categorized, and the corresponding ground truth (if available). The relative filepaths in this script follow the same directory structure as this Github repository, and it is recommended that you use this same structure.  You might have to use `setwd()` to set the working directory to the location of the R script.  
 
 ```
+# Load categorization tags
 tag_list <- read_csv("../data/categorization-tags.csv")
-sample_eems <- read_csv("../data/sample-eems.csv")
-# Use sample-eems.csv or building-sync.csv or your custom EEM list
+
+# Load one of the two samples provided with the script or a custom EEM list:
+sample_eems <- read_csv("../data/sample-eems.csv") # 5% random sample of EEMs from the main list
+
+# Load the manually assigned categories for the EEM samples (For calculating metrics 3 and 4)
+ground_truth <- read_csv("../data/sample-eems-ground-truth.csv") # Ground truth for the 5% random sample 
 ```
 
 #### Tokenize tags and EEMs
@@ -202,13 +207,14 @@ For the first five tokens, the dataframe is now:
 ### Results
 
 #### Tagged and untagged EEMs
-The script then exports five CSV files:
+The script then exports six CSV files:
 - `sheet-1-tagged-eems`: Tagged EEMs from the sample along with their original and new categorizations
 - `sheet-2-untagged-eems`: Untagged EEMs from the sample along with their original categorizations
 - `sheet-3-top-tags`: Most frequently occurring tagged terms from the sample along with their counts
 - `sheet-4-untagged-words`: Most frequently occurring un-tagged terms from the sample along with their counts   
-- `sheet-5-untagged-bigrams`: Most frequently occurring un-tagged bigrams from the sample along with their counts     
-   
+- `sheet-5-untagged-bigrams`: Most frequently occurring un-tagged bigrams from the sample along with their counts    
+- `sheet-6-ground-truth-matching`: Comparison of automatically and manually assigned categorizations for each EEM in the sample    
+    
 To illustrate the results, the first five EEMs from `sheet-1-tagged-eems` are shown below. If multiple tags are present in the EEM, each tag gets its own row in the re-categorized list.
     
 | eem_id|document |cat_lev1    |cat_lev2     |eem_name                           |tags    |type       |uni_code |uni_level_1             |uni_level_2       |uni_level_3       |
@@ -219,52 +225,18 @@ To illustrate the results, the first five EEMs from `sheet-1-tagged-eems` are sh
 |     36|1651RP   |Envelope    |Fenestration |Manual Internal Window shades      |manual  |Descriptor |X0000    |Unassigned              |Unassigned        |Unassigned        |
 |     36|1651RP   |Envelope    |Fenestration |Manual Internal Window shades      |Wind    |Descriptor |D3010    |SERVICES                |HVAC              |Energy Supply     |
 
-The first five EEMs from `sheet-2-untagged-eems` are shown below.  When EEMs remain untagged it is generally for one of several reasons: a relevant tag present in the EEM name is missing from the list of categorization tags; the EEM name uses a synonymous, abbreviated, or different form of a tag present in the tag list; the EEM name does not actually contain a building element. Examining the results, we see that EEM 73 illustrates the second error: it contains the plural term "doors", but the relevant categorization tags are "interior door" and "exterior door."  The rest of the EEM names illustrate the third error and do not contain any element tags.   
-    
-| eem_id|document |cat_lev1      |cat_lev2    |eem_name                                                                                                                           |
-|------:|:--------|:-------------|:-----------|:----------------------------------------------------------------------------------------------------------------------------------|
-|     73|1651RP   |Envelope      |Opaque      |High-speed doors between heated/cooled building space and unconditioned space in the areas with high-traffic                       |
-|     80|1651RP   |Envelope      |Opaque      |large reservoirs of water for thermal mass within zone                                                                             |
-|    304|1651RP   |HVAC          |Ventilation |Hybrid/Mixed Mode Ventilation                                                                                                      |
-|    501|BEQ      |HVAC System   |0           |Where cooling is provided by multiple units, maintain proper sequencing to achieve maximum efficiency while meeting required load. |
-|    562|BEQ      |HVAC System   |0           |Reduce operating hours of simultaneously heating and cooling systems.                                                              |
- 
 #### Performance metrics
-The script then computes summary metrics to quantify the performance of the automated tagging system.  Metric 1 is the percentage of EEMs in the list that are tagged with at least one tag. 
-
-```
-> tagged_eem_count <- tagged_tokens$id %>% unique() %>% length()
-> total_eem_count <- sample_eems %>% nrow()
-> paste0("Percent EEMs tagged = ", round(100*tagged_eem_count/total_eem_count,1))
-[1] "Percent EEMs tagged = 62.4"
-```
-
-Metric 2 is the percentage of EEMs in the list that are categorized, i.e., are tagged with at least one element tag.  If you prefer to compute metric 2 based on the number of EEMs that are categorized using either an element or descriptor tag (excluding unassigned descriptor tags), use the first (commented out) filter criteria instead.  
-
-```
-> categorized_tokens <- tagged_tokens %>% 
-+   #filter(uni_code != "X0000") # Use this if you want to see both the descriptor and element tags
-+   filter(type == "Element")
-> categorized_eem_count <- categorized_tokens$id %>% unique() %>% length()
-> paste0("Percent EEMs categorized = ", round(100*categorized_eem_count/total_eem_count,1))
-[1] "Percent EEMs categorized = 41"
-```
-
-Metric 3 is the percentage of categorized EEMs in the list that are categorized correctly, i.e., the automatic categorization matches the ground truth categorization. 
-
-```
-> CODE TK METRIC 3
-```
-
-
-
+The script then computes four summary metrics to quantify the performance of the categorization system and R script: 
+- Metric 1: Percentage of EEMs that got tagged automatically by the script    
+- Metric 2: Percentage of EEMs that got categorized automatically by the script 
+- Metric 3: Percentage of EEMs that got categorized manually in the ground truth
+- Metric 4: Percentage of EEMs that got categorized correctly
+    
 ### Troubleshooting
-
 If the script produces an error, check for the following issues:
-
-* Are you using a CSV file? The script will not work with Excel sheets.
-* Do the column names in the file match those specified above?
-* Are you following the GitHub repo folder structure?
-* Are you using RStudio to open and run the files?
-* Do you have the most recent version of R and RStudio installed?
-* Are the libraries in R up to date?
+- Are you using a CSV file? The script will not work with Excel sheets.
+- Do the column names in the file match those specified above?
+- Are you following the GitHub repo folder structure?
+- Are you using RStudio to open and run the files?
+- Do you have the most recent version of R and RStudio installed?
+- Are the libraries in R up to date?
